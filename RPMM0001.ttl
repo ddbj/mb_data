@@ -1,81 +1,81 @@
-@prefix :      <http://metadb.riken.jp/ontology/plantMetabolomics/0.1/> .
+@prefix :      <http://ddbj.nig.ac.jp/ontologies/metabobank#> .
 @prefix qudt:  <http://qudt.org/schema/qudt> .
-@prefix pm_techPlat: <http://metadb.riken.jp/db/plantMetabolomics/0.1/TechnologyPlatform/> .
-@prefix pm_uniAnalysis: <http://metadb.riken.jp/db/plantMetabolomics/0.1/UnivariateAnalysis/> .
+@prefix pm_techPlat: <http://ddbj.nig.ac.jp/ontologies/metabobank#TechnologyPlatform/> .
+@prefix pm_uniAnalysis: <http://ddbj.nig.ac.jp/ontologies/metabobank#UnivariateAnalysis/> .
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rmd:   <http://metadb.riken.jp/> .
 @prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
-@prefix pm_sampleAmount: <http://metadb.riken.jp/db/plantMetabolomics/0.1/SampleAmount/> .
-@prefix pm_exp: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Experiment/> .
-@prefix pm_expFactor: <http://metadb.riken.jp/db/plantMetabolomics/0.1/ExperimentalFactor/> .
-@prefix pm_techType: <http://metadb.riken.jp/db/plantMetabolomics/0.1/TechnologyType/> .
-@prefix pm_sampleExtProt: <http://metadb.riken.jp/db/plantMetabolomics/0.1/SampleExtractionProtocol/> .
-@prefix pm_expDesign: <http://metadb.riken.jp/db/plantMetabolomics/0.1/ExperimentalDesign/> .
-@prefix pm_voltage: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Voltage/> .
+@prefix pm_sampleAmount: <http://ddbj.nig.ac.jp/ontologies/metabobank#SampleAmount/> .
+@prefix pm_exp: <http://ddbj.nig.ac.jp/ontologies/metabobank#Experiment/> .
+@prefix pm_expFactor: <http://ddbj.nig.ac.jp/ontologies/metabobank#ExperimentalFactor/> .
+@prefix pm_techType: <http://ddbj.nig.ac.jp/ontologies/metabobank#TechnologyType/> .
+@prefix pm_sampleExtProt: <http://ddbj.nig.ac.jp/ontologies/metabobank#SampleExtractionProtocol/> .
+@prefix pm_expDesign: <http://ddbj.nig.ac.jp/ontologies/metabobank#ExperimentalDesign/> .
+@prefix pm_voltage: <http://ddbj.nig.ac.jp/ontologies/metabobank#Voltage/> .
 @prefix dcterms: <http://purl.org/dc/dcmitype/> .
 @prefix foaf:  <http://xmlns.com/foaf/0.1/> .
-@prefix pm_flowRate: <http://metadb.riken.jp/db/plantMetabolomics/0.1/FlowRate/> .
-@prefix pm_summarisation: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Summarisation/> .
-@prefix pm_samplePrep: <http://metadb.riken.jp/db/plantMetabolomics/0.1/SamplePreparation/> .
-@prefix pm_material: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Metarial/> .
-@prefix pm_treatment: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Treatment/> .
-@prefix pm_sample: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Sample/> .
-@prefix pm_expRegime: <http://metadb.riken.jp/db/plantMetabolomics/0.1/ExperimentalRegime/> .
-@prefix pm_length: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Length/> .
-@prefix pm_massAnalyser: <http://metadb.riken.jp/db/plantMetabolomics/0.1/MassAnalyser/> .
-@prefix pm_unit: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Unit/> .
-@prefix pm_normal: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Normalisation/> .
-@prefix pm_dataAnalysis: <http://metadb.riken.jp/db/plantMetabolomics/0.1/DataAnalysis/> .
-@prefix pm_visualisation: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Visualisation/> .
-@prefix pm_organ: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Organ/> .
-@prefix pm_concentration: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Concentration/> .
-@prefix pm_analysedDataset: <http://metadb.riken.jp/db/plantMetabolomics/0.1/AnalysedDataset/> .
-@prefix pm_amd: <http://metadb.riken.jp/db/plantMetabolomics/0.1/AnnotationMethodDetails/> .
-@prefix pm_rawData: <http://metadb.riken.jp/db/plantMetabolomics/0.1/RawData/> .
-@prefix pm_statResFile: <http://metadb.riken.jp/db/plantMetabolomics/0.1/StatisticalResultsFile/> .
-@prefix pm_measureCond: <http://metadb.riken.jp/db/plantMetabolomics/0.1/MeasurementCondition/> .
-@prefix pm_biosamp: <http://metadb.riken.jp/db/plantMetabolomics/0.1/BiologicalSample/> .
-@prefix pm_preProcess: <http://metadb.riken.jp/db/plantMetabolomics/0.1/PreProcessing/> .
+@prefix pm_flowRate: <http://ddbj.nig.ac.jp/ontologies/metabobank#FlowRate/> .
+@prefix pm_summarisation: <http://ddbj.nig.ac.jp/ontologies/metabobank#Summarisation/> .
+@prefix pm_samplePrep: <http://ddbj.nig.ac.jp/ontologies/metabobank#SamplePreparation/> .
+@prefix pm_material: <http://ddbj.nig.ac.jp/ontologies/metabobank#Metarial/> .
+@prefix pm_treatment: <http://ddbj.nig.ac.jp/ontologies/metabobank#Treatment/> .
+@prefix pm_sample: <http://ddbj.nig.ac.jp/ontologies/metabobank#Sample/> .
+@prefix pm_expRegime: <http://ddbj.nig.ac.jp/ontologies/metabobank#ExperimentalRegime/> .
+@prefix pm_length: <http://ddbj.nig.ac.jp/ontologies/metabobank#Length/> .
+@prefix pm_massAnalyser: <http://ddbj.nig.ac.jp/ontologies/metabobank#MassAnalyser/> .
+@prefix pm_unit: <http://ddbj.nig.ac.jp/ontologies/metabobank#Unit/> .
+@prefix pm_normal: <http://ddbj.nig.ac.jp/ontologies/metabobank#Normalisation/> .
+@prefix pm_dataAnalysis: <http://ddbj.nig.ac.jp/ontologies/metabobank#DataAnalysis/> .
+@prefix pm_visualisation: <http://ddbj.nig.ac.jp/ontologies/metabobank#Visualisation/> .
+@prefix pm_organ: <http://ddbj.nig.ac.jp/ontologies/metabobank#Organ/> .
+@prefix pm_concentration: <http://ddbj.nig.ac.jp/ontologies/metabobank#Concentration/> .
+@prefix pm_analysedDataset: <http://ddbj.nig.ac.jp/ontologies/metabobank#AnalysedDataset/> .
+@prefix pm_amd: <http://ddbj.nig.ac.jp/ontologies/metabobank#AnnotationMethodDetails/> .
+@prefix pm_rawData: <http://ddbj.nig.ac.jp/ontologies/metabobank#RawData/> .
+@prefix pm_statResFile: <http://ddbj.nig.ac.jp/ontologies/metabobank#StatisticalResultsFile/> .
+@prefix pm_measureCond: <http://ddbj.nig.ac.jp/ontologies/metabobank#MeasurementCondition/> .
+@prefix pm_biosamp: <http://ddbj.nig.ac.jp/ontologies/metabobank#BiologicalSample/> .
+@prefix pm_preProcess: <http://ddbj.nig.ac.jp/ontologies/metabobank#PreProcessing/> .
 @prefix metadb_catalog: <http://metadb.riken.jp/db/DBcatalog/> .
-@prefix pm_dataTrans: <http://metadb.riken.jp/db/plantMetabolomics/0.1/DataTransformation/> .
+@prefix pm_dataTrans: <http://ddbj.nig.ac.jp/ontologies/metabobank#DataTransformation/> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix pm_measurement: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Measurement/> .
-@prefix pm_measureType: <http://metadb.riken.jp/db/plantMetabolomics/0.1/MeasurementType/> .
-@prefix pm_massSpecFile: <http://metadb.riken.jp/db/plantMetabolomics/0.1/MassSpectraFile/> .
-@prefix pm_compound: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Compound/> .
-@prefix pm_rawDataset: <http://metadb.riken.jp/db/plantMetabolomics/0.1/RawDataset/> .
-@prefix pm_LightCond: <http://metadb.riken.jp/db/plantMetabolomics/0.1/LightCondition/> .
+@prefix pm_measurement: <http://ddbj.nig.ac.jp/ontologies/metabobank#Measurement/> .
+@prefix pm_measureType: <http://ddbj.nig.ac.jp/ontologies/metabobank#MeasurementType/> .
+@prefix pm_massSpecFile: <http://ddbj.nig.ac.jp/ontologies/metabobank#MassSpectraFile/> .
+@prefix pm_compound: <http://ddbj.nig.ac.jp/ontologies/metabobank#Compound/> .
+@prefix pm_rawDataset: <http://ddbj.nig.ac.jp/ontologies/metabobank#RawDataset/> .
+@prefix pm_LightCond: <http://ddbj.nig.ac.jp/ontologies/metabobank#LightCondition/> .
 @prefix dct:   <http://purl.org/dc/terms/> .
-@prefix pm_humidity: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Humidity/> .
-@prefix pm_tissue: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Tissue/> .
-@prefix pm_multiAnalysis: <http://metadb.riken.jp/db/plantMetabolomics/0.1/MultivariateAnalysis/> .
-@prefix pm_fileFormat: <http://metadb.riken.jp/db/plantMetabolomics/0.1/FileFormat/> .
-@prefix pm_temperature: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Temperature/> .
-@prefix pm_file: <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/> .
-@prefix pm_energy: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Energy/> .
-@prefix pm_massSpec: <http://metadb.riken.jp/db/plantMetabolomics/0.1/MassSpectometry/> .
-@prefix pm_chromato: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Chromatography/> .
-@prefix pm_pressure: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Pressure/> .
-@prefix pm_peakFile: <http://metadb.riken.jp/db/plantMetabolomics/0.1/PeakFile/> .
-@prefix pm_normalMatFile: <http://metadb.riken.jp/db/plantMetabolomics/0.1/NormalisationDataMatrixFile/> .
-@prefix pm_time: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Time/> .
+@prefix pm_humidity: <http://ddbj.nig.ac.jp/ontologies/metabobank#Humidity/> .
+@prefix pm_tissue: <http://ddbj.nig.ac.jp/ontologies/metabobank#Tissue/> .
+@prefix pm_multiAnalysis: <http://ddbj.nig.ac.jp/ontologies/metabobank#MultivariateAnalysis/> .
+@prefix pm_fileFormat: <http://ddbj.nig.ac.jp/ontologies/metabobank#FileFormat/> .
+@prefix pm_temperature: <http://ddbj.nig.ac.jp/ontologies/metabobank#Temperature/> .
+@prefix pm_file: <http://ddbj.nig.ac.jp/ontologies/metabobank#File/> .
+@prefix pm_energy: <http://ddbj.nig.ac.jp/ontologies/metabobank#Energy/> .
+@prefix pm_massSpec: <http://ddbj.nig.ac.jp/ontologies/metabobank#MassSpectometry/> .
+@prefix pm_chromato: <http://ddbj.nig.ac.jp/ontologies/metabobank#Chromatography/> .
+@prefix pm_pressure: <http://ddbj.nig.ac.jp/ontologies/metabobank#Pressure/> .
+@prefix pm_peakFile: <http://ddbj.nig.ac.jp/ontologies/metabobank#PeakFile/> .
+@prefix pm_normalMatFile: <http://ddbj.nig.ac.jp/ontologies/metabobank#NormalisationDataMatrixFile/> .
+@prefix pm_time: <http://ddbj.nig.ac.jp/ontologies/metabobank#Time/> .
 @prefix org:   <http://www.w3.org/ns/org#> .
-@prefix pm_instrument: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Instrument/> .
-@prefix pm_org: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Organisation/> .
+@prefix pm_instrument: <http://ddbj.nig.ac.jp/ontologies/metabobank#Instrument/> .
+@prefix pm_org: <http://ddbj.nig.ac.jp/ontologies/metabobank#Organisation/> .
 @prefix pmid:  <http://rdf.ncbi.nlm.nih.gov/pubmed/> .
-@prefix pm_rawDataFileList: <http://metadb.riken.jp/db/plantMetabolomics/0.1/RawDataFileList/> .
-@prefix pm_rawDataSet: <http://metadb.riken.jp/db/plantMetabolomics/0.1/RawDataSet/> .
-@prefix pm_person: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Person/> .
-@prefix pm_expType: <http://metadb.riken.jp/db/plantMetabolomics/0.1/ExperimentType/> .
+@prefix pm_rawDataFileList: <http://ddbj.nig.ac.jp/ontologies/metabobank#RawDataFileList/> .
+@prefix pm_rawDataSet: <http://ddbj.nig.ac.jp/ontologies/metabobank#RawDataSet/> .
+@prefix pm_person: <http://ddbj.nig.ac.jp/ontologies/metabobank#Person/> .
+@prefix pm_expType: <http://ddbj.nig.ac.jp/ontologies/metabobank#ExperimentType/> .
 @prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix pm_proj: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Project/> .
+@prefix pm_proj: <http://ddbj.nig.ac.jp/ontologies/metabobank#Project/> .
 @prefix foaf_person: <http://xmlns.com/foaf/0.1/Person/> .
-@prefix pm_statDataAnalysis: <http://metadb.riken.jp/db/plantMetabolomics/0.1/StatisticalDataAnalsis/> .
+@prefix pm_statDataAnalysis: <http://ddbj.nig.ac.jp/ontologies/metabobank#StatisticalDataAnalsis/> .
 @prefix metadb_db: <http://metadb.riken.jp/db/> .
 @prefix bibo:  <http://purl.org/ontology/bibo> .
 @prefix obo:   <http://purl.obolibrary.org/obo/> .
-@prefix pm_scaling: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Scaling/> .
+@prefix pm_scaling: <http://ddbj.nig.ac.jp/ontologies/metabobank#Scaling/> .
 @prefix dc:    <http://purl.org/dc/elements/1.1/> .
 
 pm_person:FumioMatsuda
@@ -93,7 +93,7 @@ pm_person:FumioMatsuda
 pm_rawDataSet:RPMM0001_GC_L_47_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_47_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_47_1(ABF)> , pm_file:RPMM0001_File_GC_L_47_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_47_1(ABF)> , pm_file:RPMM0001_File_GC_L_47_1 .
 
 pm_org:TohokuUnivEng  a  org:Organization ;
         rdfs:label      "東北大学大学院 工学研究科"@ja , "Graduate School of Engineering, Tohoku University"@en ;
@@ -105,14 +105,14 @@ pm_normal:RPMM0001  a        :Normalisation ;
         :normalisationType   obo:MSIO_0000140 ;
         dcterms:description  "The normalized responses are peak areas corrected using the sample weight and a constant amount of the representative internal standard compound ([<sup>13</sup>C<sub>4<sub>]-hexadecanoic acid)."@en .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_42_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_42_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_42_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_42_1.abf"^^xsd:anyURI ;
         :fileFormat   <nrn:mimetype:application/x-abf> ;
         :md5          "96b42b07ab12e47cea21eb1a16cd9814" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_06_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_06_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_06_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_06_1.abf"^^xsd:anyURI ;
@@ -206,7 +206,7 @@ pm_org:KyotoUnivGSBiosutdies
 pm_rawDataSet:RPMM0001_GC_L_27_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_27_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_27_1(ABF)> , pm_file:RPMM0001_File_GC_L_27_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_27_1(ABF)> , pm_file:RPMM0001_File_GC_L_27_1 .
 
 <http://purl.bioontology.org/ontology/NCBITAXON/3702>
         a       owl:Class .
@@ -282,14 +282,14 @@ pm_sample:RPMM0001_GC_L_51_1
         :biologicalSample   pm_biosamp:RPMM0001_L_51_1 ;
         :samplePreparation  pm_samplePrep:RPMM0001_GC .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_32_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_32_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_32_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_32_1.abf"^^xsd:anyURI ;
         :fileFormat   <nrn:mimetype:application/x-abf> ;
         :md5          "5e3867604f5575e3798f95d13d514485" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_39_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_39_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_39_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_39_1.abf"^^xsd:anyURI ;
@@ -504,7 +504,7 @@ pm_measurement:RPMM0001_GC_L_24_1
         :rawDataset            pm_rawDataSet:RPMM0001_GC_L_24_1 ;
         :sampleMeasured        pm_sample:RPMM0001_GC_L_24_1 .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_36_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_36_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_36_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_36_1.abf"^^xsd:anyURI ;
@@ -514,7 +514,7 @@ pm_measurement:RPMM0001_GC_L_24_1
 pm_rawDataSet:RPMM0001_GC_L_36_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_36_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_36_1(ABF)> , pm_file:RPMM0001_File_GC_L_36_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_36_1(ABF)> , pm_file:RPMM0001_File_GC_L_36_1 .
 
 pm_biosamp:RPMM0001_L_19_1
         a                           :BiologicalSample ;
@@ -647,7 +647,7 @@ pm_measurement:RPMM0001_GC_L_04_1
 pm_rawDataSet:RPMM0001_GC_L_16_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_16_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_16_1(ABF)> , pm_file:RPMM0001_File_GC_L_16_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_16_1(ABF)> , pm_file:RPMM0001_File_GC_L_16_1 .
 
 pm_org:ChibaPrefAgriResCenter
         a               org:Organization ;
@@ -679,7 +679,7 @@ pm_file:RPMM0001_File_GC_L_30_1
         :fileFormat   <nrn:mimetype:application/x-cdf> ;
         :md5          "1257ad6c774c6d158667b9125ae2a142" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_26_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_26_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_26_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_26_1.abf"^^xsd:anyURI ;
@@ -906,7 +906,7 @@ pm_person:KotaKera  a    foaf:Person ;
 pm_rawDataSet:RPMM0001_GC_L_45_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_45_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_45_1(ABF)> , pm_file:RPMM0001_File_GC_L_45_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_45_1(ABF)> , pm_file:RPMM0001_File_GC_L_45_1 .
 
 pm_person:MotoyukiAshikari
         a                foaf:Person ;
@@ -968,7 +968,7 @@ pm_person:NayumiAkimoto
         rdfs:label   "実験者"@ja , "experimenter"@en ;
         rdfs:range   foaf:Person .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_23_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_23_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_23_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_23_1.abf"^^xsd:anyURI ;
@@ -1035,7 +1035,7 @@ pm_measurement:RPMM0001_GC_L_13_1
 pm_rawDataSet:RPMM0001_GC_L_25_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_25_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_25_1(ABF)> , pm_file:RPMM0001_File_GC_L_25_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_25_1(ABF)> , pm_file:RPMM0001_File_GC_L_25_1 .
 
 pm_biosamp:RPMM0001_L_08_1
         a                           :BiologicalSample ;
@@ -1121,7 +1121,7 @@ pm_file:RPMM0001_File_GC_L_17_1
 pm_rawDataSet:RPMM0001_GC_L_05_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_05_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_05_1(ABF)> , pm_file:RPMM0001_File_GC_L_05_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_05_1(ABF)> , pm_file:RPMM0001_File_GC_L_05_1 .
 
 pm_person:HiroshiEzura
         a                foaf:Person ;
@@ -1188,7 +1188,7 @@ pm_person:MakotoHirosawa
         foaf:familyName  "HIROSAWA"@en ;
         foaf:firstName   "Makoto"@en .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_20_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_20_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_20_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_20_1.abf"^^xsd:anyURI ;
@@ -1236,7 +1236,7 @@ pm_measurement:RPMM0001_GC_L_42_1
 pm_rawDataSet:RPMM0001_GC_L_54_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_54_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_54_1(ABF)> , pm_file:RPMM0001_File_GC_L_54_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_54_1(ABF)> , pm_file:RPMM0001_File_GC_L_54_1 .
 
 :samplingTime  a     rdf:Property ;
         rdfs:domain  :BiologicalSample ;
@@ -1315,7 +1315,7 @@ pm_measurement:RPMM0001_GC_L_22_1
 pm_rawDataSet:RPMM0001_GC_L_34_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_34_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_34_1(ABF)> , pm_file:RPMM0001_File_GC_L_34_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_34_1(ABF)> , pm_file:RPMM0001_File_GC_L_34_1 .
 
 pm_biosamp:RPMM0001_L_17_1
         a                           :BiologicalSample ;
@@ -1343,21 +1343,21 @@ pm_biosamp:RPMM0001_L_17_1
         obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
         dcterms:identifier          "L_17_1" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_10_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_10_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_10_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_10_1.abf"^^xsd:anyURI ;
         :fileFormat   <nrn:mimetype:application/x-abf> ;
         :md5          "cd2510a2e1c612319d09f934ccb2dc08" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_53_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_53_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_53_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_53_1.abf"^^xsd:anyURI ;
         :fileFormat   <nrn:mimetype:application/x-abf> ;
         :md5          "5b716a3462f2ec8cdb138dee5ec2d4a8" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_17_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_17_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_17_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_17_1.abf"^^xsd:anyURI ;
@@ -1479,7 +1479,7 @@ pm_person:MutsumiWatanabe
         foaf:familyName  "WATANABE"@en ;
         foaf:firstName   "Mutsumi"@en .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_50_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_50_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_50_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_50_1.abf"^^xsd:anyURI ;
@@ -1521,7 +1521,7 @@ pm_biosamp:RPMM0001_L_46_1
         obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
         dcterms:identifier          "L_46_1" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_57_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_57_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_57_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_57_1.abf"^^xsd:anyURI ;
@@ -1670,14 +1670,14 @@ pm_file:RPMM0001_File_GC_L_35_1
         :fileFormat   <nrn:mimetype:application/x-cdf> ;
         :md5          "10b00ed7614184773325aaba05c83176" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_40_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_40_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_40_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_40_1.abf"^^xsd:anyURI ;
         :fileFormat   <nrn:mimetype:application/x-abf> ;
         :md5          "200b02822392a5b0f5d1f0f04f7d7672" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_04_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_04_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_04_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_04_1.abf"^^xsd:anyURI ;
@@ -1690,7 +1690,7 @@ pm_measurement:RPMM0001_GC_L_11_1
         :rawDataset            pm_rawDataSet:RPMM0001_GC_L_11_1 ;
         :sampleMeasured        pm_sample:RPMM0001_GC_L_11_1 .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_47_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_47_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_47_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_47_1.abf"^^xsd:anyURI ;
@@ -1700,7 +1700,7 @@ pm_measurement:RPMM0001_GC_L_11_1
 pm_rawDataSet:RPMM0001_GC_L_23_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_23_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_23_1(ABF)> , pm_file:RPMM0001_File_GC_L_23_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_23_1(ABF)> , pm_file:RPMM0001_File_GC_L_23_1 .
 
 :preProcessing  a    rdf:Property ;
         rdfs:domain  :DataAnalysis ;
@@ -1771,7 +1771,7 @@ pm_person:TerukoMatsuo
 pm_rawDataSet:RPMM0001_GC_L_03_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_03_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_03_1(ABF)> , pm_file:RPMM0001_File_GC_L_03_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_03_1(ABF)> , pm_file:RPMM0001_File_GC_L_03_1 .
 
 pm_unit:milligram_per_microliter
         a                :Unit , owl:Class ;
@@ -1832,14 +1832,14 @@ pm_LightCond:RPMM0001
         a                :LightCondition ;
         :lightIntensity  "50 micro E/(m^2 s)" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_44_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_44_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_44_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_44_1.abf"^^xsd:anyURI ;
         :fileFormat   <nrn:mimetype:application/x-abf> ;
         :md5          "281eabd3d78c54d642afe19cd22e7ddc" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_01_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_01_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_01_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_01_1.abf"^^xsd:anyURI ;
@@ -1867,7 +1867,7 @@ pm_person:TakayukiKohchi
         foaf:familyName  "KOHCHI"@en ;
         foaf:firstName   "Takayuki"@en .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_08_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_08_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_08_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_08_1.abf"^^xsd:anyURI ;
@@ -1893,7 +1893,7 @@ pm_person:ShokoFujiwara
 pm_rawDataSet:RPMM0001_GC_L_52_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_52_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_52_1(ABF)> , pm_file:RPMM0001_File_GC_L_52_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_52_1(ABF)> , pm_file:RPMM0001_File_GC_L_52_1 .
 
 pm_person:RyoNakabayashi
         a                foaf:Person ;
@@ -2017,7 +2017,7 @@ pm_person:HiromitsuTakayama
 pm_rawDataSet:RPMM0001_GC_L_32_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_32_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_32_1(ABF)> , pm_file:RPMM0001_File_GC_L_32_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_32_1(ABF)> , pm_file:RPMM0001_File_GC_L_32_1 .
 
 :Person  a               rdfs:Class ;
         rdfs:label       "人物"@ja , "Person"@en ;
@@ -2059,7 +2059,7 @@ pm_person:EstherKnaap
         foaf:familyName  "van der Knaap"@en ;
         foaf:firstName   "Esther"@en .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_34_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_34_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_34_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_34_1.abf"^^xsd:anyURI ;
@@ -2098,7 +2098,7 @@ pm_file:RPMM0001_File_GC_L_24_1
 pm_rawDataSet:RPMM0001_GC_L_12_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_12_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_12_1(ABF)> , pm_file:RPMM0001_File_GC_L_12_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_12_1(ABF)> , pm_file:RPMM0001_File_GC_L_12_1 .
 
 :Organization  a         rdfs:Class ;
         rdfs:label       "組織"@ja , "Organization"@en ;
@@ -2153,7 +2153,7 @@ pm_measurement:RPMM0001_GC_L_47_1
 pm_rawDataSet:RPMM0001_GC_alkanemix
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_alkanemix"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_alkanemix(ABF)> , pm_file:RPMM0001_File_GC_alkanemix .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_alkanemix(ABF)> , pm_file:RPMM0001_File_GC_alkanemix .
 
 :plantOrgan  a       rdf:Property ;
         rdfs:domain  :BiologicalSample ;
@@ -2261,9 +2261,9 @@ pm_measurement:RPMM0001_GC_L_27_1
 pm_rawDataSet:RPMM0001_GC_L_39_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_39_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_39_1(ABF)> , pm_file:RPMM0001_File_GC_L_39_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_39_1(ABF)> , pm_file:RPMM0001_File_GC_L_39_1 .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_31_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_31_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_31_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_31_1.abf"^^xsd:anyURI ;
@@ -2277,7 +2277,7 @@ pm_person:MasayukiShimamura
         foaf:familyName  "SHIMAMURA"@en ;
         foaf:firstName   "Masayuki"@en .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_38_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_38_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_38_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_38_1.abf"^^xsd:anyURI ;
@@ -2370,7 +2370,7 @@ pm_person:YoshinobuKawamitsu
 pm_rawDataSet:RPMM0001_GC_L_19_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_19_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_19_1(ABF)> , pm_file:RPMM0001_File_GC_L_19_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_19_1(ABF)> , pm_file:RPMM0001_File_GC_L_19_1 .
 
 :flowGradient  a     rdf:Property ;
         rdfs:domain  :Chromatography ;
@@ -2410,7 +2410,7 @@ pm_file:RPMM0001_File_GC_L_33_1
 pm_rawDataSet:RPMM0001_GC_L_21_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_21_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_21_1(ABF)> , pm_file:RPMM0001_File_GC_L_21_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_21_1(ABF)> , pm_file:RPMM0001_File_GC_L_21_1 .
 
 pm_org:KyotoUnivBot  a  org:Organization ;
         rdfs:label      "京都大学大学院 理学研究科 生物科学専攻 植物学教室"@ja , "Department of Botany, Graduate School of Science, Kyoto University"@en ;
@@ -2443,7 +2443,7 @@ pm_biosamp:RPMM0001_L_04_1
         obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
         dcterms:identifier          "L_04_1" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_28_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_28_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_28_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_28_1.abf"^^xsd:anyURI ;
@@ -2469,7 +2469,7 @@ pm_person:ChiakiMatsukura
         a           dct:FileFormat ;
         rdfs:label  "RData format (format designed for use with R)"@en .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_35_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_35_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_35_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_35_1.abf"^^xsd:anyURI ;
@@ -2500,7 +2500,7 @@ pm_statDataAnalysis:RPMM0001_02
 pm_rawDataSet:RPMM0001_GC_L_01_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_01_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_01_1(ABF)> , pm_file:RPMM0001_File_GC_L_01_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_01_1(ABF)> , pm_file:RPMM0001_File_GC_L_01_1 .
 
 metadb_db:plantMetabolomics
         a               rmd:db ;
@@ -2577,7 +2577,7 @@ pm_measurement:RPMM0001_GC_L_36_1
 pm_rawDataSet:RPMM0001_GC_L_48_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_48_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_48_1(ABF)> , pm_file:RPMM0001_File_GC_L_48_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_48_1(ABF)> , pm_file:RPMM0001_File_GC_L_48_1 .
 
 obo:UO_0000052  a  rdfs:Class .
 
@@ -2595,7 +2595,7 @@ pm_person:MiwaOhashi  a  foaf:Person ;
 pm_rawDataSet:RPMM0001_GC_L_50_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_50_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_50_1(ABF)> , pm_file:RPMM0001_File_GC_L_50_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_50_1(ABF)> , pm_file:RPMM0001_File_GC_L_50_1 .
 
 pm_org:TokyoInstTechnoSchGSBiosciBiotech
         a               org:Organization ;
@@ -2635,7 +2635,7 @@ pm_biosamp:RPMM0001_L_33_1
         obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
         dcterms:identifier          "L_33_1" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_25_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_25_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_25_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_25_1.abf"^^xsd:anyURI ;
@@ -2668,7 +2668,7 @@ pm_measurement:RPMM0001_GC_L_16_1
 pm_rawDataSet:RPMM0001_GC_L_28_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_28_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_28_1(ABF)> , pm_file:RPMM0001_File_GC_L_28_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_28_1(ABF)> , pm_file:RPMM0001_File_GC_L_28_1 .
 
 pm_person:NozomuSakurai
         a                foaf:Person ;
@@ -2704,7 +2704,7 @@ pm_sample:RPMM0001_GC_L_04_1
 pm_rawDataSet:RPMM0001_GC_L_30_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_30_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_30_1(ABF)> , pm_file:RPMM0001_File_GC_L_30_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_30_1(ABF)> , pm_file:RPMM0001_File_GC_L_30_1 .
 
 pm_person:EriAdams  a    foaf:Person ;
         rdfs:label       "アダムス 英里"@ja , "ADAMS Eri"@en ;
@@ -2767,7 +2767,7 @@ pm_sample:RPMM0001_GC_L_52_1
 pm_rawDataSet:RPMM0001_GC_L_08_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_08_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_08_1(ABF)> , pm_file:RPMM0001_File_GC_L_08_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_08_1(ABF)> , pm_file:RPMM0001_File_GC_L_08_1 .
 
 :massSpectralFile  a        rdf:Property ;
         rdfs:domain         :RawDataset ;
@@ -2800,13 +2800,13 @@ pm_person:KazuoShinozaki
 pm_rawDataSet:RPMM0001_GC_L_10_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_10_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_10_1(ABF)> , pm_file:RPMM0001_File_GC_L_10_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_10_1(ABF)> , pm_file:RPMM0001_File_GC_L_10_1 .
 
 foaf:Person  a           rdfs:Class ;
         rdfs:label       "人物"@ja , "Person"@en ;
         rdfs:subclassOf  foaf:Agent .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_22_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_22_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_22_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_22_1.abf"^^xsd:anyURI ;
@@ -2826,7 +2826,7 @@ pm_person:HaruyaTakahashi
         foaf:familyName  "TAKAHASHI"@en ;
         foaf:firstName   "Haruya"@en .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_29_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_29_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_29_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_29_1.abf"^^xsd:anyURI ;
@@ -2846,7 +2846,7 @@ pm_measurement:RPMM0001_GC_L_45_1
 pm_rawDataSet:RPMM0001_GC_L_57_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_57_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_57_1(ABF)> , pm_file:RPMM0001_File_GC_L_57_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_57_1(ABF)> , pm_file:RPMM0001_File_GC_L_57_1 .
 
 pm_file:RPMM0001_File_GC_L_02_1
         a             :File ;
@@ -2938,7 +2938,7 @@ pm_measurement:RPMM0001_GC_L_25_1
 pm_rawDataSet:RPMM0001_GC_L_37_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_37_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_37_1(ABF)> , pm_file:RPMM0001_File_GC_L_37_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_37_1(ABF)> , pm_file:RPMM0001_File_GC_L_37_1 .
 
 pm_person:KimitsuneIshizaki
         a                foaf:Person ;
@@ -2959,7 +2959,7 @@ pm_chromato:RPMM0001_GC
         :instrument           pm_instrument:GC_Agilent6890N ;
         :temperatureGradient  "The temperture program started with a 2-min isothermal step at 80 degrees C and this was followed by temperature ramping at 30 degrees C to a final temperature of 320 degrees C" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_12_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_12_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_12_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_12_1.abf"^^xsd:anyURI ;
@@ -2982,7 +2982,7 @@ pm_sample:RPMM0001_GC_L_13_1
         :biologicalSample   pm_biosamp:RPMM0001_L_13_1 ;
         :samplePreparation  pm_samplePrep:RPMM0001_GC .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_19_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_19_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_19_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_19_1.abf"^^xsd:anyURI ;
@@ -3051,7 +3051,7 @@ pm_measurement:RPMM0001_GC_L_05_1
 pm_rawDataSet:RPMM0001_GC_L_17_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_17_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_17_1(ABF)> , pm_file:RPMM0001_File_GC_L_17_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_17_1(ABF)> , pm_file:RPMM0001_File_GC_L_17_1 .
 
 :growthLocation  a   rdf:Property ;
         rdfs:domain  :BiologicalSample ;
@@ -3197,14 +3197,14 @@ pm_file:RPMM0001_File_GC_L_11_1
         rdfs:label   "イオンスプレー電圧"@ja , "ion splay voltage"@en ;
         rdfs:range   :Voltage .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_52_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_52_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_52_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_52_1.abf"^^xsd:anyURI ;
         :fileFormat   <nrn:mimetype:application/x-abf> ;
         :md5          "45c38733829da178c662904090155d46" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_16_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_16_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_16_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_16_1.abf"^^xsd:anyURI ;
@@ -3293,7 +3293,7 @@ pm_person:NorimotoShimada
 pm_rawDataSet:RPMM0001_GC_L_46_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_46_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_46_1(ABF)> , pm_file:RPMM0001_File_GC_L_46_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_46_1(ABF)> , pm_file:RPMM0001_File_GC_L_46_1 .
 
 pm_org:KyotoUnivExpFarm
         a               org:Organization ;
@@ -3427,7 +3427,7 @@ pm_person:AkiraOikawa
 pm_rawDataSet:RPMM0001_GC_L_26_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_26_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_26_1(ABF)> , pm_file:RPMM0001_File_GC_L_26_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_26_1(ABF)> , pm_file:RPMM0001_File_GC_L_26_1 .
 
 pm_biosamp:RPMM0001_L_09_1
         a                           :BiologicalSample ;
@@ -3483,7 +3483,7 @@ pm_file:RPMM0001_File_GC_L_40_1
         :fileFormat   <nrn:mimetype:application/x-cdf> ;
         :md5          "b6f0661da9e26d600771db001203cc3d" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_13_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_13_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_13_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_13_1.abf"^^xsd:anyURI ;
@@ -3560,7 +3560,7 @@ pm_person:ToruFujiwara
 pm_rawDataSet:RPMM0001_GC_L_06_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_06_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_06_1(ABF)> , pm_file:RPMM0001_File_GC_L_06_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_06_1(ABF)> , pm_file:RPMM0001_File_GC_L_06_1 .
 
 :Experiment  a      rdfs:Class ;
         rdfs:label  "実験"@ja , "Experiment"@en .
@@ -3653,14 +3653,14 @@ pm_org:JST  a           org:Organization ;
         :postalAddress  "〒332-0012 埼玉県川口市本町4-1-8"@ja , "4-1-8, Honcho, Kawaguchi-shi, Saitama 332-0012 Japan"@en ;
         foaf:page       "https://www.jst.go.jp/"^^xsd:anyURI .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_03_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_03_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_03_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_03_1.abf"^^xsd:anyURI ;
         :fileFormat   <nrn:mimetype:application/x-abf> ;
         :md5          "840dabec473bdbbd51dd5a1045980d74" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_46_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_46_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_46_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_46_1.abf"^^xsd:anyURI ;
@@ -3776,7 +3776,7 @@ pm_measurement:RPMM0001_GC_L_23_1
 pm_rawDataSet:RPMM0001_GC_L_35_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_35_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_35_1(ABF)> , pm_file:RPMM0001_File_GC_L_35_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_35_1(ABF)> , pm_file:RPMM0001_File_GC_L_35_1 .
 
 :columnName  a       rdf:Property ;
         rdfs:domain  :Chromatography ;
@@ -3893,7 +3893,7 @@ pm_file:RPMM0001_File_GC_L_27_1
 :SampleAmount  a    rdfs:Class ;
         rdfs:label  "サンプル量"@ja , "Sample Amount"@en .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_alkanemix(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_alkanemix(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):alkane_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/alkane_1.abf"^^xsd:anyURI ;
@@ -4049,7 +4049,7 @@ pm_samplePrep:RPMM0001_GC
         rdfs:label   "保持指標方法"@ja , "retention index method"@en ;
         rdfs:range   xsd:string .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_33_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_33_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_33_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_33_1.abf"^^xsd:anyURI ;
@@ -4110,7 +4110,7 @@ pm_org:TokyoUnivBiotech
 pm_rawDataSet:RPMM0001_GC_L_44_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_44_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_44_1(ABF)> , pm_file:RPMM0001_File_GC_L_44_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_44_1(ABF)> , pm_file:RPMM0001_File_GC_L_44_1 .
 
 pm_massSpec:RPMM0001_GC
         a                       :MassSpectrometry ;
@@ -4203,7 +4203,7 @@ pm_measurement:RPMM0001_GC_L_12_1
 pm_rawDataSet:RPMM0001_GC_L_24_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_24_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_24_1(ABF)> , pm_file:RPMM0001_File_GC_L_24_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_24_1(ABF)> , pm_file:RPMM0001_File_GC_L_24_1 .
 
 xsd:date  a     rdfs:Class .
 
@@ -4240,7 +4240,7 @@ pm_org:OsakaUnivGSLifeEnvSci
         :postalAddress  "〒599-8531 大阪府堺市中区学園町1番1号"@ja , "1-1 Gakuen-cho,Nakaku, Sakai,Osaka 599-8531, Japan"@en ;
         foaf:page       "http://www.bioenv.osakafu-u.ac.jp/eng/"^^xsd:anyURI .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_30_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_30_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_30_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_30_1.abf"^^xsd:anyURI ;
@@ -4254,7 +4254,7 @@ pm_file:RPMM0001_File_GC_L_16_1
         :fileFormat   <nrn:mimetype:application/x-cdf> ;
         :md5          "cb3361fc1376d78a6b8bdb754946dbac" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_37_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_37_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_37_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_37_1.abf"^^xsd:anyURI ;
@@ -4264,7 +4264,7 @@ pm_file:RPMM0001_File_GC_L_16_1
 pm_rawDataSet:RPMM0001_GC_L_04_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_04_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_04_1(ABF)> , pm_file:RPMM0001_File_GC_L_04_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_04_1(ABF)> , pm_file:RPMM0001_File_GC_L_04_1 .
 
 :ionMode  a          rdf:Property ;
         rdfs:domain  :MassSpectrometry ;
@@ -4315,7 +4315,7 @@ pm_org:KyushuUnivAgri
 pm_rawDataSet:RPMM0001_GC_L_53_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_53_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_53_1(ABF)> , pm_file:RPMM0001_File_GC_L_53_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_53_1(ABF)> , pm_file:RPMM0001_File_GC_L_53_1 .
 
 pm_person:ReikoMotohashi
         a                foaf:Person ;
@@ -4372,7 +4372,7 @@ pm_measurement:RPMM0001_GC_L_19_1
         :rawDataset            pm_rawDataSet:RPMM0001_GC_L_19_1 ;
         :sampleMeasured        pm_sample:RPMM0001_GC_L_19_1 .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_27_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_27_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_27_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_27_1.abf"^^xsd:anyURI ;
@@ -4431,7 +4431,7 @@ pm_measurement:RPMM0001_GC_L_21_1
 pm_rawDataSet:RPMM0001_GC_L_33_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_33_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_33_1(ABF)> , pm_file:RPMM0001_File_GC_L_33_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_33_1(ABF)> , pm_file:RPMM0001_File_GC_L_33_1 .
 
 :postalAddress  a    rdf:Property ;
         rdfs:domain  org:Organization ;
@@ -4520,7 +4520,7 @@ pm_org:KagomeCo  a      org:Organization ;
         :postalAddress  "〒329-2762 栃木県那須塩原市西富山17"@ja , "17 Nishitomiyama, Nasushiobara, 329-2762, Japan"@en ;
         foaf:page       "https://www.kagome.co.jp/"^^xsd:anyURI .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/Person/KeiichiMochida%20>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#Person/KeiichiMochida%20>
         a                foaf:Person ;
         rdfs:label       "持田 恵一"@ja , "MOCHIDA Keiichi"@en ;
         :Orcid           "0000-0003-1299-0024" ;
@@ -4550,7 +4550,7 @@ pm_org:Denken  a        org:Organization ;
 pm_rawDataSet:RPMM0001_GC_L_13_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_13_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_13_1(ABF)> , pm_file:RPMM0001_File_GC_L_13_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_13_1(ABF)> , pm_file:RPMM0001_File_GC_L_13_1 .
 
 pm_massAnalyser:TOF  a  :MassAnalyser ;
         rdfs:label  "飛行時間型質量分析計"@ja , "TOF"@en .
@@ -4575,14 +4575,14 @@ pm_org:TokyoUnivPharmacyLifeSci
         :postalAddress  "〒192-0392 東京都八王子市堀之内1432-1"@ja , "1432-1 Horinouchi, Hachioji, Tokyo 192-0392, Japan"@en ;
         foaf:page       "https://www.toyaku.ac.jp/"^^xsd:anyURI .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_60_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_60_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_60_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_60_1.abf"^^xsd:anyURI ;
         :fileFormat   <nrn:mimetype:application/x-abf> ;
         :md5          "ee2ad6e1e5e2450220e4e230a4103d7b" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_24_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_24_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_24_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_24_1.abf"^^xsd:anyURI ;
@@ -4733,7 +4733,7 @@ pm_person:HiroshiTsugawa
 pm_rawDataSet:RPMM0001_GC_L_42_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_42_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_42_1(ABF)> , pm_file:RPMM0001_File_GC_L_42_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_42_1(ABF)> , pm_file:RPMM0001_File_GC_L_42_1 .
 
 pm_person:NaokoWaki  a   foaf:Person ;
         rdfs:label       "WAKI Naoko"@en ;
@@ -4777,7 +4777,7 @@ pm_measurement:RPMM0001_GC_L_08_1
         :rawDataset            pm_rawDataSet:RPMM0001_GC_L_08_1 ;
         :sampleMeasured        pm_sample:RPMM0001_GC_L_08_1 .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_21_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_21_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_21_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_21_1.abf"^^xsd:anyURI ;
@@ -4833,7 +4833,7 @@ pm_person:KazuyoshiKitazaki
 pm_rawDataSet:RPMM0001_GC_L_22_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_22_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_22_1(ABF)> , pm_file:RPMM0001_File_GC_L_22_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_22_1(ABF)> , pm_file:RPMM0001_File_GC_L_22_1 .
 
 pm_sample:RPMM0001_GC_alkanemix
         a           :Sample ;
@@ -4916,28 +4916,28 @@ pm_massSpecFile:RPMM0001_02
 pm_rawDataSet:RPMM0001_GC_L_02_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_02_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_02_1(ABF)> , pm_file:RPMM0001_File_GC_L_02_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_02_1(ABF)> , pm_file:RPMM0001_File_GC_L_02_1 .
 
 :scanMZRange  a      rdf:Property ;
         rdfs:domain  :Chromatography ;
         rdfs:label   "スキャンm/z範囲"@ja , "scan m/z range"@en ;
         rdfs:range   xsd:string .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_11_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_11_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_11_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_11_1.abf"^^xsd:anyURI ;
         :fileFormat   <nrn:mimetype:application/x-abf> ;
         :md5          "cb774362977937ecb5c9930f456e308b" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_54_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_54_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_54_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_54_1.abf"^^xsd:anyURI ;
         :fileFormat   <nrn:mimetype:application/x-abf> ;
         :md5          "8f892596ba567e87c2756f5a80c8454f" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_18_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_18_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_18_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_18_1.abf"^^xsd:anyURI ;
@@ -5031,7 +5031,7 @@ pm_org:OsakaUnivBioinfo
 pm_rawDataSet:RPMM0001_GC_L_51_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_51_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_51_1(ABF)> , pm_file:RPMM0001_File_GC_L_51_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_51_1(ABF)> , pm_file:RPMM0001_File_GC_L_51_1 .
 
 :MassSpectrometry  a  rdfs:Class .
 
@@ -5079,7 +5079,7 @@ pm_measurement:RPMM0001_GC_L_17_1
 pm_rawDataSet:RPMM0001_GC_L_29_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_29_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_29_1(ABF)> , pm_file:RPMM0001_File_GC_L_29_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_29_1(ABF)> , pm_file:RPMM0001_File_GC_L_29_1 .
 
 pm_measurement:RPMM0001_GC_alkanemix
         a                      :Measurement ;
@@ -5110,9 +5110,9 @@ pm_sample:RPMM0001_GC_L_05_1
 pm_rawDataSet:RPMM0001_GC_L_31_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_31_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_31_1(ABF)> , pm_file:RPMM0001_File_GC_L_31_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_31_1(ABF)> , pm_file:RPMM0001_File_GC_L_31_1 .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_51_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_51_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_51_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_51_1.abf"^^xsd:anyURI ;
@@ -5142,7 +5142,7 @@ pm_person:TakaoShimizu
 pm_rawDataSet:RPMM0001_GC_L_09_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_09_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_09_1(ABF)> , pm_file:RPMM0001_File_GC_L_09_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_09_1(ABF)> , pm_file:RPMM0001_File_GC_L_09_1 .
 
 :sample  a           rdf:Property ;
         rdfs:domain  :Material ;
@@ -5182,7 +5182,7 @@ org:Organization  a  rdfs:Class .
 pm_rawDataSet:RPMM0001_GC_L_11_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_11_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_11_1(ABF)> , pm_file:RPMM0001_File_GC_L_11_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_11_1(ABF)> , pm_file:RPMM0001_File_GC_L_11_1 .
 
 pm_person:YokoIde  a     foaf:Person ;
         rdfs:label       "IDE Yoko"@en ;
@@ -5224,14 +5224,14 @@ pm_file:RPMM0001_File_GC_L_03_1
         :fileFormat   <nrn:mimetype:application/x-cdf> ;
         :md5          "6ebbd714fe1e103dc22fd22040b830c9" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_05_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_05_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_05_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_05_1.abf"^^xsd:anyURI ;
         :fileFormat   <nrn:mimetype:application/x-abf> ;
         :md5          "7f306e1dec42ea6c1943ce66ea0a4bc0" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_48_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_48_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_48_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_48_1.abf"^^xsd:anyURI ;
@@ -5246,7 +5246,7 @@ pm_unit:milliliter_per_minute
 pm_rawDataSet:RPMM0001_GC_L_60_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_60_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_60_1(ABF)> , pm_file:RPMM0001_File_GC_L_60_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_60_1(ABF)> , pm_file:RPMM0001_File_GC_L_60_1 .
 
 obo:UO_0000266  a  owl:Class .
 
@@ -5262,7 +5262,7 @@ pm_measurement:RPMM0001_GC_L_26_1
 pm_rawDataSet:RPMM0001_GC_L_38_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_38_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_38_1(ABF)> , pm_file:RPMM0001_File_GC_L_38_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_38_1(ABF)> , pm_file:RPMM0001_File_GC_L_38_1 .
 
 :md5    a            rdf:Property ;
         rdfs:domain  :File ;
@@ -5286,7 +5286,7 @@ pm_file:RPMM0001_File_GC_L_52_1
 pm_rawDataSet:RPMM0001_GC_L_40_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_40_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_40_1(ABF)> , pm_file:RPMM0001_File_GC_L_40_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_40_1(ABF)> , pm_file:RPMM0001_File_GC_L_40_1 .
 
 <http://www.ebi.ac.uk/metabolights/MTBLS40>
         a       rdfs:Resource .
@@ -5340,7 +5340,7 @@ pm_measurement:RPMM0001_GC_L_06_1
 pm_rawDataSet:RPMM0001_GC_L_18_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_18_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_18_1(ABF)> , pm_file:RPMM0001_File_GC_L_18_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_18_1(ABF)> , pm_file:RPMM0001_File_GC_L_18_1 .
 
 pm_person:TakashiAsano
         a                foaf:Person ;
@@ -5354,14 +5354,14 @@ pm_person:TakashiAsano
         rdfs:label   "種名"@ja , "species name"@en ;
         rdfs:range   xsd:string .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_45_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_45_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_45_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_45_1.abf"^^xsd:anyURI ;
         :fileFormat   <nrn:mimetype:application/x-abf> ;
         :md5          "70a78dc25b445f0146277646d84870c9" .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_02_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_02_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_02_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_02_1.abf"^^xsd:anyURI ;
@@ -5371,7 +5371,7 @@ pm_person:TakashiAsano
 :Metarial  a        rdfs:Class ;
         rdfs:label  "材料"@ja , "Material"@en .
 
-<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_09_1(ABF)>
+<http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_09_1(ABF)>
         a             :File ;
         rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_09_1.abf"@en ;
         :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_09_1.abf"^^xsd:anyURI ;
@@ -5400,7 +5400,7 @@ pm_file:RPMM0001_File_GC_L_32_1
 pm_rawDataSet:RPMM0001_GC_L_20_1
         a           :RawDataset ;
         rdfs:label  "RPMM0001_RawData_GC_L_20_1"@en ;
-        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_20_1(ABF)> , pm_file:RPMM0001_File_GC_L_20_1 .
+        :file       <http://ddbj.nig.ac.jp/ontologies/metabobank#File/RPMM0001_File_GC_L_20_1(ABF)> , pm_file:RPMM0001_File_GC_L_20_1 .
 
 :extraction  a       rdf:Property ;
         rdfs:domain  :SamplePreparation ;
