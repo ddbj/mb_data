@@ -1,0 +1,1009 @@
+## 定義情報 OWL/RDF
+### MassAnalyser
+### TechnologyType
+### TechnologyPlatform
+### MeasurementType
+
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix obo:   <http://purl.obolibrary.org/obo/> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix bibo:  <http://purl.org/ontology/bibo> .
+
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+@prefix :      <http://metadb.riken.jp/ontology/plantMetabolomics/0.1/> .
+@prefix metadb_db: <http://metadb.riken.jp/db/> .
+@prefix rmd:   <http://metadb.riken.jp/> .
+
+@prefix pm_unit: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Unit/> .
+@prefix pm_massAnalyser: <http://metadb.riken.jp/db/plantMetabolomics/0.1/MassAnalyser/> .
+@prefix pm_techType: <http://metadb.riken.jp/db/plantMetabolomics/0.1/TechnologyType/> .
+@prefix pm_techPlat: <http://metadb.riken.jp/db/plantMetabolomics/0.1/TechnologyPlatform/> .
+@prefix pm_measureType: <http://metadb.riken.jp/db/plantMetabolomics/0.1/MeasurementType/> .
+
+
+:MassAnalyser  a    rdfs:Class ;
+        rdfs:label  "質量分析計"@ja , "MassAnalyser"@en .
+
+:Material  a    rdfs:Class .
+
+:DataTransformation  a  rdfs:Class ;
+        rdfs:label  "データ変換"@ja , "Data Transformation"@en .
+
+:BiologicalSample  a  rdfs:Class ;
+        rdfs:label  "生物サンプル"@ja , "Biological Sample"@en .
+
+:CompressedFile  a       rdfs:Class ;
+        rdfs:label       "圧縮ファイル"@ja , "Compressed File"@en ;
+        rdfs:subclassOf  :File .
+
+:Humidity  a        rdfs:Class ;
+        rdfs:label  "湿度"@ja , "Humidity"@en .
+
+:Project  a         rdfs:Class ;
+        rdfs:label  "プロジェクト"@ja , "Project"@en .
+
+:SampleExtractionProtorol
+        a       rdfs:Class .
+
+:ExperimentalFactor  a  rdfs:Class ;
+        rdfs:label  "実験因子"@ja , "Experimental Factor"@en .
+
+:Chromatography  a  rdfs:Class ;
+        rdfs:label  "クロマトグラフィ"@ja , "Chromatography"@en .
+
+:DataTransformationType
+        a           rdfs:Class ;
+        rdfs:label  "データ変換の種類"@ja , "Data Transformation Type"@en .
+
+:MassSpectometry  a  rdfs:Class ;
+        rdfs:label  "質量分析"@ja , "MassSpectometry"@en .
+
+:Energy  a          rdfs:Class ;
+        rdfs:label  "エネルギー"@ja , "Energy"@en .
+
+:RowDataset  a  rdfs:Class .
+
+:ExperimentType  a  rdfs:Class ;
+        rdfs:label  "実験の種類"@ja , "Experiment Type"@en .
+
+:File   a           rdfs:Class ;
+        rdfs:label  "ファイル"@ja , "File"@en .
+
+:TechnologyPlatform  a  rdfs:Class ;
+        rdfs:label  "測定プラットフォーム"@ja , "TechnologyPlatform"@en .
+
+:LightCondition  a  rdfs:Class ;
+        rdfs:label  "光条件"@ja , "Light Condition"@en .
+
+:Instrument  a      rdfs:Class ;
+        rdfs:label  "機器"@ja , "Instrument"@en .
+
+:TechnologyType  a  rdfs:Class ;
+        rdfs:label  "技術の種類"@ja , "Technology Type"@en .
+
+:SamplePreparation  a  rdfs:Class ;
+        rdfs:label  "サンプル調製"@ja , "Sample Preparation"@en .
+
+:AnalysedDataset  a      rdfs:Class ;
+        rdfs:label       "解析結果データセット"@ja , "Analysed Dataset"@en ;
+        rdfs:subclassOf  :Dataset .
+
+:DataAnalysis  a    rdfs:Class ;
+        rdfs:label  "データ解析"@ja , "DataAnalysis"@en .
+
+:MeasurementCondition
+        a           rdfs:Class ;
+        rdfs:label  "測定条件"@ja , "Measurement Condition"@en .
+
+:AnnotationMethodDetails
+        a           rdfs:Class ;
+        rdfs:label  "アノテーション方法の詳細"@ja , "Annotation Method Details"@en .
+
+:Dataset  a         rdfs:Class ;
+        rdfs:label  "データセット"@ja , "Dataset"@en .
+
+:Voltage  a         rdfs:Class ;
+        rdfs:label  "電圧"@ja , "Voltage"@en .
+
+:Metarial  a        rdfs:Class ;
+        rdfs:label  "材料"@ja , "Material"@en .
+
+:RawDataset  a           rdfs:Class ;
+        rdfs:label       "生データセット"@ja , "Raw Dataset"@en ;
+        rdfs:subclassOf  :Dataset .
+
+:Length  a          rdfs:Class ;
+        rdfs:label  "長さ"@ja , "Length"@en .
+
+:MeasurementType  a  rdfs:Class ;
+        rdfs:label  "測定の種類"@ja , "Measurement Type"@en .
+
+:Time   a           rdfs:Class ;
+        rdfs:label  "時間"@ja , "Time"@en .
+
+:MultivariateAnalysis
+        a           rdfs:Class ;
+        rdfs:label  "多変量解析"@ja , "Multivariate Analysis"@en .
+
+:PlantTissue  a     rdfs:Class ;
+        rdfs:label  "植物組織"@ja , "Plant Tissue"@en .
+
+:Normalisation  a   rdfs:Class ;
+        rdfs:label  "正規化・標準化"@ja , "Normalisation"@en .
+
+:Visualisation  a   rdfs:Class ;
+        rdfs:label  "可視化"@ja , "Visualisation"@en .
+
+:Orcid  a           rdfs:Class ;
+        rdfs:label  "ORCID"@ja , "ORCID"@en .
+
+:NormalisationType  a  rdfs:Class ;
+        rdfs:label  "正規化・標準化の種類"@ja , "Normalisation Type"@en .
+
+:Scaling  a         rdfs:Class ;
+        rdfs:label  "スケーリング"@ja , "Scaling"@en .
+
+:Temperature  a     rdfs:Class ;
+        rdfs:label  "温度"@ja , "Temperature"@en .
+
+:Pressure  a        rdfs:Class ;
+        rdfs:label  "圧力"@ja , "Pressure"@en .
+
+:StatisticalDataAnalysis
+        a       rdfs:Class .
+
+:Concentration  a   rdfs:Class ;
+        rdfs:label  "濃度"@ja , "Concentration"@en .
+
+:FlowRate  a        rdfs:Class ;
+        rdfs:label  "流量"@ja , "Flow Rate"@en .
+
+:ExperimentalDesign  a  rdfs:Class ;
+        rdfs:label  "実験デザイン"@ja , "Experiment Design"@en .
+
+:Folder  a          rdfs:Class ;
+        rdfs:label  "フォルダ"@ja , "Folder"@en .
+
+:Sample  a          rdfs:Class ;
+        rdfs:label  "サンプル"@ja , "Sample"@en .
+
+:PlantOrgan  a      rdfs:Class ;
+        rdfs:label  "植物器官"@ja , "Plant Organ"@en .
+
+:MassSpectralFile  a     rdfs:Class ;
+        rdfs:label       "質量分析スペクトルファイル"@ja , "Mass Spectral File"@en ;
+        rdfs:subclassOf  :File .
+
+:SampleExtractionProtocol
+        a           rdfs:Class ;
+        rdfs:label  "サンプル抽出プロトコル"@ja , "Sample Extraction Protocol"@en .
+
+:StatisticalDataAnalsis
+        a           rdfs:Class ;
+        rdfs:label  "統計的データ解析"@ja , "Statistical Data Analysis"@en .
+
+:StatisticalResultsFile
+        a                rdfs:Class ;
+        rdfs:label       "統計解析結果ファイル"@ja , "Statistical Results File"@en ;
+        rdfs:subclassOf  :File .
+
+:Compound  a        rdfs:Class ;
+        rdfs:label  "化合物"@ja , "Compound"@en .
+
+:NormalisationDataMatrixFile
+        a                rdfs:Class ;
+        rdfs:label       "正規化データ行列ファイル"@ja , "Normalisation Data Matrix File"@en ;
+        rdfs:subclassOf  :File .
+
+:MassSpectrometry  a  rdfs:Class .
+
+:Summarisation  a   rdfs:Class ;
+        rdfs:label  "データ要約"@ja , "Summarisation"@en .
+
+:PreProcessing  a   rdfs:Class ;
+        rdfs:label  "前処理"@ja , "Pre-processing"@en .
+
+:SummarisationType  a  rdfs:Class ;
+        rdfs:label  "データ要約の種類"@ja , "Summarisation Type"@en .
+
+:PeakFile  a             rdfs:Class ;
+        rdfs:label       "ピークファイル"@ja , "Peak File"@en ;
+        rdfs:subclassOf  :File .
+
+:UnivariateAnalysis  a  rdfs:Class ;
+        rdfs:label  "単変量解析"@ja , "Univariate Analysis"@en .
+
+:SampleAmount  a    rdfs:Class ;
+        rdfs:label  "サンプル量"@ja , "Sample Amount"@en .
+
+:Treatment  a       rdfs:Class ;
+        rdfs:label  "処理"@ja , "Treatment"@en .
+
+:ScalingType  a     rdfs:Class ;
+        rdfs:label  "スケーリングの種類"@ja , "Scaling Type"@en .
+
+:Measurement  a     rdfs:Class ;
+        rdfs:label  "測定"@ja , "Measurement"@en .
+
+:ExperimenalFactor  a  rdfs:Class .
+
+:Experiment  a      rdfs:Class ;
+        rdfs:label  "実験"@ja , "Experiment"@en .
+
+:Unit   a                rdfs:Class ;
+        rdfs:label       "単位"@ja , "Unit"@en ;
+        rdfs:subclassOf  obo:UO_0000000 .
+
+:Person  a               rdfs:Class ;
+        rdfs:label       "人物"@ja , "Person"@en ;
+        rdfs:subclassOf  foaf:Person .
+
+:Organization  a         rdfs:Class ;
+        rdfs:label       "組織"@ja , "Organization"@en ;
+        rdfs:subclassOf  org:Organization .
+
+org:Organization  a  rdfs:Class .
+
+obo:UO_0000000  a  rdfs:Class .
+obo:UO_0000270  a  rdfs:Class .
+obo:UO_0000052  a  rdfs:Class .
+
+obo:PO_0009006  a  owl:Class .
+obo:UO_0000266  a  owl:Class .
+obo:UO_0000027  a  owl:Class .
+obo:UO_0000176  a  owl:Class .
+
+obo:MSIO_0000140  a  :NormalisationType .
+obo:CHMO_0000497  a  :ExperimentType .
+obo:OBI_0200094  a  :DataTransformationType .
+
+pm_unit:milliliter_per_minute
+        a                owl:Class , :Unit ;
+        rdfs:label       "milliliter per minute"@en ;
+        rdfs:subclassOf  obo:UO_0000270 .
+
+pm_unit:milligram_per_microliter
+        a                :Unit , owl:Class ;
+        rdfs:label       "milligram per microliter"@en ;
+        rdfs:subclassOf  obo:UO_0000052 .
+
+xsd:date  a     rdfs:Class .
+xsd:string  a   rdfs:Class .
+xsd:time  a     rdfs:Class .
+xsd:anyURI  a   rdfs:Class .
+xsd:datetime  a  rdfs:Class .
+
+rdf:langString  a  rdfs:Class .
+
+bibo:Article  a     rdfs:Class ;
+        rdfs:label  "記事"@ja , "Article"@en .
+
+foaf:Agent  a       rdfs:Class ;
+        rdfs:label  "エージェント"@ja , "Agent"@en .
+
+foaf:Organization  a     rdfs:Class ;
+        rdfs:label       "組織"@ja , "Organization"@en ;
+        rdfs:subclassOf  foaf:Agent .
+
+foaf:Person  a           rdfs:Class ;
+        rdfs:label       "人物"@ja , "Person"@en ;
+        rdfs:subclassOf  foaf:Agent .
+
+dct:FileFormat  a   rdfs:Class ;
+        rdfs:label  "ファイル形式"@ja , "File Format"@en .
+
+# Property
+
+:experiment  a       rdf:Property ;
+        rdfs:domain  :Project ;
+        rdfs:label   "実験"@ja , "experiment"@en ;
+        rdfs:range   :Experiment .
+
+:massAnalyser  a     rdf:Property ;
+        rdfs:domain  :MassSpectrometry ;
+        rdfs:label   "質量分析計"@ja , "mass analyser"@en ;
+        rdfs:range   :MassAnalyser .
+
+:experimentalFactor  a  rdf:Property ;
+        rdfs:domain  :ExperimentalDesign ;
+        rdfs:label   "実験因子"@ja , "experimental factor"@en ;
+        rdfs:range   :ExperimenalFactor .
+
+:scalingType  a      rdf:Property ;
+        rdfs:domain  :Scaling ;
+        rdfs:label   "スケーリングの種類"@ja , "Scaling Type"@en ;
+        rdfs:range   :ScalingType .
+
+:contactPerson  a    rdf:Property ;
+        rdfs:domain  :Project ;
+        rdfs:label   "連絡窓口"@ja , "contact person"@en ;
+        rdfs:range   foaf:Person .
+
+:parameters  a       rdf:Property ;
+        rdfs:domain  :PreProcessing ;
+        rdfs:label   "パラメータ"@ja , "parameters"@en ;
+        rdfs:range   xsd:string .
+
+:sampleAmount  a     rdf:Property ;
+        rdfs:domain  :SamplePreparation ;
+        rdfs:label   "サンプル量"@ja , "sample amount"@en ;
+        rdfs:range   :SampleAmount .
+
+:massSpectometry  a  rdf:Property ;
+        rdfs:domain  :MeasurementCondition ;
+        rdfs:label   "質量分析"@ja , "mass spectrometry"@en ;
+        rdfs:range   :MassSpectrometry .
+
+:mutant  a           rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "変異体"@ja , "mutant"@en ;
+        rdfs:range   xsd:string .
+
+:growthSupport  a    rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "生育方法"@ja , "growth support"@en ;
+        rdfs:range   xsd:string .
+
+:sampleStorage  a    rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "サンプルの保存状態"@ja , "sample storage"@en ;
+        rdfs:range   xsd:string .
+
+:dateOfPlantEstablishment
+        a            rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "植物の採取日"@ja , "date of plant establishment"@en ;
+        rdfs:range   xsd:date .
+
+:processing  a       rdf:Property ;
+        rdfs:domain  :SamplePreparation ;
+        rdfs:label   "処理法"@ja , "processing"@en ;
+        rdfs:range   xsd:string .
+
+:derivatisation  a   rdf:Property ;
+        rdfs:domain  :SamplePreparation ;
+        rdfs:label   "誘導体化"@ja , "derivatisation"@en ;
+        rdfs:range   xsd:string .
+
+:experimenter  a     rdf:Property ;
+        rdfs:domain  :Experiment ;
+        rdfs:label   "実験者"@ja , "experimenter"@en ;
+        rdfs:range   foaf:Person .
+
+:lightWageLength  a  rdf:Property ;
+        rdfs:domain  :LightCondition ;
+        rdfs:label   "光波長"@ja , "light wave length"@en ;
+        rdfs:range   :Length .
+
+:experimentType  a   rdf:Property ;
+        rdfs:domain  :ExperimentalDesign ;
+        rdfs:label   "実験の種類"@ja , "experiment type"@en ;
+        rdfs:range   :ExperimentType .
+
+:compound  a         rdf:Property ;
+        rdfs:domain  :Sample ;
+        rdfs:label   "化合物"@ja , "compound"@en ;
+        rdfs:range   :Compound .
+
+:measurement  a      rdf:Property ;
+        rdfs:domain  :Experiment ;
+        rdfs:label   "測定"@ja , "measurement"@en ;
+        rdfs:range   :Measurement .
+
+:samplingTime  a     rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "サンプリング時間"@ja , "sampling time"@en ;
+        rdfs:range   xsd:time .
+
+:annotationMethodDetails
+        a            rdf:Property ;
+        rdfs:domain  :Project ;
+        rdfs:label   "アノテーション方法の詳細"@ja , "annotation method details"@en ;
+        rdfs:range   :AnnotationMethodDetails .
+
+:normalisationDataMatrixFile
+        a                   rdf:Property ;
+        rdfs:domain         :RawDataset ;
+        rdfs:label          "標準化データ行列ファイル"@ja , "normalisation data matrix file"@en ;
+        rdfs:range          :NormalisationDataMatrixFile ;
+        rdfs:subpropertyOf  :file .
+
+:dataTransformationType
+        a            rdf:Property ;
+        rdfs:domain  :DataTransformation ;
+        rdfs:label   "データ変換の種類"@ja , "Data Transformation Type"@en ;
+        rdfs:range   :DataTransformationType .
+
+:subFolder  a        rdf:Property ;
+        rdfs:domain  :Folder ;
+        rdfs:label   "サブフォルダ"@ja , "sub-folder"@en ;
+        rdfs:range   :Folder .
+
+:humidity  a         rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "湿度"@ja , "humidity"@en ;
+        rdfs:range   :Humidity .
+
+:concentration  a    rdf:Property ;
+        rdfs:domain  :Treatment ;
+        rdfs:label   "濃度"@ja , "concentration"@en ;
+        rdfs:range   :Concentration .
+
+:preProcessing  a    rdf:Property ;
+        rdfs:domain  :DataAnalysis ;
+        rdfs:label   "前処理"@ja , "pre-processing"@en ;
+        rdfs:range   :PreProcessing .
+
+:growthCondition  a  rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "生育条件"@ja , "growth condition"@en ;
+        rdfs:range   xsd:string .
+
+:speciesName  a      rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "種名"@ja , "species name"@en ;
+        rdfs:range   xsd:string .
+
+:extraction  a       rdf:Property ;
+        rdfs:domain  :SamplePreparation ;
+        rdfs:label   "抽出法"@ja , "extraction"@en ;
+        rdfs:range   xsd:string .
+
+:annotationType  a   rdf:Property ;
+        rdfs:domain  :AnnotationMethodDetails ;
+        rdfs:label   "注釈の種類"@ja , "annotation type"@en ;
+        rdfs:range   xsd:string .
+
+:biologicalSample  a  rdf:Property ;
+        rdfs:domain  :Sample ;
+        rdfs:label   "生物サンプル"@ja , "biological sample"@en ;
+        rdfs:range   :BiologicalSample .
+
+:ionSource  a        rdf:Property ;
+        rdfs:domain  :MassSpectrometry ;
+        rdfs:label   "イオン源"@ja , "ion source"@en ;
+        rdfs:range   xsd:string .
+
+:samplePreparation  a  rdf:Property ;
+        rdfs:domain  :Measurement ;
+        rdfs:label   "サンプル調製"@ja , "sample preparation"@en ;
+        rdfs:range   :SamplePreparation .
+
+:spectralLibrary  a  rdf:Property ;
+        rdfs:domain  :AnnotationMethodDetails ;
+        rdfs:label   "スペクルライブラリ"@ja , "spectral library"@en ;
+        rdfs:range   xsd:string .
+
+:transgenicLine  a   rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "形質転換体ライン"@ja , "transgenic line"@en ;
+        rdfs:range   xsd:string .
+
+:software  a         rdf:Property ;
+        rdfs:domain  :PreProcessing ;
+        rdfs:label   "ソフトウエア"@ja , "software"@en ;
+        rdfs:range   xsd:string .
+
+:sampleExtractionProtocol
+        a            rdf:Property ;
+        rdfs:domain  :SamplePreparation ;
+        rdfs:label   "サンプル抽出プロトコル"@ja , "sample extraction protocol"@en ;
+        rdfs:range   :SampleExtractionProtocol .
+
+:massAccuracy  a     rdf:Property ;
+        rdfs:domain  :MassSpectrometry ;
+        rdfs:label   "質量精度"@ja , "mass accuracy"@en ;
+        rdfs:range   xsd:string .
+
+:experimentalDesign  a  rdf:Property ;
+        rdfs:domain  :Project ;
+        rdfs:label   "実験デザイン"@ja , "experimental design"@en ;
+        rdfs:range   :ExperimentalDesign .
+
+:file   a            rdf:Property ;
+        rdfs:domain  :Dataset ;
+        rdfs:label   "ファイル"@ja , "file"@en ;
+        rdfs:range   :File .
+
+:lightIntensity  a   rdf:Property ;
+        rdfs:domain  :LightCondition ;
+        rdfs:label   "光強度"@ja , "light intensity"@en ;
+        rdfs:range   xsd:string .
+
+:measurementType  a  rdf:Property ;
+        rdfs:domain  :Experiment ;
+        rdfs:label   "測定の種類"@ja , "measurement type"@en ;
+        rdfs:range   :MeasurementType .
+
+:plantOrgan  a       rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "植物器官"@ja , "plant organ"@en ;
+        rdfs:range   :PlantOrgan .
+
+:columnPressure  a   rdf:Property ;
+        rdfs:domain  :Chromatography ;
+        rdfs:label   "カラム圧力"@ja , "column pressure"@en ;
+        rdfs:range   :Pressure .
+
+:lightQuality  a     rdf:Property ;
+        rdfs:domain  :LightCondition ;
+        rdfs:label   "光質"@ja , "light quality"@en ;
+        rdfs:range   xsd:string .
+
+:spectralExtraction  a  rdf:Property ;
+        rdfs:domain  :PreProcessing ;
+        rdfs:label   "スペクトル抽出法"@ja , "spectralExtraction"@en ;
+        rdfs:range   xsd:string .
+
+:nightTemperature  a        rdf:Property ;
+        rdfs:domain         :BiologicalSample ;
+        rdfs:label          "夜温度"@ja , "night temperature"@en ;
+        rdfs:range          :Temperature ;
+        rdfs:subpropertyOf  :temperature .
+
+:treatment  a        rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "処理"@ja , "treatment"@en ;
+        rdfs:range   :Treatment .
+
+:nutritionalRegime  a  rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "栄養状態"@ja , "nutritional regime"@en ;
+        rdfs:range   xsd:string .
+
+:flowGas  a          rdf:Property ;
+        rdfs:domain  :Chromatography ;
+        rdfs:label   "フローガス"@ja , "flow gas"@en ;
+        rdfs:range   xsd:string .
+
+:folder  a           rdf:Property ;
+        rdfs:domain  :Dataset ;
+        rdfs:label   "フォルダ"@ja , "folder"@en ;
+        rdfs:range   :Folder .
+
+:affiliation  a      rdf:Property ;
+        rdfs:domain  foaf:Person ;
+        rdfs:label   "所属先"@ja , "affiliation"@en ;
+        rdfs:range   org:Organization .
+
+:collisionEnergy  a  rdf:Property ;
+        rdfs:domain  :MassSpectrometry ;
+        rdfs:label   "コリジョンエネルギー"@ja , "collision energy"@en ;
+        rdfs:range   :Energy .
+
+:fileFormat  a       rdf:Property ;
+        rdfs:domain  :PreProcessing ;
+        rdfs:label   "ファイル形式"@ja , "file format"@en ;
+        rdfs:range   dct:FileFormat .
+
+:evidence  a         rdf:Property ;
+        rdfs:domain  :AnnotationMethodDetails ;
+        rdfs:label   "エビデンス"@ja , "evidence"@en ;
+        rdfs:range   xsd:string .
+
+:flowGradient  a     rdf:Property ;
+        rdfs:domain  :Chromatography ;
+        rdfs:label   "流量勾配"@ja , "flow gradient"@en ;
+        rdfs:range   xsd:string .
+
+:qualityControl  a   rdf:Property ;
+        rdfs:domain  :ExperimentalDesign ;
+        rdfs:label   "品質管理"@ja , "quality control"@en ;
+        rdfs:range   xsd:string .
+
+:measurementCondition
+        a            rdf:Property ;
+        rdfs:domain  :Measurement ;
+        rdfs:label   "測定条件"@ja , "measurement condition"@en ;
+        rdfs:range   :MeasurementCondition .
+
+:wateringRegime  a   rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "散水状態"@ja , "watering regime"@en ;
+        rdfs:range   xsd:string .
+
+:orcid  a            rdf:Property ;
+        rdfs:domain  :Person ;
+        rdfs:label   "ORCID ID"@ja , "ORCID ID"@en ;
+        rdfs:range   xsd:string .
+
+:compressedFile  a          rdf:Property ;
+        rdfs:domain         :Dataset ;
+        rdfs:label          "圧縮ファイル"@ja , "compressed file"@en ;
+        rdfs:range          :CompressedFile ;
+        rdfs:subpropertyOf  :file .
+
+:extractStorage  a   rdf:Property ;
+        rdfs:domain  :SamplePreparation ;
+        rdfs:label   "抽出ストレージ"@ja , "extract storage"@en ;
+        rdfs:range   xsd:string .
+
+:analyticalTime  a   rdf:Property ;
+        rdfs:domain  :Chromatography ;
+        rdfs:label   "分析時間"@ja , "analytical time"@en ;
+        rdfs:range   :Time .
+
+:lightCondition  a   rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "光条件"@ja , "light condition"@en ;
+        rdfs:range   :LightCondition .
+
+:dayLength  a        rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "日長"@ja , "day length"@en ;
+        rdfs:range   xsd:time .
+
+:statisticalResultsFile
+        a                   rdf:Property ;
+        rdfs:domain         :RawDataset ;
+        rdfs:label          "統計解析結果ファイル"@ja , "statistical results file"@en ;
+        rdfs:range          :StatisticalResultsFile ;
+        rdfs:subpropertyOf  :file .
+
+:massSpectralFile  a        rdf:Property ;
+        rdfs:domain         :RawDataset ;
+        rdfs:label          "質量分析ファイル"@ja , "mass spectral file"@en ;
+        rdfs:range          :MassSpectralFile ;
+        rdfs:subpropertyOf  :file .
+
+:chromatography  a   rdf:Property ;
+        rdfs:domain  :MeasurementCondition ;
+        rdfs:label   "クロマトグラフィー"@ja , "chromatography"@en ;
+        rdfs:range   :Chromatography .
+
+:growthLocation  a   rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "生育場所"@ja , "growth location"@en ;
+        rdfs:range   xsd:string .
+
+
+:technologyType  a   rdf:Property ;
+        rdfs:domain  :Experiment ;
+        rdfs:label   "技術の種類"@ja , "technology type"@en ;
+        rdfs:range   :TechnologyType .
+
+:acquisitionRate  a  rdf:Property ;
+        rdfs:domain  :MassSpectrometry ;
+        rdfs:label   "取得率"@ja , "acquisition rate"@en ;
+        rdfs:range   xsd:string .
+
+:developmentalStage  a  rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "生育段階"@ja , "developmental stage"@en ;
+        rdfs:range   xsd:string .
+
+:ionIsolationEnergy  a  rdf:Property ;
+        rdfs:domain  :MassSpectrometry ;
+        rdfs:label   "イオン化エネルギー"@ja , "ion isolation energy"@en ;
+        rdfs:range   :Energy .
+
+:samplingLocation  a  rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "サンプリングした場所"@ja , "sampling location"@en ;
+        rdfs:range   xsd:string .
+
+:recommendedDecimalPlacesOfMZ
+        a            rdf:Property ;
+        rdfs:domain  :DataAnalysis ;
+        rdfs:label   "推奨されるm/zの桁数"@ja , "recommended decimal places of m/z"@en ;
+        rdfs:range   xsd:string .
+
+:scanMZRange  a      rdf:Property ;
+        rdfs:domain  :Chromatography ;
+        rdfs:label   "スキャンm/z範囲"@ja , "scan m/z range"@en ;
+        rdfs:range   xsd:string .
+
+:cultivar  a         rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "品種"@ja , "cultivar"@en ;
+        rdfs:range   xsd:string .
+
+:dateTime  a         rdf:Property ;
+        rdfs:domain  :Experiment ;
+        rdfs:label   "日時"@ja , "date time"@en ;
+        rdfs:range   xsd:datetime .
+
+:extractCocentration  a  rdf:Property ;
+        rdfs:domain  :SampleExtractionProtorol ;
+        rdfs:label   "抽出濃度"@ja , "extract concentration"@en ;
+        rdfs:range   :Concentration .
+
+:sample  a           rdf:Property ;
+        rdfs:domain  :Material ;
+        rdfs:label   "サンプル"@ja , "sample"@en ;
+        rdfs:range   :Sample .
+
+:columnTemperature  a  rdf:Property ;
+        rdfs:domain  :Chromatography ;
+        rdfs:label   "カラム温度"@ja , "column temperature"@en ;
+        rdfs:range   :Temperature .
+
+:instrument  a       rdf:Property ;
+        rdfs:domain  :Chromatography ;
+        rdfs:label   "機器"@ja , "instrument"@en ;
+        rdfs:range   :Instrument .
+
+:md5    a            rdf:Property ;
+        rdfs:domain  :File ;
+        rdfs:label   "MD5値"@ja , "MD5"@en ;
+        rdfs:range   xsd:string .
+        
+:ionSplayVoltage  a  rdf:Property ;
+        rdfs:domain  :MassSpectrometry ;
+        rdfs:label   "イオンスプレー電圧"@ja , "ion splay voltage"@en ;
+        rdfs:range   :Voltage .
+
+:publicRelaseDate  a  rdf:Property ;
+        rdfs:domain  :Project ;
+        rdfs:label   "公開日"@ja , "public release date"@en ;
+        rdfs:range   xsd:date .
+
+
+:normalisationType  a  rdf:Property ;
+        rdfs:domain  :Normalisation ;
+        rdfs:label   "正規化・標準化の種類"@ja , "Normalisation Type"@en ;
+        rdfs:range   :NormalisationType .
+
+:peakFile  a                rdf:Property ;
+        rdfs:domain         :RawDataset ;
+        rdfs:label          "ピークファイル"@ja , "peak file"@en ;
+        rdfs:range          :PeakFile ;
+        rdfs:subpropertyOf  :file .
+
+:source  a           rdf:Property ;
+        rdfs:domain  :Compound ;
+        rdfs:label   "原材料"@ja , "source"@en ;
+        rdfs:range   xsd:string .
+
+:dataAnalysis  a     rdf:Property ;
+        rdfs:domain  :Experiment ;
+        rdfs:label   "データ解析"@ja , "data analysis"@en ;
+        rdfs:range   :DataAnalysis .
+
+:genotype  a         rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "遺伝子型"@ja , "genotype"@en ;
+        rdfs:range   xsd:string .
+
+:subProject  a       rdf:Property ;
+        rdfs:domain  :Project ;
+        rdfs:label   "サブプロジェクト"@ja , "sub-project"@en ;
+        rdfs:range   :Project .
+
+:peakWaveLength  a   rdf:Property ;
+        rdfs:domain  :LightCondition ;
+        rdfs:label   "ピーク波長"@ja , "peak wave length"@en ;
+        rdfs:range   :Length .
+
+:temperatureGradient  a  rdf:Property ;
+        rdfs:domain  :Chromatography ;
+        rdfs:label   "温度勾配"@ja , "temperature gradient"@en ;
+        rdfs:range   xsd:string .
+
+:metabolismQuenchingMethod
+        a            rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "クエンチング方法"@ja , "metabolism quenching method"@en ;
+        rdfs:range   xsd:string .
+
+:columnName  a       rdf:Property ;
+        rdfs:domain  :Chromatography ;
+        rdfs:label   "カラム名"@ja , "column name"@en ;
+        rdfs:range   xsd:string .
+
+:material  a         rdf:Property ;
+        rdfs:domain  :Sample ;
+        rdfs:label   "材料"@ja , "material"@en ;
+        rdfs:range   :Material .
+
+:downloadURL  a      rdf:Property ;
+        rdfs:domain  :File ;
+        rdfs:label   "ダウンロードURL"@ja , "download URL"@en ;
+        rdfs:range   xsd:anyURI .
+
+:capillaryTemperature
+        a            rdf:Property ;
+        rdfs:domain  :MassSpectrometry ;
+        rdfs:label   "キャピラリ温度"@ja , "capillary temperature"@en ;
+        rdfs:range   :Temperature .
+
+:dayTemperature  a          rdf:Property ;
+        rdfs:domain         :BiologicalSample ;
+        rdfs:label          "昼温度"@ja , "day temperature"@en ;
+        rdfs:range          :Temperature ;
+        rdfs:subpropertyOf  :temperature .
+
+:flowRate  a         rdf:Property ;
+        rdfs:domain  :Chromatography ;
+        rdfs:label   "流量"@ja , "flow rate"@en ;
+        rdfs:range   :FlowRate .
+
+:sampleMeasured  a   rdf:Property ;
+        rdfs:domain  :Measurement ;
+        rdfs:label   "測定されたサンプル"@ja , "sample measured"@en ;
+        rdfs:range   :Sample .
+
+:retentionTimeCorrection
+        a            rdf:Property ;
+        rdfs:domain  :PreProcessing ;
+        rdfs:label   "保持時間補正"@ja , "retention time correction"@en ;
+        rdfs:range   xsd:string .
+
+:fragmentationMethod  a  rdf:Property ;
+        rdfs:domain  :MassSpectrometry ;
+        rdfs:label   "フラグメンテーション方法"@ja , "fragmentation method"@en ;
+        rdfs:range   xsd:string .
+
+:retentionIndexMethod
+        a            rdf:Property ;
+        rdfs:domain  :MassSpectrometry ;
+        rdfs:label   "保持指標方法"@ja , "retention index method"@en ;
+        rdfs:range   xsd:string .
+
+:internalStandardCompound
+        a            rdf:Property ;
+        rdfs:domain  :SamplePreparation ;
+        rdfs:label   "内部標準化合物"@ja , "internal standard compound"@en ;
+        rdfs:range   xsd:string .
+
+:technologyPlatform  a  rdf:Property ;
+        rdfs:domain  :Experiment ;
+        rdfs:label   "測定技術プラットフォーム"@ja , "technology platform"@en ;
+        rdfs:range   :TechnologyPlatform .
+
+:plantTissue  a      rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "植物組織"@ja , "plant tissue"@en ;
+        rdfs:range   :PlantTissue .
+
+:ionMode  a          rdf:Property ;
+        rdfs:domain  :MassSpectrometry ;
+        rdfs:label   "イオンモード"@ja , "ion mode"@en ;
+        rdfs:range   xsd:string .
+
+:principalInvestigator
+        a            rdf:Property ;
+        rdfs:domain  :Project ;
+        rdfs:label   "研究責任者"@ja , "principal investigator"@en ;
+        rdfs:range   foaf:Person .
+
+:temperature  a      rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "温度"@ja , "temperature"@en ;
+        rdfs:range   :Temperature .
+
+:summarisationType  a  rdf:Property ;
+        rdfs:domain  :Summarisation ;
+        rdfs:label   "データ要約の種類"@ja , "Summarisation Type"@en ;
+        rdfs:range   :SummarisationType .
+
+:postalAddress  a    rdf:Property ;
+        rdfs:domain  org:Organization ;
+        rdfs:label   "郵便住所"@ja , "postal address"@en ;
+        rdfs:range   rdf:langString .
+
+:ionSourceTemperature
+        a            rdf:Property ;
+        rdfs:domain  :MassSpectrometry ;
+        rdfs:label   "イオン源温度"@ja , "ion source temperature"@en ;
+        rdfs:range   :Temperature .
+
+:ionIsolation  a     rdf:Property ;
+        rdfs:domain  :Chromatography ;
+        rdfs:label   "イオン化"@en , "ion isolation"@en ;
+        rdfs:range   xsd:string .
+
+:resultantRowDataset  a  rdf:Property ;
+        rdfs:domain  :Measurement ;
+        rdfs:label   "測定結果生データセット"@ja , "resultant raw dataset"@en ;
+        rdfs:range   :RowDataset .
+
+:statisticalDataAnalysis
+        a            rdf:Property ;
+        rdfs:domain  :PreProcessing ;
+        rdfs:label   "統計的データ解析"@ja , "statistical data analysis"@en ;
+        rdfs:range   :StatisticalDataAnalysis .
+
+:plotDesign  a       rdf:Property ;
+        rdfs:domain  :BiologicalSample ;
+        rdfs:label   "プロットデザイン"@ja , "plot design"@en ;
+        rdfs:range   xsd:string .
+
+:peakAlignment  a    rdf:Property ;
+        rdfs:domain  :PreProcessing ;
+        rdfs:label   "ピークアラインメント"@ja , "peak alignment"@en ;
+        rdfs:range   xsd:string .
+
+:submitter  a        rdf:Property ;
+        rdfs:domain  :Project ;
+        rdfs:label   "投稿者"@ja , "submitter"@en ;
+        rdfs:range   foaf:Person .
+
+:columnType  a       rdf:Property ;
+        rdfs:domain  :Chromatography ;
+        rdfs:label   "カラムの種類"@ja , "column type"@en ;
+        rdfs:range   xsd:string .
+
+
+<nrn:mimetype:application/x-cdf>
+        a           dct:FileFormat , :FileFormat ;
+        rdfs:label  "netCDF format file"@en .
+
+<nrn:mimetype:application/x-Rdata>
+        a           dct:FileFormat ;
+        rdfs:label  "RData format (format designed for use with R)"@en .
+
+<nrn:mimetype:application/zip>
+        a           dct:FileFormat ;
+        rdfs:label  "zip file"@en .
+
+<nrn:mimetype:image/png>
+        a           dct:FileFormat ;
+        rdfs:label  "image/png"@en .
+
+<nrn:mimetype:text/csv>
+        a           dct:FileFormat ;
+        rdfs:label  "csv file"@en .
+
+<nrn:mimetype:application/vnd.ms-excel>
+        a           dct:FileFormat ;
+        rdfs:label  "Microsoft Excel file"@en .
+
+<nrn:mimetype:text/plain>
+        a           dct:FileFormat ;
+        rdfs:label  "text file"@en .
+
+<nrn:mimetype:image/jpeg>
+        a           dct:FileFormat ;
+        rdfs:label  "image/jpeg"@en .
+
+<nrn:mimetype:application/x-abf>
+        a           dct:FileFormat , :FileFormat ;
+        rdfs:label  "abf format file"@en .
+
+<http://metadb.riken.jp/ontology/plantMetabolomics/0.1/%22理研植物メタボロミクスメタデータベース%22@ja>
+        a       rdfs:langString .
+
+<http://metadb.riken.jp/ontology/plantMetabolomics/0.1/%22RIKEN%20Plant%20Metabolomics%20MetaDatabase%22@en>
+        a       rdfs:langString .
+
+metadb_db:plantMetabolomics
+        a               rmd:db ;
+        rdfs:label      <http://metadb.riken.jp/ontology/plantMetabolomics/0.1/%22理研植物メタボロミクスメタデータベース%22@ja> , <http://metadb.riken.jp/ontology/plantMetabolomics/0.1/%22RIKEN%20Plant%20Metabolomics%20MetaDatabase%22@en> ;
+        dc:description  <http://metadb.riken.jp/ontology/plantMetabolomics/0.1/%22理研植物メタボロミクスメタデータベース%22@ja> , <http://metadb.riken.jp/ontology/plantMetabolomics/0.1/%22RIKEN%20Plant%20Metabolomics%20MetaDatabase%22@en> .
+
+pm_massAnalyser:TOF  a  :MassAnalyser ;
+        rdfs:label  "飛行時間型質量分析計"@ja , "TOF"@en .
+
+pm_massAnalyser:QqQ  a  :MassAnalyser ;
+        rdfs:label  "トリプル四重極型質量分析計"@ja , "Triple quadrupole"@en .
+
+pm_massAnalyser:Q-TOF
+        a           :MassAnalyser ;
+        rdfs:label  "四重極-飛行時間型質量分析計"@ja , "Q-TOF"@en .
+
+pm_massAnalyser:FT-ICR
+        a           :MassAnalyser ;
+        rdfs:label  "フーリエ変換イオンサイクロトロン共鳴質量分析計"@ja , "FT-ICR"@en .
+
+
+pm_techType:massSpectrometry
+        a           :TechnologyType ;
+        rdfs:label  "質量分析計"@ja , "mass spectrometry"@en .
+
+pm_techType:chromatography
+        a           :TechnologyType ;
+        rdfs:label  "クロマトグラフィー"@ja , "chromatography"@en .
+
+pm_techPlat:GCMS  a  :TechnologyPlatform ;
+        rdfs:label  "GC-MS"@ja , "GC-MS"@en .
+
+pm_measureType:metaboliteProfiling
+        a           :MeasurementType ;
+        rdfs:label  "代謝物プロファイリング"@ja , "metabolite profiling"@en .

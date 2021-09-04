@@ -1,0 +1,377 @@
+
+# RPMM0001_def
+@prefix :      <http://metadb.riken.jp/ontology/plantMetabolomics/0.1/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix pm_measureType: <http://metadb.riken.jp/db/plantMetabolomics/0.1/MeasurementType/> .
+@prefix pm_techPlat: <http://metadb.riken.jp/db/plantMetabolomics/0.1/TechnologyPlatform/> .
+@prefix pm_techType: <http://metadb.riken.jp/db/plantMetabolomics/0.1/TechnologyType/> .
+
+## Experiment
+## Experiment/Measurement
+## Experiment/Instrument
+## Experiment/Condition
+
+@prefix dcterms: <http://purl.org/dc/dcmitype/> . #Project, Experiment, Sample
+
+@prefix pm_exp: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Experiment/> .  # Project → Experiment
+@prefix pm_measurement: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Measurement/> .
+@prefix pm_instrument: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Instrument/> .
+@prefix pm_measureCond: <http://metadb.riken.jp/db/plantMetabolomics/0.1/MeasurementCondition/> .
+@prefix pm_dataAnalysis: <http://metadb.riken.jp/db/plantMetabolomics/0.1/DataAnalysis/> . # Experiment → TODO
+@prefix pm_expDesign: <http://metadb.riken.jp/db/plantMetabolomics/0.1/ExperimentalDesign/> . # Experiment → TODO
+#@prefix pm_rawDataset: <http://metadb.riken.jp/db/plantMetabolomics/0.1/RawDataset/> .  
+@prefix pm_rawDataSet: <http://metadb.riken.jp/db/plantMetabolomics/0.1/RawDataSet/> . # Experiment/Measurement → Dataset
+@prefix pm_sample: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Sample/> . # Experiment/Measurement → Sample
+@prefix pm_LightCond: <http://metadb.riken.jp/db/plantMetabolomics/0.1/LightCondition/> . # Sample → Experiment/Condition
+@prefix pm_massSpec: <http://metadb.riken.jp/db/plantMetabolomics/0.1/MassSpectometry/> . # Experiment/Condition → TODO
+@prefix pm_chromato: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Chromatography/> .  # Experiment/Condition → TODO
+
+
+pm_exp:RPMM0001_GC  a        :Experiment ;
+        rdfs:label           "GC-TOF/MS analysis"@en ;
+        :dataAnalysis        pm_dataAnalysis:RPMM0001 ;
+        :experimentalDesign  pm_expDesign:RPMM0001_GC ;
+        :measurement         pm_measurement:RPMM0001_GC_L_29_1 , pm_measurement:RPMM0001_GC_L_11_1 , pm_measurement:RPMM0001_GC_L_33_1 , pm_measurement:RPMM0001_GC_L_25_1 , pm_measurement:RPMM0001_GC_L_51_1 , pm_measurement:RPMM0001_GC_L_39_1 , pm_measurement:RPMM0001_GC_L_22_1 , pm_measurement:RPMM0001_GC_L_28_1 , pm_measurement:RPMM0001_GC_L_54_1 , pm_measurement:RPMM0001_GC_L_30_1 , pm_measurement:RPMM0001_GC_L_01_1 , pm_measurement:RPMM0001_GC_L_42_1 , pm_measurement:RPMM0001_GC_L_09_1 , pm_measurement:RPMM0001_GC_L_40_1 , pm_measurement:RPMM0001_GC_L_37_1 , pm_measurement:RPMM0001_GC_L_05_1 , pm_measurement:RPMM0001_GC_L_26_1 , pm_measurement:RPMM0001_GC_L_35_1 , pm_measurement:RPMM0001_GC_L_53_1 , pm_measurement:RPMM0001_GC_L_45_1 , pm_measurement:RPMM0001_GC_L_04_1 , pm_measurement:RPMM0001_GC_L_03_1 , pm_measurement:RPMM0001_GC_L_24_1 , pm_measurement:RPMM0001_GC_L_31_1 , pm_measurement:RPMM0001_GC_L_47_1 , pm_measurement:RPMM0001_GC_L_20_1 , pm_measurement:RPMM0001_GC_L_44_1 , pm_measurement:RPMM0001_GC_L_18_1 , pm_measurement:RPMM0001_GC_L_60_1 , pm_measurement:RPMM0001_GC_L_21_1 , pm_measurement:RPMM0001_GC_L_02_1 , pm_measurement:RPMM0001_GC_L_13_1 , pm_measurement:RPMM0001_GC_L_27_1 , pm_measurement:RPMM0001_GC_L_23_1 , pm_measurement:RPMM0001_GC_L_50_1 , pm_measurement:RPMM0001_GC_L_10_1 , pm_measurement:RPMM0001_GC_L_16_1 , pm_measurement:RPMM0001_GC_L_38_1 , pm_measurement:RPMM0001_GC_L_06_1 , pm_measurement:RPMM0001_GC_L_12_1 , pm_measurement:RPMM0001_GC_L_34_1 , pm_measurement:RPMM0001_GC_L_52_1 , pm_measurement:RPMM0001_GC_L_17_1 , pm_measurement:RPMM0001_GC_L_08_1 , pm_measurement:RPMM0001_GC_L_36_1 , pm_measurement:RPMM0001_GC_L_46_1 , pm_measurement:RPMM0001_GC_L_19_1 , pm_measurement:RPMM0001_GC_L_32_1 , pm_measurement:RPMM0001_GC_L_57_1 , pm_measurement:RPMM0001_GC_L_48_1 , pm_measurement:RPMM0001_GC_alkanemix ;
+        :measurementType     pm_measureType:metaboliteProfiling ;
+        :technologyPlatform  pm_techPlat:GCMS ;
+        :technologyType      pm_techType:chromatography , pm_techType:massSpectrometry ;
+        dcterms:description  "Non-targeted analysis of metabolites by GC-TOF-MS"@en ;
+        dcterms:identifier   "RPMM0001 GC-MS" .
+
+pm_measurement:RPMM0001_GC_L_12_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_12_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_12_1 .
+
+pm_measurement:RPMM0001_GC_L_39_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_39_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_39_1 .
+
+pm_measurement:RPMM0001_GC_L_19_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_19_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_19_1 .
+
+pm_measurement:RPMM0001_GC_L_21_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_21_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_21_1 .
+
+pm_measurement:RPMM0001_GC_L_01_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_01_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_01_1 .
+
+pm_measurement:RPMM0001_GC_L_48_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_48_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_48_1 .
+
+pm_measurement:RPMM0001_GC_L_50_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_50_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_50_1 .
+
+pm_measurement:RPMM0001_GC_L_28_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_28_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_28_1 .
+
+pm_measurement:RPMM0001_GC_L_30_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_30_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_30_1 .
+
+pm_measurement:RPMM0001_GC_L_08_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_08_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_08_1 .
+
+pm_measurement:RPMM0001_GC_L_10_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_10_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_10_1 .
+
+pm_measurement:RPMM0001_GC_L_57_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_57_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_57_1 .
+
+pm_measurement:RPMM0001_GC_L_37_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_37_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_37_1 .
+
+pm_measurement:RPMM0001_GC_L_17_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_17_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_17_1 .
+
+pm_measurement:RPMM0001_GC_alkanemix
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_alkanemix ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_alkanemix .
+
+pm_measurement:RPMM0001_GC_L_46_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_46_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_46_1 .
+
+pm_measurement:RPMM0001_GC_L_26_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_26_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_26_1 .
+
+pm_measurement:RPMM0001_GC_L_06_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_06_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_06_1 .
+
+pm_measurement:RPMM0001_GC_L_35_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_35_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_35_1 .
+pm_measurement:RPMM0001_GC_L_40_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_40_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_40_1 .
+
+pm_measurement:RPMM0001_GC_L_18_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_18_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_18_1 .
+
+pm_measurement:RPMM0001_GC_L_20_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_20_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_20_1 .
+
+pm_measurement:RPMM0001_GC_L_05_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_05_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_05_1 .
+
+pm_measurement:RPMM0001_GC_L_54_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_54_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_54_1 .
+
+pm_measurement:RPMM0001_GC_L_34_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_34_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_34_1 .
+
+pm_measurement:RPMM0001_GC_L_23_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_23_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_23_1 .
+
+pm_measurement:RPMM0001_GC_L_03_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_03_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_03_1 .
+
+pm_measurement:RPMM0001_GC_L_52_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_52_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_52_1 .
+
+pm_measurement:RPMM0001_GC_L_32_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_32_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_32_1 .
+
+pm_measurement:RPMM0001_GC_L_44_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_44_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_44_1 .
+
+pm_measurement:RPMM0001_GC_L_24_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_24_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_24_1 .
+
+pm_measurement:RPMM0001_GC_L_04_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_04_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_04_1 .
+
+pm_measurement:RPMM0001_GC_L_53_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_53_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_53_1 .
+
+pm_measurement:RPMM0001_GC_L_33_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_33_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_33_1 .
+
+pm_measurement:RPMM0001_GC_L_13_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_13_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_13_1 .
+
+pm_measurement:RPMM0001_GC_L_42_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_42_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_42_1 .
+
+pm_measurement:RPMM0001_GC_L_22_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_22_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_22_1 .
+
+pm_measurement:RPMM0001_GC_L_02_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_02_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_02_1 .
+
+pm_measurement:RPMM0001_GC_L_51_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_51_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_51_1 .
+
+pm_measurement:RPMM0001_GC_L_29_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_29_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_29_1 .
+
+pm_measurement:RPMM0001_GC_L_31_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_31_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_31_1 .
+
+pm_measurement:RPMM0001_GC_L_09_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_09_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_09_1 .
+
+pm_measurement:RPMM0001_GC_L_11_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_11_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_11_1 .
+
+pm_measurement:RPMM0001_GC_L_60_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_60_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_60_1 .
+
+pm_measurement:RPMM0001_GC_L_38_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_38_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_38_1 .
+
+pm_measurement:RPMM0001_GC_L_47_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_47_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_47_1 .
+
+pm_measurement:RPMM0001_GC_L_27_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_27_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_27_1 .
+
+pm_measurement:RPMM0001_GC_L_36_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_36_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_36_1 .
+
+pm_measurement:RPMM0001_GC_L_16_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_16_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_16_1 .
+
+pm_measurement:RPMM0001_GC_L_45_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_45_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_45_1 .
+
+pm_measurement:RPMM0001_GC_L_25_1
+        a                      :Measurement ;
+        :measurementCondition  pm_measureCond:RPMM0001_GC ;
+        :rawDataset            pm_rawDataSet:RPMM0001_GC_L_25_1 ;
+        :sampleMeasured        pm_sample:RPMM0001_GC_L_25_1 .
+
+pm_instrument:LC_WatersAcquity
+        a           :Instrument ;
+        rdfs:label  "Waters Acquity UPLC system"@en .
+
+pm_instrument:GC_Agilent6890N
+        a           :Instrument ;
+        rdfs:label  "Agilent 6890N Gas Chromatograph (Agilent Technologies, Wilmingston, USA)"@en .
+
+pm_instrument:MS_QTOFWatersPremier
+        a           :Instrument ;
+        rdfs:label  "Waters Q-Tof Premier"@en .
+
+pm_instrument:MS_TOFPeg4D
+        a           :Instrument ;
+        rdfs:label  "Pegasus 4D TOF mass spectrometer (Leco, St. Joseph, MI, USA)"@en .
+
+pm_instrument:MS_TOFPeg4
+        a           :Instrument ;
+        rdfs:label  "Pegasus IV TOF mass spectrometer (LECO, St. Joseph, MI, USA)"@en .
+
+pm_instrument:MS_TOFPeg3
+        a           :Instrument ;
+        rdfs:label  "Pegasus III TOF mass spectrometer (LECO, St. Joseph, MI, USA)"@en .
+
+pm_LightCond:RPMM0001
+        a                :LightCondition ;
+        :lightIntensity  "50 micro E/(m^2 s)" .
+
+pm_measureCond:RPMM0001_GC
+        a                  :MeasurementCondition ;
+        :chromatography    pm_chromato:RPMM0001_GC ;
+        :massSpectrometry  pm_massSpec:RPMM0001_GC .

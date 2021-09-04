@@ -1,0 +1,1026 @@
+# RPMM0001_def
+@prefix :      <http://metadb.riken.jp/ontology/plantMetabolomics/0.1/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+#Dataset/File
+
+@prefix dcterms: <http://purl.org/dc/dcmitype/> . #Project, Experiment, Sample
+
+@prefix pm_rawDataset: <http://metadb.riken.jp/db/plantMetabolomics/0.1/RawDataset/> .
+@prefix pm_rawDataSet: <http://metadb.riken.jp/db/plantMetabolomics/0.1/RawDataSet/> .
+@prefix pm_analysedDataset: <http://metadb.riken.jp/db/plantMetabolomics/0.1/AnalysedDataset/> .
+@prefix pm_file: <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/> .
+@prefix pm_normalMatFile: <http://metadb.riken.jp/db/plantMetabolomics/0.1/NormalisationDataMatrixFile/> .
+@prefix pm_statResFile: <http://metadb.riken.jp/db/plantMetabolomics/0.1/StatisticalResultsFile/> .
+@prefix pm_fileFormat: <http://metadb.riken.jp/db/plantMetabolomics/0.1/FileFormat/> .
+@prefix pm_massSpecFile: <http://metadb.riken.jp/db/plantMetabolomics/0.1/MassSpectraFile/> .
+
+pm_analysedDataset:RPMM0001
+        a                          :AnalysedDataset ;
+        :massSpectralFile          pm_massSpecFile:RPMM0001_02 , pm_massSpecFile:RPMM0001_01 ;
+        :normalisedDataMatrixFile  pm_normalMatFile:RPMM0001_02 , pm_normalMatFile:RPMM0001_01 .
+
+pm_rawDataSet:RPMM0001_GC_L_47_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_47_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_47_1(ABF)> , pm_file:RPMM0001_File_GC_L_47_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_36_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_36_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_36_1(ABF)> , pm_file:RPMM0001_File_GC_L_36_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_27_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_27_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_27_1(ABF)> , pm_file:RPMM0001_File_GC_L_27_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_54_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_54_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_54_1(ABF)> , pm_file:RPMM0001_File_GC_L_54_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_34_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_34_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_34_1(ABF)> , pm_file:RPMM0001_File_GC_L_34_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_23_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_23_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_23_1(ABF)> , pm_file:RPMM0001_File_GC_L_23_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_03_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_03_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_03_1(ABF)> , pm_file:RPMM0001_File_GC_L_03_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_16_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_16_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_16_1(ABF)> , pm_file:RPMM0001_File_GC_L_16_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_45_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_45_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_45_1(ABF)> , pm_file:RPMM0001_File_GC_L_45_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_25_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_25_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_25_1(ABF)> , pm_file:RPMM0001_File_GC_L_25_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_05_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_05_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_05_1(ABF)> , pm_file:RPMM0001_File_GC_L_05_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_52_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_52_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_52_1(ABF)> , pm_file:RPMM0001_File_GC_L_52_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_32_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_32_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_32_1(ABF)> , pm_file:RPMM0001_File_GC_L_32_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_12_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_12_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_12_1(ABF)> , pm_file:RPMM0001_File_GC_L_12_1 .
+
+pm_rawDataSet:RPMM0001_GC_alkanemix
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_alkanemix"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_alkanemix(ABF)> , pm_file:RPMM0001_File_GC_alkanemix .
+
+pm_rawDataSet:RPMM0001_GC_L_39_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_39_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_39_1(ABF)> , pm_file:RPMM0001_File_GC_L_39_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_19_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_19_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_19_1(ABF)> , pm_file:RPMM0001_File_GC_L_19_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_21_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_21_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_21_1(ABF)> , pm_file:RPMM0001_File_GC_L_21_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_01_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_01_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_01_1(ABF)> , pm_file:RPMM0001_File_GC_L_01_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_48_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_48_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_48_1(ABF)> , pm_file:RPMM0001_File_GC_L_48_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_50_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_50_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_50_1(ABF)> , pm_file:RPMM0001_File_GC_L_50_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_28_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_28_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_28_1(ABF)> , pm_file:RPMM0001_File_GC_L_28_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_30_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_30_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_30_1(ABF)> , pm_file:RPMM0001_File_GC_L_30_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_08_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_08_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_08_1(ABF)> , pm_file:RPMM0001_File_GC_L_08_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_10_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_10_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_10_1(ABF)> , pm_file:RPMM0001_File_GC_L_10_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_37_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_37_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_37_1(ABF)> , pm_file:RPMM0001_File_GC_L_37_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_57_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_57_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_57_1(ABF)> , pm_file:RPMM0001_File_GC_L_57_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_17_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_17_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_17_1(ABF)> , pm_file:RPMM0001_File_GC_L_17_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_46_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_46_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_46_1(ABF)> , pm_file:RPMM0001_File_GC_L_46_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_26_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_26_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_26_1(ABF)> , pm_file:RPMM0001_File_GC_L_26_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_06_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_06_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_06_1(ABF)> , pm_file:RPMM0001_File_GC_L_06_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_35_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_35_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_35_1(ABF)> , pm_file:RPMM0001_File_GC_L_35_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_44_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_44_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_44_1(ABF)> , pm_file:RPMM0001_File_GC_L_44_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_24_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_24_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_24_1(ABF)> , pm_file:RPMM0001_File_GC_L_24_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_53_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_53_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_53_1(ABF)> , pm_file:RPMM0001_File_GC_L_53_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_33_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_33_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_33_1(ABF)> , pm_file:RPMM0001_File_GC_L_33_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_13_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_13_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_13_1(ABF)> , pm_file:RPMM0001_File_GC_L_13_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_42_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_42_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_42_1(ABF)> , pm_file:RPMM0001_File_GC_L_42_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_22_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_22_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_22_1(ABF)> , pm_file:RPMM0001_File_GC_L_22_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_02_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_02_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_02_1(ABF)> , pm_file:RPMM0001_File_GC_L_02_1 .
+
+
+pm_rawDataSet:RPMM0001_GC_L_51_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_51_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_51_1(ABF)> , pm_file:RPMM0001_File_GC_L_51_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_29_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_29_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_29_1(ABF)> , pm_file:RPMM0001_File_GC_L_29_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_31_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_31_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_31_1(ABF)> , pm_file:RPMM0001_File_GC_L_31_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_09_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_09_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_09_1(ABF)> , pm_file:RPMM0001_File_GC_L_09_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_11_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_11_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_11_1(ABF)> , pm_file:RPMM0001_File_GC_L_11_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_60_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_60_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_60_1(ABF)> , pm_file:RPMM0001_File_GC_L_60_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_38_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_38_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_38_1(ABF)> , pm_file:RPMM0001_File_GC_L_38_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_40_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_40_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_40_1(ABF)> , pm_file:RPMM0001_File_GC_L_40_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_18_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_18_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_18_1(ABF)> , pm_file:RPMM0001_File_GC_L_18_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_20_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_20_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_20_1(ABF)> , pm_file:RPMM0001_File_GC_L_20_1 .
+
+pm_rawDataSet:RPMM0001_GC_L_04_1
+        a           :RawDataset ;
+        rdfs:label  "RPMM0001_RawData_GC_L_04_1"@en ;
+        :file       <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_04_1(ABF)> , pm_file:RPMM0001_File_GC_L_04_1 .
+
+
+pm_massSpecFile:RPMM0001_01
+        a                    :MassSpectralFile ;
+        rdfs:label           "RPMM0001_Mass Spectral File: 060512SF_leaf_nist.txt"@en ;
+        :downloadURL         "http://metabobank.riken.jp/data/RPMM0001/AnalysedDataset/060512SF_leaf_nist.txt"^^xsd:anyURI ;
+        :fileFormat          <nrn:mimetype:text/plain> ;
+        :md5                 "900788e8f2abc6b50846e83082462a29" ;
+        dcterms:description  "Extracted mass spectra (NIST MSP format)"@en .
+
+pm_massSpecFile:RPMM0001_02
+        a                    :MassSpectralFile ;
+        rdfs:label           "RPMM0001_Mass Spectral File: ALKANE_SERIE.txt"@en ;
+        :downloadURL         "http://metabobank.riken.jp/data/RPMM0001/AnalysedDataset/ALKANE_SERIE.txt"^^xsd:anyURI ;
+        :fileFormat          <nrn:mimetype:text/plain> ;
+        :md5                 "a025c8555c2fb4b97d1750be8d82ed60" ;
+        dcterms:description  "Mass spectra for normal alkane retention index (NIST MSP format)"@en .
+
+pm_normalMatFile:RPMM0001_01
+        a                    :NormalisedDataMatrixFile ;
+        rdfs:label           "RPMM0001_Normalised Data Matrix File: 12918_2007_53_MOESM6_ESM.xls"@en ;
+        :downloadURL         "http://metabobank.riken.jp/data/RPMM0001/AnalysedDataset/12918_2007_53_MOESM6_ESM.xls"^^xsd:anyURI ;
+        :fileFormat          <nrn:mimetype:application/vnd.ms-excel> ;
+        :md5                 "2d06f0da3b5dd79b820a1b56258190d0" ;
+        dcterms:description  "internal standard (e.g., Hexadecanoic acid)-based normalised metabolome data"@en .
+
+pm_normalMatFile:RPMM0001_02
+        a                    :NormalisedDataMatrixFile ;
+        rdfs:label           "RPMM0001_Normalised Data Matrix File: AraMetLeaves.RData"@en ;
+        :downloadURL         "http://metabobank.riken.jp/data/RPMM0001/AnalysedDataset/AraMetLeaves.Rdata"^^xsd:anyURI ;
+        :fileFormat          <nrn:mimetype:application/x-Rdata> ;
+        :md5                 "d2eb3263945bd39eef16f5104b40503e" ;
+        dcterms:description  "A metabolite data set. The Arabidopsis metabolome of the aerial regions of individual WT plants and the mto1 and tt4 mutants were analyzed by GC-TOF/MS."@en .
+
+pm_file:RPMM0001_File_GC_L_42_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_42_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_42_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "57d75a1c460b0e7a09f908f1fd50e315" .
+
+pm_file:RPMM0001_File_GC_L_22_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_22_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_22_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "c92a77e3d8c4b11a3ba7e8e263dd7242" .
+
+pm_file:RPMM0001_File_GC_L_51_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_51_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_51_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "6792892e5c183f43d0458c892c0b0961" .
+
+pm_file:RPMM0001_File_GC_L_29_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_29_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_29_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "48f5a564629681a2fc9b7e4075febf41" .
+
+pm_file:RPMM0001_File_GC_L_31_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_31_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_31_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "2e6016c9a2438c5070686a1c0300351b" .
+
+pm_file:RPMM0001_File_GC_L_09_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_09_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_09_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "af19a442b6a80e1d1d12e58161a737ce" .
+
+pm_file:RPMM0001_File_GC_L_11_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_11_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_11_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "366551158a083d6263ea55193aff1dd1" .
+
+pm_file:RPMM0001_File_GC_L_60_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_60_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_60_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "b612178b22e722463a93f0f69ae310ae" .
+
+pm_file:RPMM0001_File_GC_L_18_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_18_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_18_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "98550a33742f010daf8d8be9e971b001" .
+
+pm_file:RPMM0001_File_GC_L_47_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_47_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_47_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "a93956790cdbf99ddd3d361d2bf1ec55" .
+
+pm_file:RPMM0001_File_GC_L_27_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_27_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_27_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "b2cb0ce3366a25a2bb2c578609abcaae" .
+
+pm_file:RPMM0001_File_GC_L_36_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_36_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_36_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "d7ec2c3a01986d77b2ff6ab3041d1412" .
+
+pm_file:RPMM0001_File_GC_L_45_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_45_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_45_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "c1aafe5e54541d45a52dc737e56a9bc8" .
+
+pm_file:RPMM0001_File_GC_L_25_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_25_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_25_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "939f59d7275d4ebcdaa1832fde8de1ff" .
+
+pm_file:RPMM0001_File_GC_L_05_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_05_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_05_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "f392523db49773b9f864c8bd8d67c0bc" .
+
+pm_file:RPMM0001_File_GC_L_54_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_54_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_54_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "d71d1863370bedda0675e949d601681c" .
+
+pm_file:RPMM0001_File_GC_L_34_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_34_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_34_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "98a2c392bf293070f713746fbde108e2" .
+
+pm_file:RPMM0001_File_GC_L_23_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_23_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_23_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "3527bc6cebbe47d4122cc3267766feba" .
+
+pm_file:RPMM0001_File_GC_L_03_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_03_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_03_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "6ebbd714fe1e103dc22fd22040b830c9" .
+
+pm_file:RPMM0001_File_GC_L_52_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_52_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_52_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "fd51f6fa943d7b32ae078e912e62344a" .
+
+pm_file:RPMM0001_File_GC_L_32_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_32_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_32_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "46b56f157dbe673a5b4a71f5c8bd1237" .
+
+pm_file:RPMM0001_File_GC_L_12_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_12_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_12_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "dbae22387c4586bbcbdb7c662206766d" .
+
+pm_file:RPMM0001_File_GC_L_17_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_17_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_17_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "32212388f321b840b2eb906828248c4c" .
+
+pm_file:RPMM0001_File_GC_L_38_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_38_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_38_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "0eec805e3460a14cc4203b3dcba0e2a5" .
+
+pm_file:RPMM0001_File_GC_L_20_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_20_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_20_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "5486af2e0041795b2f813d23a902e91c" .
+
+pm_file:RPMM0001_File_GC_L_16_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_16_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_16_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "cb3361fc1376d78a6b8bdb754946dbac" .
+
+pm_file:RPMM0001_File_GC_L_40_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_40_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_40_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "b6f0661da9e26d600771db001203cc3d" .
+
+pm_file:RPMM0001_File_GC_L_02_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_02_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_02_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "214455b9370685f062f77ffb79721fe2" .
+
+pm_file:RPMM0001_File_GC_L_53_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_53_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_53_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "80191cb898de814515b51fe8a8443da8" .
+
+pm_file:RPMM0001_File_GC_L_39_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_39_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_39_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "6082dd630fb192177d22f17e69cef271" .
+
+pm_file:RPMM0001_File_GC_alkanemix
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):alkane_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/alkane_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "28e35816b720b327b0bd45d58577b63d" .
+
+pm_file:RPMM0001_File_GC_L_19_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_19_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_19_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "c7b6be7a38916b227446bad2d326c2da" .
+
+pm_file:RPMM0001_File_GC_L_21_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_21_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_21_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "ff493f0fcaf1f30cc537c7f47cd12175" .
+
+pm_file:RPMM0001_File_GC_L_01_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_01_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_01_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "8bb60f85441eb4cece0cfca0988b36f5" .
+
+pm_file:RPMM0001_File_GC_L_48_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_48_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_48_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "cd7147565c0160ac241a296c7c56df1a" .
+
+pm_file:RPMM0001_File_GC_L_50_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_50_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_50_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "bad22d304e30e50ab780c73ff04b6a8f" .
+
+pm_file:RPMM0001_File_GC_L_28_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_28_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_28_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "2deaf7383566488d98ff01d8f5273db2" .
+
+pm_file:RPMM0001_File_GC_L_30_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_30_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_30_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "1257ad6c774c6d158667b9125ae2a142" .
+
+pm_file:RPMM0001_File_GC_L_08_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_08_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_08_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "64ed91fb1210d351842b4083718eef90" .
+
+pm_file:RPMM0001_File_GC_L_10_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_10_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_10_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "9e08a2be06dc2970990674696ed4c8b0" .
+
+pm_file:RPMM0001_File_GC_L_57_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_57_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_57_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "44237b5e7209455fd9bf6b3eee8744c0" .
+
+pm_file:RPMM0001_File_GC_L_37_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_37_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_37_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "cde020d17609d409380adffa2ed3fb3e" .
+
+pm_file:RPMM0001_File_GC_L_46_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_46_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_46_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "5a8626e5af31fc04e03a506a4f9ce667" .
+
+pm_file:RPMM0001_File_GC_L_26_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_26_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_26_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "a389c38c5ddb9280096502dc00688c0b" .
+
+pm_file:RPMM0001_File_GC_L_06_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_06_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_06_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "79e977b9b112205bdf5deb038cace91c" .
+
+pm_file:RPMM0001_File_GC_L_35_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_35_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_35_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "10b00ed7614184773325aaba05c83176" .
+
+pm_file:RPMM0001_File_GC_L_44_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_44_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_44_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "1b688df387b2639a317b228cd34ec20f" .
+
+pm_file:RPMM0001_File_GC_L_24_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_24_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_24_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "9aadd25aca8dc2ec98d9f0d4c985d4c2" .
+
+pm_file:RPMM0001_File_GC_L_04_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_04_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_04_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "57226d91b3bffb8a42ab7db756db9cde" .
+
+pm_file:RPMM0001_File_GC_L_33_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_33_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_33_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "3222f4f8a28d2f1c692be43c3f6f98b2" .
+
+pm_file:RPMM0001_File_GC_L_13_1
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_13_1.cdf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/L_13_1.cdf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-cdf> ;
+        :md5          "e95db2008bb910a457d7962d0885136f" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_23_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_23_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_23_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "271769d320543cd1f96479598249cb01" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_40_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_40_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_40_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "200b02822392a5b0f5d1f0f04f7d7672" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_04_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_04_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_04_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "749b1de9b09b03ee898f90e2515713f9" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_12_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_12_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_12_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "ebc996ed3dad9a531fb2025ab1b3c241" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_19_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_19_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_19_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "101e6ad850b24cde9c2b6a2baa7ca568" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_45_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_45_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_45_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "70a78dc25b445f0146277646d84870c9" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_02_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_02_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_02_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "e83e2ea28c66ce07bb7fc6fd09a2739f" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_09_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_09_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_09_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "3dfec69b5259b44e99ff0059ee0bdc14" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_20_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_20_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_20_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "919fcfbcb5600f79d1f5fbeb9903c71b" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_10_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_10_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_10_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "cd2510a2e1c612319d09f934ccb2dc08" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_53_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_53_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_53_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "5b716a3462f2ec8cdb138dee5ec2d4a8" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_17_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_17_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_17_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "12eb4ea1263190aba483500c059d9737" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_50_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_50_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_50_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "6709747a263c03fa1da9b9fde7d676f1" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_57_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_57_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_57_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "c206839c64178075268994241c26b220" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_44_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_44_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_44_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "281eabd3d78c54d642afe19cd22e7ddc" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_01_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_01_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_01_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "6515de4b4263e4ab85f5fde08d01cc75" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_08_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_08_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_08_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "4a3af9d3df71861acbbcac7bcc09fe51" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_34_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_34_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_34_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "9e0e51d9905fa549761654706fce58fd" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_35_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_35_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_35_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "9549c22dbaed5fa2d67223a4b11a0ab3" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_25_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_25_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_25_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "11f3216d861a4326c56a6f5377612013" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_22_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_22_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_22_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "5283760730a73015774b13088d5ac0ed" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_29_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_29_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_29_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "15862529e56dc6035a6c67f08ac981c6" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_52_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_52_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_52_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "45c38733829da178c662904090155d46" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_16_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_16_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_16_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "e096b02cfecf76a9cdc874a009252bbc" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_03_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_03_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_03_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "840dabec473bdbbd51dd5a1045980d74" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_46_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_46_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_46_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "9193487660064cf28500ecd210ed82b0" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_alkanemix(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):alkane_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/alkane_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "810944f8713dc3b618f86a4f32ec7af6" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_33_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_33_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_33_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "41fc3f72c6c8d77ae054385bd6e46d5e" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_27_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_27_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_27_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "6fbdea6aee3b670ebd3b1f75674c49d7" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_60_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_60_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_60_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "ee2ad6e1e5e2450220e4e230a4103d7b" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_24_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_24_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_24_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "fda4e8afbf0ea674e9be0239d79c6676" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_21_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_21_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_21_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "46d7c601f53ee47057ae411bf40d8ea3" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_11_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_11_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_11_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "cb774362977937ecb5c9930f456e308b" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_54_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_54_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_54_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "8f892596ba567e87c2756f5a80c8454f" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_18_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_18_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_18_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "79b5f9be3cade3fdcbb1f804f73ca3e3" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_51_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_51_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_51_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "84993b1491e2c007874e401f5899d75a" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_05_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_05_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_05_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "7f306e1dec42ea6c1943ce66ea0a4bc0" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_48_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_48_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_48_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "b63d79b070bcdb1f5eb5aac3ed7119b2" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_47_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_47_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_47_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "847e9bc3dd3f584c697466ba49da7aab" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_30_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_30_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_30_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "d1da3ee8be76a362c272f3977c4258ef" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_37_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_37_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_37_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "2ed55bb3481b0326dc5de716a8dfda2a" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_13_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_13_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_13_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "090171b803791d1b046752380c8cb820" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_28_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_28_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_28_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "fd3140c9cd77fa028b93e260cc5f0868" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_31_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_31_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_31_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "4c75c1d811b3716403b3c749980145e8" .
+
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_38_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_38_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_38_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "f60089ffbeff14d40f89401a112b0cfc" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_32_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_32_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_32_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "5e3867604f5575e3798f95d13d514485" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_39_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_39_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_39_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "98af10c37338f18da2857c2852154cd6" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_36_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_36_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_36_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "cf4a13a6af0bdea0c6a55f016c434eec" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_26_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_26_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_26_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "8c77bf0458db6e8850069fa15a4e1d00" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_42_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_42_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_42_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "96b42b07ab12e47cea21eb1a16cd9814" .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/File/RPMM0001_File_GC_L_06_1(ABF)>
+        a             :File ;
+        rdfs:label    "RPMM0001 Raw Data File(GC-MS):L_06_1.abf"@en ;
+        :downloadURL  "http://metabobank.riken.jp/data/RPMM0001/RawDataset/ABF/L_06_1.abf"^^xsd:anyURI ;
+        :fileFormat   <nrn:mimetype:application/x-abf> ;
+        :md5          "0bd917328a8df5f0cd6aca327a9f3df5" .

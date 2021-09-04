@@ -1,0 +1,1382 @@
+# RPMM0001_def
+@prefix :      <http://metadb.riken.jp/ontology/plantMetabolomics/0.1/> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix org:   <http://www.w3.org/ns/org#> .
+@prefix bibo:  <http://purl.org/ontology/bibo> .
+
+## relation:Project-> Experiment
+@prefix pm_exp: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Experiment/> .
+
+# PROJECT
+@prefix dcterms: <http://purl.org/dc/dcmitype/> .
+@prefix pmid:  <http://rdf.ncbi.nlm.nih.gov/pubmed/> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+
+@prefix pm_proj: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Project/> .
+@prefix pm_person: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Person/> .
+@prefix pm_org: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Organisation/> .
+
+pm_proj:RPMM0001  a             :Project ;
+        rdfs:label              "Unbiased characterization of genotype-dependent metabolic regulations by metabolomic approach in Arabidopsis thaliana"@en ;
+        rdfs:seeAlso            <http://www.ebi.ac.uk/metabolights/MTBLS40> ;
+        :contactPerson          pm_person:AtsushiFukushima ;
+        :experiment             pm_exp:RPMM0001_GC ;
+        :principalInvestigator  pm_person:AtsushiFukushima , pm_person:MiyakoKusano , pm_person:KazukiSaito ;
+        :submitter              pm_person:MikikoTakahashi ;
+        dcterms:creator         pm_person:MikikoTakahashi ;
+        dcterms:description     "Metabolites are not only the catalytic products of enzymatic reactions but also the active regulators or the ultimate phenotype of metabolic homeostasis in highly complex cellular processes. The modes of regulation at the metabolome level can be revealed by metabolic networks. We investigated the metabolic network between wild-type and 2 mutant (<i>methionine-over accumulation 1</i> [<i>mto1</i>] and <i>transparent testa4</i> [<i>tt4</i>]) plants regarding the alteration of metabolite accumulation in <i>Arabidopsis thaliana</i>. In the GC-TOF/MS analysis, we acquired quantitative information regarding over 170 metabolites, which has been analyzed by a novel score (ZMC, z-score of metabolite correlation) describing a characteristic metabolite in terms of correlation. Although the 2 mutants revealed no apparent morphological abnormalities, the overall correlation values in <i>mto1</i> were much lower than those of the wild-type and <i>tt4</i> plants, indicating the loss of overall network stability due to the uncontrolled accumulation of methionine. In the <i>tt4</i> mutant, a new correlation between malate and sinapate was observed although the levels of malate, sinapate, and sinapoylmalate remain unchanged, suggesting an adaptive reconfiguration of the network. Gene-expression correlations presumably responsible for these metabolic networks were determined using the metabolite correlations as clues. Two Arabidopsis mutants, <i>mto1</i> and tt4, exhibited the following changes in entire metabolome networks: the overall loss of metabolic stability (<i>mto1</i>) or the generation of a metabolic network of a backup pathway for the lost physiological functions (<i>tt4</i>). The expansion of metabolite correlation to gene-expression correlation provides detailed insights into the systemic understanding of the plant cellular process regarding metabolome and transcriptome."@en ;
+        dcterms:identifier      "RPMM0001" ;
+        dcterms:references      pmid:18028551 ;
+        foaf:fundedBy           "Grants-in-Aid for Scientific Research from the Japan Society of the Promotion of Science (JSPS)"@en , "Uehara Memorial Foundation"@en , "Grant-in-Aid for Scientific Research on Priority Areas \"Systems Genomics\" from the Ministry of Education, Culture, Sports, Science and Technology of Japan"@en .
+
+pm_person:FumioMatsuda
+        a                foaf:Person ;
+        rdfs:label       "松田 史生"@ja , "MATSUDA Fumio"@en ;
+        :affiliation     pm_org:OsakaUnivBioinfo , pm_org:RikenPSC ;
+        foaf:familyName  "松田"@ja , "MATSUDA"@en ;
+        foaf:firstName   "史生"@ja , "Fumio"@en .
+
+pm_person:KeisukeOhta
+        a                foaf:Person ;
+        rdfs:label       "OHTA Keisuke"@en ;
+        :affiliation     pm_org:TokyoInstTechnoSchGSBiosciBiotech ;
+        foaf:familyName  "OHTA"@en ;
+        foaf:firstName   "Keisuke"@en .
+
+pm_person:TaneakiTsugane
+        a                foaf:Person ;
+        rdfs:label       "TSUGANE Taneaki"@en ;
+        :affiliation     pm_org:ChibaPrefAgriResCenter ;
+        foaf:familyName  "TSUGANE"@en ;
+        foaf:firstName   "Taneaki"@en .
+
+pm_person:TomonoriOgura
+        a                foaf:Person ;
+        rdfs:label       "OGURA Tomonori"@en ;
+        :affiliation     pm_org:OsakaUnivGSLifeEnvSci ;
+        foaf:familyName  "OGURA"@en ;
+        foaf:firstName   "Tomonori"@en .
+
+pm_person:ChoongHwanLee
+        a                foaf:Person ;
+        rdfs:label       "LEE Choong Hwan"@en ;
+        :affiliation     pm_org:KonkukUniv ;
+        foaf:familyName  "LEE"@en ;
+        foaf:firstName   "Choong Hwan"@en ;
+        foaf:mbox        "mailto:chlee123@konkuk.ac.kr"^^xsd:anyURI .
+
+pm_person:MamiYamazaki
+        a                foaf:Person ;
+        rdfs:label       "YAMAZAKI Mami"@en ;
+        :affiliation     pm_org:ChibaUnivGSPharmaceuticalSci ;
+        foaf:familyName  "YAMAZAKI"@en ;
+        foaf:firstName   "Mami"@en .
+
+
+pm_person:KoichiAizawa
+        a                foaf:Person ;
+        rdfs:label       "AIZAWA Koichi"@en ;
+        :affiliation     pm_org:KagomeCoLtdJp ;
+        foaf:familyName  "AIZAWA"@en ;
+        foaf:firstName   "Koichi"@en .
+
+pm_person:KenShirasu  a  foaf:Person ;
+        rdfs:label       "SHIRASU Ken"@en , "白須 賢"@ja ;
+        :Orcid           "0000-0002-0349-3870" ;
+        :affiliation     pm_org:RikenCSRS ;
+        foaf:familyName  "白須"@ja , "SHIRASU"@en ;
+        foaf:firstName   "Ken"@en , "賢"@ja ;
+        foaf:mbox        "mailto:ken.shirasu@riken.jp"^^xsd:anyURI .
+
+pm_person:MotoakiSeki
+        a                foaf:Person ;
+        rdfs:label       "SEKI Motoaki"@en , "関 原明"@ja ;
+        :Orcid           "0000-0001-8288-0467" ;
+        :affiliation     pm_org:CREST , pm_org:RikenCSRS , pm_org:KiharaBR ;
+        foaf:familyName  "SEKI"@en , "関"@ja ;
+        foaf:firstName   "Motoaki"@en , "原明"@ja ;
+        foaf:mbox        "mailto:motoaki.seki@riken.jp"^^xsd:anyURI .
+
+pm_person:MasakiIshikawa
+        a                foaf:Person ;
+        rdfs:label       "ISHIKAWA Masaki"@en ;
+        :affiliation     pm_org:TokyoUnivGSMedicineMetabo ;
+        foaf:familyName  "ISHIKAWA"@en ;
+        foaf:firstName   "Masaki"@en .
+
+pm_person:KazuhiroShoji
+        a                foaf:Person ;
+        rdfs:label       "庄子 和博"@ja , "SHOJI Kazuhiro"@en ;
+        :affiliation     pm_org:Denken ;
+        foaf:familyName  "庄子"@ja , "SHOJI"@en ;
+        foaf:firstName   "和博"@ja , "Kazuhiro"@en ;
+        foaf:mbox        "mailto:shoji@criepi.denken.or.jp"^^xsd:anyURI .
+
+pm_person:YoshihikoMorishita
+        a                foaf:Person ;
+        rdfs:label       "MORISHITA Yoshihiko"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "MORISHITA"@en ;
+        foaf:firstName   "Yoshihiko"@en .
+
+pm_person:HiroyukiSuganuma
+        a                foaf:Person ;
+        rdfs:label       "SUGANUMA Hiroyuki"@en ;
+        :affiliation     pm_org:KagomeCoLtdJp ;
+        foaf:familyName  "SUGANUMA"@en ;
+        foaf:firstName   "Hiroyuki"@en .
+
+pm_person:YasunoriIchihashi
+        a                foaf:Person ;
+        rdfs:label       "市橋 泰範"@ja , "ICHIHASHI Yasunori"@en ;
+        :Orcid           "0000-0003-1935-4397" ;
+        :affiliation     pm_org:JST , pm_org:RikenCSRS ;
+        foaf:familyName  "ICHIHASHI"@en , "市橋"@ja ;
+        foaf:firstName   "Yasunori"@en , "泰範"@ja ;
+        foaf:mbox        "mailto:yasunori.ichihashi@riken.jp"^^xsd:anyURI .
+
+pm_person:TatsuyaSuzuki
+        a                foaf:Person ;
+        rdfs:label       "SUZUKI Tatsuya"@en ;
+        :affiliation     pm_org:ChibaPrefAgriResCenter , pm_org:KDRI ;
+        foaf:familyName  "SUZUKI"@en ;
+        foaf:firstName   "Tatsuya"@en .
+
+pm_person:KoeiOkazaki
+        a                foaf:Person ;
+        rdfs:label       "OKAZAKI Koei"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "OKAZAKI"@en ;
+        foaf:firstName   "Koei"@en .
+
+pm_person:MasanoriArita
+        a                foaf:Person ;
+        rdfs:label       "ARITA Masanori"@en , "有田 正規"@ja ;
+        :Orcid           "0000-0001-6706-0487" ;
+        :affiliation     pm_org:RikenCSRS , pm_org:NIG ;
+        foaf:familyName  "有田"@ja , "ARITA"@en ;
+        foaf:firstName   "正規"@ja , "Masanori"@en ;
+        foaf:mbox        "mailto:masanori.arita@riken.jp"^^xsd:anyURI , "mailto:arita@nig.ac.jp"^^xsd:anyURI .
+
+pm_person:RyoTaguchi  a  foaf:Person ;
+        rdfs:label       "TAGUCHI Ryo"@en ;
+        :affiliation     pm_org:TokyoUnivGSMedicineMetabo ;
+        foaf:familyName  "TAGUCHI"@en ;
+        foaf:firstName   "Ryo"@en .
+
+pm_person:YoshidaKaoru
+        a                foaf:Person ;
+        rdfs:label       "吉田 薫"@ja , "T. YOSHIDA Kaoru"@en ;
+        :affiliation     pm_org:TokyoUnivAgriGrad ;
+        foaf:familyName  "吉田"@ja , "T. YOSHIDA"@en ;
+        foaf:firstName   "薫"@ja , "Kaoru"@en ;
+        foaf:mbox        "mailto:ayosida@mail.ecc.u-tokyo.ac.jp"^^xsd:anyURI .
+
+pm_person:HenningRedestig
+        a                foaf:Person ;
+        rdfs:label       "Henning Redestig"@en ;
+        :Orcid           "0000-0003-2130-9288" ;
+        :affiliation     pm_org:RikenPSC ;
+        foaf:familyName  "Redestig"@en ;
+        foaf:firstName   "Henning"@en .
+pm_person:Jong-MyongKim
+        a                foaf:Person ;
+        rdfs:label       "KIM Jong-Myong"@en , "金 鍾明"@ja ;
+        :Orcid           "0000-0003-0017-2577" ;
+        :affiliation     pm_org:RikenCSRS , pm_org:CREST ;
+        foaf:familyName  "KIM"@en , "金"@ja ;
+        foaf:firstName   "鍾明"@ja , "Jong-Myong"@en .
+
+
+pm_person:DorisAlbinsky
+        a                foaf:Person ;
+        rdfs:label       "Doris Albinsky"@en ;
+        :affiliation     pm_org:RikenPSC ;
+        foaf:familyName  "Albinsky"@en ;
+        foaf:firstName   "Doris"@en .
+
+pm_person:KazutakaIkeda
+        a                foaf:Person ;
+        rdfs:label       "IKEDA Kazutaka"@en ;
+        :affiliation     pm_org:TokyoUnivGSMedicineMetabo ;
+        foaf:familyName  "IKEDA"@en ;
+        foaf:firstName   "Kazutaka"@en .
+
+pm_person:KotaKera  a    foaf:Person ;
+        rdfs:label       "KERA Kota"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "KERA"@en ;
+        foaf:firstName   "Kota"@en .
+
+pm_person:MotoyukiAshikari
+        a                foaf:Person ;
+        rdfs:label       "ASHIKARI Motoyuki"@en , "芦苅 基行"@ja ;
+        :Orcid           "0000-0002-8945-2366" ;
+        :affiliation     pm_org:NagoyaUnivBBCenter ;
+        foaf:familyName  "ASHIKARI"@en , "芦苅"@ja ;
+        foaf:firstName   "基行"@ja , "Motoyuki"@en ;
+        foaf:mbox        "mailto:ashi@agr.nagoya-u.ac.jp"^^xsd:anyURI .
+
+pm_person:KenichiTanaka
+        a                foaf:Person ;
+        rdfs:label       "TANAKA Kenichi"@en ;
+        :affiliation     pm_org:NAIST ;
+        foaf:familyName  "TANAKA"@en ;
+        foaf:firstName   "Kenichi"@en .
+
+pm_person:ShigehikoKanaya
+        a                foaf:Person ;
+        rdfs:label       "KANAYA Shigehiko"@en ;
+        :affiliation     pm_org:NAIST ;
+        foaf:familyName  "KANAYA"@en ;
+        foaf:firstName   "Shigehiko"@en .
+
+pm_person:YuichiOike  a  foaf:Person ;
+        rdfs:label       "OIKE Yuichi"@en ;
+        :affiliation     pm_org:KumamotoUnivGSMedSciMolGen ;
+        foaf:familyName  "OIKE"@en ;
+        foaf:firstName   "Yuichi"@en .
+
+pm_person:YoshikiNagashima
+        a                foaf:Person ;
+        rdfs:label       "NAGASHIMA Yoshiki"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "NAGASHIMA"@en ;
+        foaf:firstName   "Yoshiki"@en .
+
+pm_person:MasaroAkai  a  foaf:Person ;
+        rdfs:label       "赤井 政郎"@ja , "AKAI Masaro"@en ;
+        :affiliation     pm_org:TohokuUnivEng ;
+        foaf:familyName  "赤井"@ja , "AKAI"@en ;
+        foaf:firstName   "政郎"@ja , "Masaro"@en .
+pm_person:YasunoriFukuzawa
+        a                foaf:Person ;
+        rdfs:label       "FUKUZAWA Yasunori"@en ;
+        :affiliation     pm_org:UnivRyukyusFaculAgriculture ;
+        foaf:familyName  "FUKUZAWA"@en ;
+        foaf:firstName   "Yasunori"@en .
+
+pm_person:TomokazuUshijima
+        a                foaf:Person ;
+        rdfs:label       "牛島 智一"@ja , "USHIJIMA Tomokazu"@en ;
+        :affiliation     pm_org:KyushuUnivAgri ;
+        foaf:familyName  "牛島"@ja , "USHIJIMA"@en ;
+        foaf:firstName   "智一"@ja , "Tomokazu"@en .
+
+pm_person:KazuoOkoshi
+        a                foaf:Person ;
+        rdfs:label       "OKOSHI Kazuo"@en ;
+        :affiliation     pm_org:ChibaPrefAgriResCenter ;
+        foaf:familyName  "OKOSHI"@en ;
+        foaf:firstName   "Kazuo"@en .
+        
+pm_person:KaoriSako  a   foaf:Person ;
+        rdfs:label       "佐古 香織"@ja , "SAKO Kaori"@en ;
+        :affiliation     pm_org:RikenCSRS ;
+        foaf:familyName  "佐古"@ja , "SAKO"@en ;
+        foaf:firstName   "香織"@ja , "Kaori"@en .
+
+pm_person:MutsumiWatanabe
+        a                foaf:Person ;
+        rdfs:label       "WATANABE Mutsumi"@en ;
+        :affiliation     pm_org:ChibaUnivGSPharmaceuticalSci ;
+        foaf:familyName  "WATANABE"@en ;
+        foaf:firstName   "Mutsumi"@en .
+
+pm_person:MikikoTakahashi
+        a                foaf:Person ;
+        rdfs:label       "高橋 みき子"@ja , "TAKAHASHI Mikiko"@en ;
+        :affiliation     pm_org:RikenCSRS ;
+        foaf:familyName  "高橋"@ja , "TAKAHASHI"@en ;
+        foaf:firstName   "みき子"@ja , "Mikiko"@en ;
+        foaf:mbox        "mailto:mikiko.takahashi@riken.jp"^^xsd:anyURI .
+
+pm_person:DaisukeShibata
+        a                foaf:Person ;
+        rdfs:label       "SHIBATA Daisuke"@en ;
+        :affiliation     pm_org:KyotoUnivGSAgriculture , pm_org:KDRI ;
+        foaf:familyName  "SHIBATA"@en ;
+        foaf:firstName   "Daisuke"@en .
+
+pm_person:NayumiAkimoto
+        a                foaf:Person ;
+        rdfs:label       "秋元 奈弓"@ja , "AKIMOTO Nayumi"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "秋元"@ja , "AKIMOTO"@en ;
+        foaf:firstName   "奈弓"@ja , "Nayumi"@en .
+pm_person:ChigenTsukamoto
+        a                foaf:Person ;
+        rdfs:label       "TSUKAMOTO Chigen"@en ;
+        :affiliation     pm_org:IwateUnivDepBiologChemFoodSciFaculAgriculture ;
+        foaf:familyName  "TSUKAMOTO"@en ;
+        foaf:firstName   "Chigen"@en .
+
+pm_person:HiroshiEzura
+        a                foaf:Person ;
+        rdfs:label       "江面 浩"@ja , "EZURA Hiroshi"@en ;
+        :affiliation     pm_org:TsukubaUnivGSLifeEnvSci ;
+        foaf:familyName  "江面"@ja , "EZURA"@en ;
+        foaf:firstName   "浩"@ja , "Hiroshi"@en ;
+        foaf:mbox        "mailto:ezura@gene.tsukuba.ac.jp"^^xsd:anyURI .
+        
+pm_person:MakotoHirosawa
+        a                foaf:Person ;
+        rdfs:label       "HIROSAWA Makoto"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "HIROSAWA"@en ;
+        foaf:firstName   "Makoto"@en .
+
+pm_person:RyoungShin  a  foaf:Person ;
+        rdfs:label       "申 怜"@ja , "SHIN Ryoung"@en ;
+        :Orcid           "0000-0003-4486-2852" ;
+        :affiliation     pm_org:RikenCSRS , pm_org:RikenPSC ;
+        foaf:familyName  "SHIN"@en , "申"@ja ;
+        foaf:firstName   "Ryoung"@en , "怜"@ja .
+
+pm_person:MiyakoKusano
+        a                foaf:Person ;
+        rdfs:label       "草野 都"@ja , "KUSANO Miyako"@en ;
+        :Orcid           "0000-0002-0052-6155" ;
+        :affiliation     pm_org:TsukubaUnivGSLifeEnvSci , pm_org:RikenPSC , pm_org:RikenCSRS ;
+        foaf:familyName  "草野"@ja , "KUSANO"@en ;
+        foaf:firstName   "都"@ja , "Miyako"@en ;
+        foaf:mbox        "mailto:mkusano005@psc.riken.jp"^^xsd:anyURI , "mailto:kusano.miyako.fp@u.tsukuba.ac.jp"^^xsd:anyURI , "mailto:miyako.kusano@riken.jp"^^xsd:anyURI .
+
+pm_person:MasahikoKitayama
+        a                foaf:Person ;
+        rdfs:label       "KITAYAMA Masahiko"@en ;
+        :affiliation     pm_org:EhimeWomenCollege ;
+        foaf:familyName  "KITAYAMA"@en ;
+        foaf:firstName   "Masahiko"@en .
+
+pm_person:YoshiyukiOgata
+        a                foaf:Person ;
+        rdfs:label       "OGATA Yoshiyuki"@en ;
+        :affiliation     pm_org:OsakaUnivGSLifeEnvSci , pm_org:KDRI ;
+        foaf:familyName  "OGATA"@en ;
+        foaf:firstName   "Yoshiyuki"@en .
+
+pm_person:TerukoMatsuo
+        a                foaf:Person ;
+        rdfs:label       "松尾 晃子"@ja , "MATSUO Teruko"@en ;
+        :affiliation     pm_org:OsakaUniv ;
+        foaf:familyName  "松尾"@ja , "MATSUO"@en ;
+        foaf:firstName   "晃子"@ja , "Teruko"@en .
+
+pm_person:JiyoungKim  a  foaf:Person ;
+        rdfs:label       "KIM Jiyoung"@en ;
+        :affiliation     pm_org:KonkukUniv ;
+        foaf:familyName  "KIM"@en ;
+        foaf:firstName   "Jiyoung"@en .
+
+pm_person:MitsuoEnomoto
+        a                foaf:Person ;
+        rdfs:label       "ENOMOTO Mitsuo"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "ENOMOTO"@en ;
+        foaf:firstName   "Mitsuo"@en .
+
+pm_person:AkiraKitajima
+        a                foaf:Person ;
+        rdfs:label       "KITAJIMA Akira"@en ;
+        :affiliation     pm_org:KyotoUnivExpFarm ;
+        foaf:familyName  "KITAJIMA"@en ;
+        foaf:firstName   "Akira"@en .
+
+pm_person:TakayukiKohchi
+        a                foaf:Person ;
+        rdfs:label       "KOHCHI Takayuki"@en ;
+        :affiliation     pm_org:KyotoUnivGSBiosutdies ;
+        foaf:familyName  "KOHCHI"@en ;
+        foaf:firstName   "Takayuki"@en .
+
+pm_person:ShokoFujiwara
+        a                foaf:Person ;
+        rdfs:label       "FUJIWARA Shoko"@en ;
+        :affiliation     pm_org:TokyoUnivPharmacyLifeSci ;
+        foaf:familyName  "FUJIWARA"@en ;
+        foaf:firstName   "Shoko"@en .
+
+pm_person:RyoNakabayashi
+        a                foaf:Person ;
+        rdfs:label       "NAKABAYASHI Ryo"@en , "中林 亮"@ja ;
+        :Orcid           "0000-0002-8674-0928" ;
+        :affiliation     pm_org:RikenCSRS ;
+        foaf:familyName  "中林"@ja , "NAKABAYASHI"@en ;
+        foaf:firstName   "亮"@ja , "Ryo"@en ;
+        foaf:mbox        "mailto:ryo.nakabayashi@riken.jp"^^xsd:anyURI .
+
+pm_person:HiromitsuTakayama
+        a                foaf:Person ;
+        rdfs:label       "TAKAYAMA Hiromitsu"@en ;
+        :affiliation     pm_org:ChibaUnivGSPharmaceuticalSci ;
+        foaf:familyName  "TAKAYAMA"@en ;
+        foaf:firstName   "Hiromitsu"@en .
+
+pm_person:KoichiToyokura
+        a                foaf:Person ;
+        rdfs:label       "豊倉 浩一"@ja , "TOYOKURA Koichi"@en ;
+        :affiliation     pm_org:KyotoUnivBot , pm_org:NIBBplantOrgan ;
+        foaf:familyName  "豊倉"@ja , "TOYOKURA"@en ;
+        foaf:firstName   "浩一"@ja , "Koichi"@en .
+
+pm_person:EstherKnaap
+        a                foaf:Person ;
+        rdfs:label       "Esther van der Knaap"@en ;
+        :Orcid           "0000-0003-4963-7427" ;
+        :affiliation     pm_org:OhaioUnivAgri ;
+        foaf:familyName  "van der Knaap"@en ;
+        foaf:firstName   "Esther"@en .
+
+pm_person:HideyukiSuzuki
+        a                foaf:Person ;
+        rdfs:label       "SUZUKI Hideyuki"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "SUZUKI"@en ;
+        foaf:firstName   "Hideyuki"@en .
+
+pm_person:MasakazuSatou
+        a                foaf:Person ;
+        rdfs:label       "佐藤 将一"@ja , "SATOU, Masakazu"@en ;
+        :affiliation     pm_org:TakaraBioDragon , pm_org:RikenPSC ;
+        foaf:familyName  "佐藤"@ja , "SATOU"@en ;
+        foaf:firstName   "将一"@ja , "Masakazu"@en .
+
+pm_person:ChisatoMasumoto
+        a                foaf:Person ;
+        rdfs:label       "増本 千都"@ja , "MASUMOTO Chisato"@en ;
+        :affiliation     pm_org:NIAS ;
+        foaf:familyName  "増本"@ja , "MASUMOTO"@en ;
+        foaf:firstName   "千都"@ja , "Chisato"@en .
+
+pm_person:MasayukiShimamura
+        a                foaf:Person ;
+        rdfs:label       "SHIMAMURA Masayuki"@en ;
+        :affiliation     pm_org:NihonUnivGSBioresourceSci ;
+        foaf:familyName  "SHIMAMURA"@en ;
+        foaf:firstName   "Masayuki"@en .
+
+pm_person:AtsukoKimura
+        a                foaf:Person ;
+        rdfs:label       "KIMURA Atsuko"@en ;
+        :affiliation     pm_org:OsakaUnivGSLifeEnvSci ;
+        foaf:familyName  "KIMURA"@en ;
+        foaf:firstName   "Atsuko"@en .
+
+pm_person:HideakiSuzuki
+        a                foaf:Person ;
+        rdfs:label       "SUZUKI Hideaki"@en ;
+        :affiliation     pm_org:ChibaPrefAgriResCenter ;
+        foaf:familyName  "SUZUKI"@en ;
+        foaf:firstName   "Hideaki"@en .
+
+pm_person:MasamiHirai
+        a                foaf:Person ;
+        rdfs:label       "平井 優美"@ja , "HIRAI YOKOTA Masami"@en ;
+        :Orcid           "0000-0003-0802-6208" ;
+        :affiliation     pm_org:ChibaUnivGSPharmaceuticalSci , pm_org:RikenPSC , pm_org:RikenCSRS ;
+        foaf:familyName  "HIRAI YOKOTA"@en , "平井"@ja ;
+        foaf:firstName   "Masami"@en , "優美"@ja ;
+        foaf:mbox        "mailto:myhirai@psc.riken.jp"^^xsd:anyURI , "mailto:masami.hirai@riken.jp"^^xsd:anyURI .
+
+pm_person:MasamiUeno  a  foaf:Person ;
+        rdfs:label       "UENO Masami"@en ;
+        :affiliation     pm_org:UnivRyukyusFaculAgriculture ;
+        foaf:familyName  "UENO"@en ;
+        foaf:firstName   "Masami"@en .
+
+pm_person:DaisakuOhta
+        a                foaf:Person ;
+        rdfs:label       "OHTA Daisaku"@en ;
+        :affiliation     pm_org:OsakaUnivGSLifeEnvSci ;
+        foaf:familyName  "OHTA"@en ;
+        foaf:firstName   "Daisaku"@en .
+
+pm_person:YoshinobuKawamitsu
+        a                foaf:Person ;
+        rdfs:label       "KAWAMITSU Yoshinobu"@en ;
+        :affiliation     pm_org:UnivRyukyusFaculAgriculture ;
+        foaf:familyName  "KAWAMITSU"@en ;
+        foaf:firstName   "Yoshinobu"@en .
+
+pm_person:DaisukeNakajima
+        a                foaf:Person ;
+        rdfs:label       "NAKAJIMA Daisuke"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "NAKAJIMA"@en ;
+        foaf:firstName   "Daisuke"@en .
+
+pm_person:ChiakiMatsukura
+        a                foaf:Person ;
+        rdfs:label       "MATSUKURA Chiaki"@en ;
+        :affiliation     pm_org:TsukubaUnivGSLifeEnvSci ;
+        foaf:familyName  "MATSUKURA"@en ;
+        foaf:firstName   "Chiaki"@en .
+
+pm_person:ShigeakiHarayama
+        a                foaf:Person ;
+        rdfs:label       "HARAYAMA Shigeaki"@en ;
+        :affiliation     pm_org:NITE ;
+        foaf:familyName  "HARAYAMA"@en ;
+        foaf:firstName   "Shigeaki"@en .
+
+pm_person:SachikoOsawa
+        a                foaf:Person ;
+        rdfs:label       "大澤 祥子"@ja , "OSAWA Sachiko"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "大澤"@ja , "OSAWA"@en ;
+        foaf:firstName   "祥子"@ja , "Sachiko"@en .
+
+pm_person:MiwaOhashi  a  foaf:Person ;
+        rdfs:label       "大橋 美和"@ja , "OHASHI Miwa"@en ;
+        :Orcid           "0000-0002-3862-3073" ;
+        :affiliation     pm_org:TohokuUnivAgri , pm_org:NagoyaUnivBio ;
+        foaf:familyName  "大橋"@ja , "OHASHI"@en ;
+        foaf:firstName   "美和"@ja , "Miwa"@en ;
+        foaf:mbox        "mailto:ohashi@agr.nagoya-u.ac.jp"^^xsd:anyURI .
+
+pm_person:RyosukeSano
+        a                foaf:Person ;
+        rdfs:label       "SANO Ryosuke"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "SANO"@en ;
+        foaf:firstName   "Ryosuke"@en .
+
+pm_person:NozomuSakurai
+        a                foaf:Person ;
+        rdfs:label       "櫻井 望"@ja , "SAKURAI Nozomu"@en ;
+        :affiliation     pm_org:NIG , pm_org:KDRI ;
+        foaf:familyName  "櫻井"@ja , "SAKURAI"@en ;
+        foaf:firstName   "望"@ja , "Nozomu"@en ;
+        foaf:mbox        "mailto:sakurai@nig.ac.jp"^^xsd:anyURI , "mailto:sakurai@kazusa.or.jp"^^xsd:anyURI .
+
+pm_person:EriAdams  a    foaf:Person ;
+        rdfs:label       "アダムス 英里"@ja , "ADAMS Eri"@en ;
+        :affiliation     pm_org:RikenCSRS ;
+        foaf:familyName  "アダムス"@ja , "ADAMS"@en ;
+        foaf:firstName   "英里"@ja , "Eri"@en .
+        
+pm_person:YujiSawada  a  foaf:Person ;
+        rdfs:label       "澤田 有司"@ja , "SAWADA Yuji"@en ;
+        :Orcid           "0000-0002-7427-1749" ;
+        :affiliation     pm_org:RikenCSRS ;
+        foaf:familyName  "澤田"@ja , "SAWADA"@en ;
+        foaf:firstName   "Yuji"@en , "有司"@ja ;
+        foaf:mbox        "mailto:yuji.sawada@riken.jp"^^xsd:anyURI .
+
+pm_person:TakuDemura  a  foaf:Person ;
+        rdfs:label       "DEMURA Taku"@en , "出村 拓"@ja ;
+        :Orcid           "0000-0002-2499-4738" ;
+        :affiliation     pm_org:RikenCSRS , pm_org:NAIST ;
+        foaf:familyName  "DEMURA"@en , "出村"@ja ;
+        foaf:firstName   "Taku"@en , "拓"@ja ;
+        foaf:mbox        "mailto:demura@riken.jp"^^xsd:anyURI .
+
+pm_person:KazuoShinozaki
+        a                foaf:Person ;
+        rdfs:label       "SHINOZAKI Kazuo"@en ;
+        :affiliation     pm_org:RikenPSC ;
+        foaf:familyName  "SHINOZAKI"@en ;
+        foaf:firstName   "Kazuo"@en .
+
+pm_person:HaruyaTakahashi
+        a                foaf:Person ;
+        rdfs:label       "TAKAHASHI Haruya"@en ;
+        :affiliation     pm_org:KyotoUnivGSAgriculture ;
+        foaf:familyName  "TAKAHASHI"@en ;
+        foaf:firstName   "Haruya"@en .
+
+pm_person:YokoIijima  a  foaf:Person ;
+        rdfs:label       "IIJIMA Yoko"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "IIJIMA"@en ;
+        foaf:firstName   "Yoko"@en .
+
+pm_person:TakeshiAra  a  foaf:Person ;
+        rdfs:label       "ARA Takeshi"@en ;
+        :affiliation     pm_org:KyotoUnivGSAgriculture , pm_org:KDRI ;
+        foaf:familyName  "ARA"@en ;
+        foaf:firstName   "Takeshi"@en .
+
+pm_person:TakayukiTohge
+        a                foaf:Person ;
+        rdfs:label       "峠 隆之"@ja , "TOHGE Takayuki"@en ;
+        :affiliation     pm_org:MaxPlanckMolecularPlantPhysiology , pm_org:RikenPSC ;
+        foaf:familyName  "峠"@ja , "TOHGE"@en ;
+        foaf:firstName   "隆之"@ja , "Takayuki"@en .
+
+pm_person:KimitsuneIshizaki
+        a                foaf:Person ;
+        rdfs:label       "ISHIZAKI Kimitsune"@en ;
+        :affiliation     pm_org:KyotoUnivGSBiosutdies ;
+        foaf:familyName  "ISHIZAKI"@en ;
+        foaf:firstName   "Kimitsune"@en .
+
+pm_person:ShinsukeMohri
+        a                foaf:Person ;
+        rdfs:label       "MOHRI Shinsuke"@en ;
+        :affiliation     pm_org:KyotoUnivGSAgriculture ;
+        foaf:familyName  "MOHRI"@en ;
+        foaf:firstName   "Shinsuke"@en .
+
+pm_person:KazukiSaito
+        a                foaf:Person ;
+        rdfs:label       "斉藤 和季"@ja , "SAITO Kazuki"@en ;
+        :Orcid           "0000-0001-6310-5342" ;
+        :affiliation     pm_org:ChibaUnivGSPharmaceuticalSci , pm_org:RikenCSRS , pm_org:RikenPSC ;
+        foaf:familyName  "斉藤"@ja , "SAITO"@en ;
+        foaf:firstName   "Kazuki"@en , "和季"@ja ;
+        foaf:mbox        "mailto:kazuki.saito@riken.jp"^^xsd:anyURI , "mailto:ksaito@psc.riken.jp"^^xsd:anyURI .
+
+pm_person:MitsueMiyao
+        a                foaf:Person ;
+        rdfs:label       "宮尾 光恵"@ja , "MIYAO Mitsue"@en ;
+        :affiliation     pm_org:NIAS ;
+        foaf:familyName  "宮尾"@ja , "MIYAO"@en ;
+        foaf:firstName   "光恵"@ja , "Mitsue"@en .
+        
+pm_person:GeorgeHarrigan
+        a                foaf:Person ;
+        rdfs:label       "George G. Harrigan"@en ;
+        :affiliation     pm_org:Monsanto ;
+        foaf:familyName  "Harrigan"@en ;
+        foaf:firstName   "George"@en ;
+        foaf:givenName   "G"@en ;
+        foaf:mbox        "mailto:george.g.harrigan@monsanto.com"^^xsd:anyURI .
+
+pm_person:AkiraIwase  a  foaf:Person ;
+        rdfs:label       "IWASE Akira"@en , "岩瀬 哲"@ja ;
+        :affiliation     pm_org:AIST , pm_org:RikenCSRS ;
+        foaf:familyName  "IWASE"@en , "岩瀬"@ja ;
+        foaf:firstName   "Akira"@en , "哲"@ja ;
+        foaf:mbox        "mailto:akira.iwase@riken.jp"^^xsd:anyURI .
+
+pm_person:NorimotoShimada
+        a                foaf:Person ;
+        rdfs:label       "SHIMADA Norimoto"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "SHIMADA"@en ;
+        foaf:firstName   "Norimoto"@en .
+
+pm_person:TakashiMatsuura
+        a                foaf:Person ;
+        rdfs:label       "MATSUURA Takashi"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "MATSUURA"@en ;
+        foaf:firstName   "Takashi"@en .
+
+pm_person:IvanBaxter  a  foaf:Person ;
+        rdfs:label       "Ivan Baxter"@en ;
+        :affiliation     pm_org:USDAplantScienceCenter ;
+        foaf:familyName  "Baxter"@en ;
+        foaf:firstName   "Ivan"@en ;
+        foaf:mbox        "mailto:ivan.baxter@ars.usda.gov"^^xsd:anyURI .
+
+pm_person:KenjiIshii  a  foaf:Person ;
+        rdfs:label       "ISHII Kenji"@en ;
+        :affiliation     pm_org:TohokuUnivGSLifeSci ;
+        foaf:familyName  "ISHII"@en ;
+        foaf:firstName   "Kenji"@en .
+
+pm_person:AlvaroCuadrosInostroza
+        a                foaf:Person ;
+        rdfs:label       "Álvaro Cuadros-Inostroza"@en ;
+        :affiliation     pm_org:USMUniv , pm_org:MaxPlanckMolecularPlantPhysiology ;
+        foaf:familyName  "Cuadros-Inostroza"@en ;
+        foaf:firstName   "Álvaro"@en ;
+        foaf:mbox        "mailto:inostroza@mpimp-golm.mpg.de"^^xsd:anyURI .
+
+pm_person:AkiraOikawa
+        a                foaf:Person ;
+        rdfs:label       "OIKAWA Akira"@en ;
+        :affiliation     pm_org:OsakaUnivGSLifeEnvSci ;
+        foaf:familyName  "OIKAWA"@en ;
+        foaf:firstName   "Akira"@en .
+
+pm_person:ToruFujiwara
+        a                foaf:Person ;
+        rdfs:label       "藤原 徹"@ja , "FUJIWARA Toru"@en ;
+        :affiliation     pm_org:CREST , pm_org:TokyoUnivAgriGrad , pm_org:TokyoUnivBiotech ;
+        foaf:familyName  "藤原"@ja , "FUJIWARA"@en ;
+        foaf:firstName   "Toru"@en , "徹"@ja .
+
+pm_person:NaokiYamamoto
+        a                foaf:Person ;
+        rdfs:label       "YAMAMOTO Naoki"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "YAMAMOTO"@en ;
+        foaf:firstName   "Naoki"@en .
+
+pm_person:NobutakaMitsuda
+        a                foaf:Person ;
+        rdfs:label       "MITSUDA Nobutaka"@en ;
+        :affiliation     pm_org:AIST ;
+        foaf:familyName  "MITSUDA"@en ;
+        foaf:firstName   "Nobutaka"@en .
+
+pm_person:MasaruTakagi
+        a                foaf:Person ;
+        rdfs:label       "TAKAGI Masaru"@en ;
+        :affiliation     pm_org:AIST ;
+        foaf:familyName  "TAKAGI"@en ;
+        foaf:firstName   "Masaru"@en .
+
+pm_person:TomoyukiYamaya
+        a                foaf:Person ;
+        rdfs:label       "山谷 知行"@ja , "YAMAYA Tomoyuki"@en ;
+        :affiliation     pm_org:TohokuUnivAgri ;
+        foaf:familyName  "山谷"@ja , "YAMAYA"@en ;
+        foaf:firstName   "知行"@ja , "Tomoyuki"@en ;
+        foaf:mbox        "mailto:tyamaya@biochem.tohoku.ac.jp"^^xsd:anyURI .
+
+pm_person:NobuyukiUozumi
+        a                foaf:Person ;
+        rdfs:label       "魚住 信之"@ja , "UOZUMI Nobuyuki"@en ;
+        :affiliation     pm_org:TohokuUnivEng ;
+        foaf:familyName  "魚住"@ja , "UOZUMI"@en ;
+        foaf:firstName   "信之"@ja , "Nobuyuki"@en ;
+        foaf:mbox        "mailto:uozumi@biophy.che.tohoku.ac.jp"^^xsd:anyURI .
+
+pm_person:XiangYu  a     foaf:Person ;
+        rdfs:label       "于 翔"@ja , "YU Xiang"@en ;
+        :affiliation     pm_org:RikenCSRS ;
+        foaf:familyName  "于"@ja , "YU"@en ;
+        foaf:firstName   "翔"@ja , "Xiang"@en .
+
+pm_person:KeishiOzawa
+        a                foaf:Person ;
+        rdfs:label       "OZAWA Keishi"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "OZAWA"@en ;
+        foaf:firstName   "Keishi"@en .
+
+pm_person:AtsushiFukushima
+        a                foaf:Person ;
+        rdfs:label       "FUKUSHIMA Atsushi"@en , "福島 敦史"@ja ;
+        :Orcid           "0000-0001-9015-1694" ;
+        :affiliation     pm_org:RikenPSC , pm_org:RikenCSRS ;
+        foaf:familyName  "FUKUSHIMA"@en , "福島"@ja ;
+        foaf:firstName   "Atsushi"@en , "敦史"@ja ;
+        foaf:mbox        "mailto:atsushi.fukushima@riken.jp"^^xsd:anyURI , "mailto:a-fukush@psc.riken.jp"^^xsd:anyURI .
+
+pm_person:YasuhiroHigashi
+        a                foaf:Person ;
+        rdfs:label       "東 泰弘"@ja , "HIGASHI Yasuhiro"@en ;
+        :Orcid           "0000-0003-0784-7960" ;
+        :affiliation     pm_org:RikenCSRS ;
+        foaf:familyName  "東"@ja , "HIGASHI"@en ;
+        foaf:firstName   "泰弘"@ja , "Yasuhiro"@en ;
+        foaf:mbox        "mailto:yasuhiro.higashi@riken.jp"^^xsd:anyURI .
+
+pm_person:KeikoSugimoto
+        a                foaf:Person ;
+        rdfs:label       "杉本 慶子"@ja , "KEIKO Keiko"@en ;
+        :affiliation     pm_org:RikenCSRS ;
+        foaf:familyName  "杉本"@ja , "KEIKO"@en ;
+        foaf:firstName   "慶子"@ja , "Keiko"@en ;
+        foaf:mbox        "mailto:keiko.sugimoto@riken.jp"^^xsd:anyURI .
+
+pm_person:TakujiNakashima
+        a                foaf:Person ;
+        rdfs:label       "NAKASHIMA Takuji"@en ;
+        :affiliation     pm_org:NITE ;
+        foaf:familyName  "NAKASHIMA"@en ;
+        foaf:firstName   "Takuji"@en .
+
+pm_person:KunihiroSuda
+        a                foaf:Person ;
+        rdfs:label       "須田 邦裕"@ja , "SUDA Kunihiro"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "須田"@ja , "SUDA"@en ;
+        foaf:firstName   "邦裕"@ja , "Kunihiro"@en .
+
+pm_person:YouichiKondou
+        a                foaf:Person ;
+        rdfs:label       "近藤 陽一"@ja , "KONDOU Youichi"@en ;
+        :affiliation     pm_org:RikenPSC ;
+        foaf:familyName  "近藤"@ja , "KONDOU"@en ;
+        foaf:firstName   "陽一"@ja , "Youichi"@en .
+
+pm_person:MarikoKitajima
+        a                foaf:Person ;
+        rdfs:label       "KITAJIMA Mariko"@en ;
+        :affiliation     pm_org:ChibaUnivGSPharmaceuticalSci ;
+        foaf:familyName  "KITAJIMA"@en ;
+        foaf:firstName   "Mariko"@en .
+
+pm_person:KohAoki  a     foaf:Person ;
+        rdfs:label       "AOKI Koh"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "AOKI"@en ;
+        foaf:firstName   "Koh"@en .
+
+pm_person:TomonaoMatsushita
+        a                foaf:Person ;
+        rdfs:label       "松下 智直"@ja , "MATSUSHITA Tomonao"@en ;
+        :affiliation     pm_org:KyushuUnivAgri ;
+        foaf:familyName  "松下"@ja , "MATSUSHITA"@en ;
+        foaf:firstName   "智直"@ja , "Tomonao"@en ;
+        foaf:mbox        "mailto:mat@agr.kyushu-u.ac.jp"^^xsd:anyURI .
+
+pm_person:AlisdairFernie
+        a                foaf:Person ;
+        rdfs:label       "Alisdair Fernie"@en ;
+        :affiliation     pm_org:MaxPlanckMolecularPlantPhysiology ;
+        foaf:familyName  "Fernie"@en ;
+        foaf:firstName   "Alisdair"@en .
+
+pm_person:ReikoMotohashi
+        a                foaf:Person ;
+        rdfs:label       "本橋 令子"@ja , "MOTOHASHI, Reiko"@en ;
+        :affiliation     pm_org:ShizuokaUnivAgri ;
+        foaf:familyName  "本橋"@ja , "MOTOHASHI"@en ;
+        foaf:firstName   "令子"@ja , "Reiko"@en ;
+        foaf:mbox        "mailto:armotoh@ipc.shizuoka.ac.jp"^^xsd:anyURI .
+
+pm_person:TutomuHosouchi
+        a                foaf:Person ;
+        rdfs:label       "HOSOUCHI Tutomu"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "HOSOUCHI"@en ;
+        foaf:firstName   "Tutomu"@en .
+        
+pm_person:JoshClevenger
+        a                foaf:Person ;
+        rdfs:label       "Josh Clevenger"@en ;
+        :Orcid           "0000-0002-9830-9481" ;
+        :affiliation     pm_org:OhaioUnivAgri ;
+        foaf:familyName  "Clevenger"@en ;
+        foaf:firstName   "Josh"@en .
+
+pm_org:NagoyaUnivBio  a  org:Organization ;
+        rdfs:label      "名古屋大学大学院 生命農学研究科"@ja , "Graduate School of Bioagricultural Sciences, Nagoya University"@en ;
+        :postalAddress  "〒464-8601 名古屋市千種区不老町"@ja , "Furo-cho, Chikusa-ku, Nagoya 464-8601, Japan"@en ;
+        foaf:page       "https://www.agr.nagoya-u.ac.jp/"^^xsd:anyURI .
+
+pm_person:YoshioTamura
+        a                foaf:Person ;
+        rdfs:label       "田村 祥雄"@ja , "TAMURA Yoshio"@en ;
+        :affiliation     pm_org:TsukubaUnivGSLifeEnvSci ;
+        foaf:familyName  "田村"@ja , "TAMURA"@en ;
+        foaf:firstName   "祥雄"@ja , "Yoshio"@en .
+
+pm_org:ShizuokaUnivAgri
+        a               org:Organization ;
+        rdfs:label      "静岡大学 農学部"@ja , "Department of Agriculture, Shizuoka University"@en ;
+        :postalAddress  "〒422-8529 静岡市駿河区大谷836"@ja , "836 Ohya,Suruga-ku,Shizuoka 422-8529,Japan"@en ;
+        foaf:page       "http://www.agr.shizuoka.ac.jp/"^^xsd:anyURI .
+
+pm_person:JunjiKimbara
+        a                foaf:Person ;
+        rdfs:label       "金原 淳司"@ja , "KIMBARA Junji"@en ;
+        :affiliation     pm_org:KagomeCo , pm_org:TsukubaUnivGSLifeEnvSci ;
+        foaf:familyName  "金原"@ja , "KIMBARA"@en ;
+        foaf:firstName   "淳司"@ja , "Junji"@en .
+
+pm_person:CelineDiaz  a  foaf:Person ;
+        rdfs:label       "Celine Diaz"@en ;
+        :affiliation     pm_org:RikenPSC ;
+        foaf:familyName  "Diaz"@en ;
+        foaf:firstName   "Celine"@en .
+
+pm_person:YokoShinbo  a  foaf:Person ;
+        rdfs:label       "SHINBO Yoko"@en ;
+        :affiliation     pm_org:NAIST ;
+        foaf:familyName  "SHINBO"@en ;
+        foaf:firstName   "Yoko"@en .
+
+pm_person:KiyotakaOkada
+        a                foaf:Person ;
+        rdfs:label       "岡田 清孝"@ja , "OKADA Kiyotaka"@en ;
+        :affiliation     pm_org:NIBBplantOrgan ;
+        foaf:familyName  "岡田"@ja , "OKADA"@en ;
+        foaf:firstName   "清孝"@ja , "Kiyotaka"@en .
+
+pm_person:HiroshiTsugawa
+        a                foaf:Person ;
+        rdfs:label       "TSUGAWA Hiroshi"@en , "津川 裕司"@ja ;
+        :Orcid           "0000-0002-2015-3958" ;
+        :affiliation     pm_org:OsakaUniv , pm_org:RikenIMS , pm_org:RikenCSRS ;
+        foaf:familyName  "TSUGAWA"@en , "津川"@ja ;
+        foaf:firstName   "裕司"@ja , "Hiroshi"@en ;
+        foaf:mbox        "mailto:hiroshi.tsugawa@riken.jp"^^xsd:anyURI .
+
+pm_person:NaokoWaki  a   foaf:Person ;
+        rdfs:label       "WAKI Naoko"@en ;
+        :affiliation     pm_org:KagomeCoLtdJp , pm_org:KyotoUnivGSAgriculture ;
+        foaf:familyName  "WAKI"@en ;
+        foaf:firstName   "Naoko"@en .
+
+pm_person:SayakaShinpo
+        a                foaf:Person ;
+        rdfs:label       "SHINPO Sayaka"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "SHINPO"@en ;
+        foaf:firstName   "Sayaka"@en .
+
+pm_person:RihitoTakisawa
+        a                foaf:Person ;
+        rdfs:label       "TAKISAWA Rihito"@en ;
+        :affiliation     pm_org:KyotoUnivExpFarm ;
+        foaf:familyName  "TAKISAWA"@en ;
+        foaf:firstName   "Rihito"@en .
+
+pm_person:KazuyoshiKitazaki
+        a                foaf:Person ;
+        rdfs:label       "北﨑 一義"@ja , "KITAZAKI Kazuyoshi"@en ;
+        :affiliation     pm_org:HokkaidoUnivAgri , pm_org:Denken ;
+        foaf:familyName  "北﨑"@ja , "KITAZAKI"@en ;
+        foaf:firstName   "一義"@ja , "Kazuyoshi"@en .
+
+pm_person:RyosukeSasaki
+        a                foaf:Person ;
+        rdfs:label       "SASAKI Ryosuke"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "SASAKI"@en ;
+        foaf:firstName   "Ryosuke"@en .
+
+pm_org:KumamotoUnivGSMedSciMolGen
+        a               org:Organization ;
+        rdfs:label      "熊本大学大学院 医学教育部分子遺伝学科"@ja , "Department of Molecular Genetics, Graduate School of Medical Sciences, Kumamoto University"@en ;
+        :postalAddress  "〒860-8556 熊本県熊本市中央区本荘１丁目１−１"@ja , "1-1-1 Honjo, Chuo-ku, Kumamoto 860-8556, Japan"@en ;
+        foaf:page       "http://www.medphas.kumamoto-u.ac.jp/medgrad/"^^xsd:anyURI .
+
+pm_person:HirokiKusuda
+        a                foaf:Person ;
+        rdfs:label       "楠田 弘毅"@ja , "KUSUDA Hiroki"@en ;
+        :affiliation     pm_org:TokyoUnivAgriGrad ;
+        foaf:familyName  "楠田"@ja , "KUSUDA"@en ;
+        foaf:firstName   "弘毅"@ja , "Hiroki"@en .
+
+pm_person:TeruoKawada
+        a                foaf:Person ;
+        rdfs:label       "KAWADA Teruo"@en ;
+        :affiliation     pm_org:KyotoUnivGSAgriculture ;
+        foaf:familyName  "KAWADA"@en ;
+        foaf:firstName   "Teruo"@en .
+
+pm_person:KaoruUrano  a  foaf:Person ;
+        rdfs:label       "URANO Kaoru"@en ;
+        :affiliation     pm_org:RikenTsukuba ;
+        foaf:familyName  "URANO"@en ;
+        foaf:firstName   "Kaoru"@en .
+
+pm_person:TakaoShimizu
+        a                foaf:Person ;
+        rdfs:label       "SHIMIZU Takao"@en ;
+        :affiliation     pm_org:TokyoUnivMedicineBioMol ;
+        foaf:familyName  "SHIMIZU"@en ;
+        foaf:firstName   "Takao"@en .
+
+pm_person:YasukiMatsumura
+        a                foaf:Person ;
+        rdfs:label       "MATSUMURA Yasuki"@en ;
+        :affiliation     pm_org:KyotoUnivGSAgriculture ;
+        foaf:familyName  "MATSUMURA"@en ;
+        foaf:firstName   "Yasuki"@en .
+
+pm_person:YokoIde  a     foaf:Person ;
+        rdfs:label       "IDE Yoko"@en ;
+        :affiliation     pm_org:TokyoUnivBiotech ;
+        foaf:familyName  "IDE"@en ;
+        foaf:firstName   "Yoko"@en .
+
+pm_person:YasuyukiNishikawa
+        a                foaf:Person ;
+        rdfs:label       "NISHIKAWA Yasuyuki"@en ;
+        :affiliation     pm_org:ChibaPrefAgriResCenter ;
+        foaf:familyName  "NISHIKAWA"@en ;
+        foaf:firstName   "Yasuyuki"@en .
+
+pm_person:EiichiroFukusaki
+        a                foaf:Person ;
+        rdfs:label       "福崎 英一郎"@ja , "FUKUSAKI Eiichiro"@en ;
+        :affiliation     pm_org:OsakaUniv ;
+        foaf:familyName  "福崎"@ja , "FUKUSAKI"@en ;
+        foaf:firstName   "英一郎"@ja , "Eiichiro"@en ;
+        foaf:mbox        "mailto:fukusaki@bio.eng.osaka-u.ac.jp"^^xsd:anyURI .
+
+pm_person:HiroshiNishida
+        a                foaf:Person ;
+        rdfs:label       "NISHIDA Hiroshi"@en ;
+        :affiliation     pm_org:KDRI ;
+        foaf:familyName  "NISHIDA"@en ;
+        foaf:firstName   "Hiroshi"@en .
+
+pm_person:YoshihikoOnda
+        a                foaf:Person ;
+        rdfs:label       "恩田 義彦"@ja , "ONDA Yoshihiko"@en ;
+        :affiliation     pm_org:RikenCSRS ;
+        foaf:familyName  "恩田"@ja , "ONDA"@en ;
+        foaf:firstName   "義彦"@ja , "Yoshihiko"@en .
+
+pm_person:TakashiAsano
+        a                foaf:Person ;
+        rdfs:label       "ASANO Takashi"@en ;
+        :affiliation     pm_org:ChibaUnivGSPharmaceuticalSci ;
+        foaf:familyName  "ASANO"@en ;
+        foaf:firstName   "Takashi"@en .
+
+pm_org:NIG  a           org:Organization ;
+        rdfs:label      "国立遺伝学研究所"@ja , "National Institute of Genetics"@en ;
+        :postalAddress  "〒411-8540 静岡県三島市谷田1111"@ja , "Yata 1111, Mishima City, 411-8540 Shizuoka, Japan"@en ;
+        skos:altLabel   "NIG"@en ;
+        foaf:page       "https://www.nig.ac.jp/"^^xsd:anyURI .
+
+pm_person:KomakiInoue
+        a                foaf:Person ;
+        rdfs:label       "井上 小槙"@ja , "INOUE Komaki"@en ;
+        :Orcid           "0000-0002-7645-7862" ;
+        :affiliation     pm_org:RikenCSRS ;
+        foaf:familyName  "井上"@ja , "INOUE"@en ;
+        foaf:firstName   "小槙"@ja , "Komaki"@en .
+
+pm_person:MakotoSuzuki
+        a                foaf:Person ;
+        rdfs:label       "SUZUKI Makoto"@en ;
+        :affiliation     pm_org:ChibaUnivGSPharmaceuticalSci , pm_org:RikenPSC ;
+        foaf:familyName  "SUZUKI"@en ;
+        foaf:firstName   "Makoto"@en .
+
+pm_person:NorihitoNakamichi
+        a                foaf:Person ;
+        rdfs:label       "中道 範人"@ja , "NAKAMICHI Norihito"@en ;
+        :affiliation     pm_org:RikenPSC ;
+        foaf:familyName  "中道"@ja , "NAKAMICHI"@en ;
+        foaf:firstName   "範人"@ja , "Norihito"@en .
+
+pm_person:ShingoTakahashi
+        a                foaf:Person ;
+        rdfs:label       "TAKAHASHI Shingo"@en ;
+        :affiliation     pm_org:KagomeCoLtdJp , pm_org:KyotoUnivGSAgriculture ;
+        foaf:familyName  "TAKAHASHI"@en ;
+        foaf:firstName   "Shingo"@en .
+
+pm_person:ToshioAoki  a  foaf:Person ;
+        rdfs:label       "AOKI Toshio"@en ;
+        :affiliation     pm_org:NihonUnivGSBioresourceSci ;
+        foaf:familyName  "AOKI"@en ;
+        foaf:firstName   "Toshio"@en .
+
+pm_org:HokkaidoUnivAgri
+        a               org:Organization ;
+        rdfs:label      "北海道大学 農学部"@ja , "Research Faculty of Agriculture, Hokkaido University"@en ;
+        :postalAddress  "〒060-8589 札幌市北区北9条西9丁目"@ja , "Kita 9, Nishi 9, Kita-ku,Sapporo, Hokkaido,060-0808 Japan"@en ;
+        foaf:page       "https://www.agr.hokudai.ac.jp/"^^xsd:anyURI .
+
+pm_person:YukikoNakamura
+        a                foaf:Person ;
+        rdfs:label       "NAKAMURA Yukiko"@en ;
+        :affiliation     pm_org:NAIST , pm_org:EhimeWomenCollege , pm_org:KDRI ;
+        foaf:familyName  "NAKAMURA"@en ;
+        foaf:firstName   "Yukiko"@en .
+
+pm_person:OliverFiehn
+        a                foaf:Person ;
+        rdfs:label       "Oliver Fiehn"@en ;
+        :Orcid           "0000-0002-6261-8928" ;
+        :affiliation     pm_org:KingAbdulazizUniv , pm_org:UnivCADavis ;
+        foaf:familyName  "Fiehn"@en ;
+        foaf:firstName   "Oliver"@en .
+
+
+pm_org:OsakaUnivBioinfo
+        a               org:Organization ;
+        rdfs:label      "大阪大学大学院 情報科学研究科 バイオ情報工学専攻"@ja , "Department of Bioinformatic Engineering, Graduate School of Information Science and Technology, Osaka University"@en ;
+        :postalAddress  "〒565-0871 大阪府吹田市山田丘2-1"@ja , "2-1 Yamadaoka, Suita, Osaka 565-0871, Japan"@en ;
+        foaf:page       "http://www.ist.osaka-u.ac.jp/"^^xsd:anyURI .
+
+pm_org:AIST  a          org:Organization ;
+        rdfs:label      "国立研究開発法人 産業技術総合研究所 生物プロセス研究部門"@ja , "Bioproduction Research Institute, National Institute of Advanced Industrial Science and Technology"@en ;
+        :postalAddress  "〒305-0046 茨城県つくば市東１丁目１−１"@ja , "1-1-1 Higashi, Tsukuba, Ibaraki 305-0046, Japan"@en ;
+        foaf:page       "https://unit.aist.go.jp/bpri/index.html"^^xsd:anyURI .
+
+
+pm_org:TokyoUnivBiotech
+        a               org:Organization ;
+        rdfs:label      "東京大学 生物生産工学研究センター"@ja , "Biotechnology Research Center, University of Tokyo"@en ;
+        :postalAddress  "〒113-0032 東京都文京区弥生１丁目１"@ja , "1-1-1, Yayoi, Bunkyo-ku, Tokyo 113-8657, Japan"@en ;
+        foaf:page       "http://park.itc.u-tokyo.ac.jp/biotec-res-ctr/index.html"^^xsd:anyURI .
+
+pm_org:TsukubaUnivGSLifeEnvSci
+        a               org:Organization ;
+        rdfs:label      "筑波大学大学院　生命環境科学研究科"@ja , "Graduate School of Life and Environmental Sciences, University of Tsukuba"@en ;
+        :postalAddress  "〒305-8572 茨城県つくば市天王台1-1-1"@ja , "Tennodai 1-1-1, Tsukuba, 305-8572, Japan"@en ;
+        foaf:page       "http://www.life.tsukuba.ac.jp/"^^xsd:anyURI .
+
+
+pm_org:OsakaUniv  a     org:Organization ;
+        rdfs:label      "大阪大学大学院 工学研究科 生命先端工学専攻"@ja , "Department of Biotechnology, Graduate School of Engineering, Osaka University"@en ;
+        :postalAddress  "〒565-0871 大阪府吹田市山田丘2-1"@ja , "2-1 Yamadaoka, Suita, Osaka 565-0871, Japan"@en ;
+        foaf:page       "http://www.bio.eng.osaka-u.ac.jp/"^^xsd:anyURI .
+
+pm_org:Monsanto  a      org:Organization ;
+        rdfs:label      "Monsanto Company"@en ;
+        :postalAddress  "800 N. Lindbergh Boulevard, St. Louis, MO 63167"@en .
+
+pm_org:TohokuUnivEng  a  org:Organization ;
+        rdfs:label      "東北大学大学院 工学研究科"@ja , "Graduate School of Engineering, Tohoku University"@en ;
+        :postalAddress  "〒980-8579 宮城県仙台市青葉区青葉山6-6-07"@ja , "Aobayama 6-6-07, Sendai 980-8579, Japan"@en ;
+        foaf:page       "https://www.eng.tohoku.ac.jp/"^^xsd:anyURI .
+
+pm_org:RikenCSRS  a     org:Organization ;
+        rdfs:label      "理化学研究所 環境資源科学研究センター"@ja , "RIKEN Center for Sustainable Resource Science"@en ;
+        :postalAddress  "〒230-0045 神奈川県横浜市鶴見区末広町1丁目7番22号"@ja , "1-7-22 Suehiro, Tsurumi, Yokohama, Kanagawa 230-0045 Japan"@en ;
+        foaf:page       "http://www.csrs.riken.jp"^^xsd:anyURI .
+
+pm_org:KyotoUnivGSBiosutdies
+        a               org:Organization ;
+        rdfs:label      "京都大学大学院 生命科学研究科"@ja , "Graduate School of Biosutdies, Kyoto University"@en ;
+        :postalAddress  "〒606-8501 京都市左京区吉田近衛町"@ja , "Yoshida-Konoecho, Sakyo-ku, Kyoto 606-8501 Japan"@en ;
+        foaf:page       "http://www.lif.kyoto-u.ac.jp/e/"^^xsd:anyURI .
+
+pm_org:NagoyaUnivBBCenter
+        a               org:Organization ;
+        rdfs:label      "名古屋大学生物機能開発利用研究センター"@ja , "Bioscience and Biotechnology Center, Nagoya University"@en ;
+        :postalAddress  "〒464-8601 名古屋市千種区不老町"@ja , "Furo-cho, Chikusa-ku, Nagoya 464-8601, Japan"@en ;
+        foaf:page       "http://bbc.agr.nagoya-u.ac.jp/"^^xsd:anyURI .
+
+pm_org:KonkukUniv  a    org:Organization ;
+        rdfs:label      "Department of Bioscience and Biotechnology, Konkuk University"@en ;
+        :postalAddress  "120 Neungdong-ro, Gwangjin-gu, Seoul 05029, Korea"@en ;
+        foaf:page       "http://www.konkuk.ac.kr/"^^xsd:anyURI .
+
+pm_org:NIAS  a          org:Organization ;
+        rdfs:label      "国立研究開発法人 農業生物資源研究所"@ja , "National Institute of Agrobiological Sciences"@en ;
+        :postalAddress  "〒305-8602 茨城県つくば市観音台2-1-2"@ja , "2-1-2 Kannondai, Tsukuba, Ibaraki 305-8602, Japan"@en ;
+        skos:altLabel   "NIAS"@en .
+
+pm_org:ChibaPrefAgriResCenter
+        a               org:Organization ;
+        rdfs:label      "千葉県農業総合研究センター"@ja , "Chiba Prefectural Agriculture Research Center"@en ;
+        :postalAddress  "〒266-0006 千葉県千葉市緑区大膳野町８０８"@ja , "808 Ozonocho, Midoriku, Chiba-shi, Chiba 266-0006, Japan"@en ;
+        foaf:page       "https://www.pref.chiba.lg.jp/lab-nourin/"^^xsd:anyURI .
+
+pm_org:ChibaUnivGSPharmaceuticalSci
+        a               org:Organization ;
+        rdfs:label      "千葉大学大学院 薬学研究院 遺伝子資源応用研究室"@ja , "Department of Molecular Biology and Biotechnology, Graduate School of Pharmaceutical Sciences, Chiba University"@en ;
+        :postalAddress  "〒260-8675 千葉市中央区亥鼻1-8-1"@ja , "1-8-1 Inohana, Chuo-ku, Chiba 260-8675 JAPAN"@en ;
+        foaf:page       "http://www.p.chiba-u.jp/lab/idenshi/index-e.html"^^xsd:anyURI .
+
+
+pm_org:TohokuUnivAgri
+        a               org:Organization ;
+        rdfs:label      "東北大学大学院 農学研究科"@ja , "Graduate School of Agricultural Science, Tohoku University"@en ;
+        :postalAddress  "〒980-8572 仙台市青葉区荒巻字青葉468-1"@ja , "468-1 Aoba, Aramaki-Aza, Aoba-ku, Sendai 980-8572, Japan"@en ;
+        foaf:page       "http://www.agri.tohoku.ac.jp/"^^xsd:anyURI .
+
+pm_org:KingAbdulazizUniv
+        a               org:Organization ;
+        rdfs:label      "Department of Biochemistry, Faculty of Sciences, King Abdulaziz University"@en ;
+        :postalAddress  "Jeddah, Saudi Arabia"@en ;
+        foaf:page       "https://sciences.kau.edu.sa/"^^xsd:anyURI .
+
+pm_org:KyotoUnivGSAgriculture
+        a               org:Organization ;
+        rdfs:label      "京都大学大学院 農学研究科"@ja , "Graduate School of Agriculture, Kyoto University, Japan"@en ;
+        :postalAddress  "〒606-8502 京都市左京区北白川追分町"@ja , "Kitashirakawa Oiwake-cho, Sakyo-ku, Kyoto 606-8502, Japan"@en ;
+        foaf:page       "https://www.kais.kyoto-u.ac.jp/english/"^^xsd:anyURI .
+
+
+pm_org:TokyoUnivAgriGrad
+        a               org:Organization ;
+        rdfs:label      "東京大学大学院 農学生命科学研究科·農学部"@ja , "Graduate School of Agricultural and Life Sciences, The University of Tokyo"@en ;
+        :postalAddress  "〒113-8657 東京都文京区弥生1-1-1"@ja , "1-1-1, Yayoi, Bunkyo-ku, Tokyo, 113-8657, JAPAN"@en ;
+        foaf:page       "https://www.a.u-tokyo.ac.jp/"^^xsd:anyURI .
+
+pm_org:USMUniv  a       org:Organization ;
+        rdfs:label      "Universidad Técnica Federico Santa María"@en ;
+        :postalAddress  "Avenida España 1680, Valparaíso, Chile"@en ;
+        foaf:page       "https://www.usm.cl/"^^xsd:anyURI .
+
+pm_org:NAIST  a         org:Organization ;
+        rdfs:label      "奈良先端科学技術大学院大学"@ja , "Nara Institute of Science and Technology"@en ;
+        :postalAddress  "〒630-0192 奈良県生駒市高山町8916-5"@ja , "8916-5 Takayama, Ikoma, NARA 630-0192 JAPAN"@en ;
+        skos:altLabel   "NAIST"@en ;
+        foaf:page       "http://www.naist.jp/"^^xsd:anyURI .
+
+pm_org:TokiwaPhytoCoLtdJp
+        a               org:Organization ;
+        rdfs:label      "株式会社常盤植物科学研究所"@ja , "Tokiwa Phytochemical Co.,Ltd."@en ;
+        :postalAddress  "〒285-0801 千葉県佐倉市木野子158"@ja , "158 Kinoko, Sakura, Chiba 285-0801, Japan"@en ;
+        foaf:page       "https://www.tokiwaph.co.jp/"^^xsd:anyURI .
+
+pm_org:TokyoUnivMedicineBioMol
+        a               org:Organization ;
+        rdfs:label      "東京大学 医学部生化学・分子生物学科"@ja , "Department of Biochemistry and Molecular Biology, Faculty of Medicine, The University of Tokyo"@en ;
+        :postalAddress  "〒113-0033 東京都文京区本郷7-3-1"@ja , "7-3-1 Hongo, Bunkyo-ku, Tokyo 113-0033, Japan"@en ;
+        foaf:page       "https://www.u-tokyo.ac.jp/ja/index.html"^^xsd:anyURI .
+
+pm_org:NihonUnivGSBioresourceSci
+        a               org:Organization ;
+        rdfs:label      "日本大学大学院 生物資源科学部"@ja , "Graduate School of Bioresource Sciences, Nihon University, Japan"@en ;
+        :postalAddress  "〒252-8510 神奈川県藤沢市亀井野1866"@ja , "1866, Kameino, Fujisawa-shi, Kanagawa 252-8510, Japan"@en ;
+        foaf:page       "http://www.nihon-u.ac.jp/en/academics/graduates/brs/"^^xsd:anyURI .
+
+pm_org:KyotoUnivBot  a  org:Organization ;
+        rdfs:label      "京都大学大学院 理学研究科 生物科学専攻 植物学教室"@ja , "Department of Botany, Graduate School of Science, Kyoto University"@en ;
+        :postalAddress  "〒606-8502 京都市左京区北白川追分町"@ja , "Sakyo-ku, Kyoto 606-8502, Japan"@en ;
+        foaf:page       "http://www.bot.kyoto-u.ac.jp/"^^xsd:anyURI .
+
+pm_org:TokyoInstTechnoSchGSBiosciBiotech
+        a               org:Organization ;
+        rdfs:label      "東京工業大学 生命理工学研究科 生体システム専攻"@ja , "School and Graduate School of Bioscience and Biotechnology, Tokyo Institute of Technology, Japan"@en ;
+        :postalAddress  "〒152-8550 東京都目黒区大岡山2-12-1"@ja , "2-12-1 Ookayama, Meguro-ku, Tokyo 152-8550 Japan"@en ;
+        foaf:page       "http://www.bio.titech.ac.jp/english/"^^xsd:anyURI .
+
+pm_org:KiharaBR  a      org:Organization ;
+        rdfs:label      "横浜市立大学 木原生物学研究所"@ja , "Kihara Institute for Biological Research, Yokohama City University"@en ;
+        :postalAddress  "〒244-0813 神奈川県横浜市戸塚区舞岡町641-12"@ja , "641-12 Maioka-cho, Totsuka Ward, Yokohama 244-0813, Japan"@en ;
+        skos:altLabel   "KIBR"@en ;
+        foaf:page       "https://www.yokohama-cu.ac.jp/kihara/index.html"^^xsd:anyURI .
+
+pm_org:UnivCADavis  a   org:Organization ;
+        rdfs:label      "Genome Center, University of California Davis"@en ;
+        :postalAddress  "451 Health Science Dr, Davis, California, USA."@en ;
+        foaf:page       "https://genomecenter.ucdavis.edu/"^^xsd:anyURI .
+
+pm_org:RikenTsukuba  a  org:Organization ;
+        rdfs:label      "理化学研究所 筑波研究所"@ja , "RIKEN Tsukuba Institute, Japan"@en ;
+        :postalAddress  "〒305-0074 茨城県つくば市高野台3丁目1-1"@ja , "3-1-1, Koyadai,Tsukuba-shi, Ibaraki 305-0074, Japan"@en ;
+        foaf:page       "http://rtcweb.rtc.riken.jp/English/index-e.html"^^xsd:anyURI .
+
+pm_org:KyotoUnivExpFarm
+        a               org:Organization ;
+        rdfs:label      "京都大学大学院 農学研究科附属農場"@ja , "Experimental Farm of Kyoto University, Japan"@en ;
+        :postalAddress  "〒619-0218 京都府木津川市城山台4-2-1"@ja , "4-2-1, Shiroyamadai, Kizugawa-shi, Kyoto, 619-0218, Japan"@en ;
+        foaf:page       "http://www.farm.kais.kyoto-u.ac.jp"^^xsd:anyURI .
+
+pm_org:MaxPlanckMolecularPlantPhysiology
+        a               org:Organization ;
+        rdfs:label      "Max Planck Institute of Molecular Plant Physiology"@en ;
+        :postalAddress  "Am Mühlenberg 1, D-14476 Potsdam-Golm, Germany"@en ;
+        foaf:page       "https://www.mpimp-golm.mpg.de/2168/en"^^xsd:anyURI .
+
+pm_org:IwateUnivDepBiologChemFoodSciFaculAgriculture
+        a               org:Organization ;
+        rdfs:label      "岩手大学 農学部 応用生物化学科 食品化学研究室"@ja , "Department of Biological Chemistry and Food Science, Faculty of Agriculture, Iwate University"@en ;
+        :postalAddress  "〒020-8550 岩手県盛岡市上田3丁目18-8"@ja , "3-18-8, Ueda, Morioka-shi, Iwate 020-8550, Japan"@en ;
+        foaf:page       "http://www.agr.iwate-u.ac.jp/lab/食品化学研究室/"^^xsd:anyURI .
+
+pm_org:USDAplantScienceCenter
+        a               org:Organization ;
+        rdfs:label      "Donald Danforth Plant Science Center, United States Department of Agriculture"@en ;
+        :postalAddress  "975 North Warson Road, St. Louis, Missouri 63132"@en .
+
+pm_org:RikenIMS  a      org:Organization ;
+        rdfs:label      "理化学研究所 生命医科学研究センター"@ja , "RIKEN Center for Integrative Medical Sciences"@en ;
+        :postalAddress  "〒230-0045 神奈川県横浜市鶴見区末広町1丁目7番22号"@ja , "1-7-22 Suehiro, Tsurumi, Yokohama, Kanagawa 230-0045 Japan"@en ;
+        foaf:page       "http://www.ims.riken.jp/"^^xsd:anyURI .
+
+pm_org:TohokuUnivGSLifeSci
+        a               org:Organization ;
+        rdfs:label      "東北大学大学院 生命科学研究科"@ja , "Graduate School of Life Sciences, Tohoku University"@en ;
+        :postalAddress  "〒980-8577 宮城県仙台市青葉区片平2-1-1"@ja , "2-1-1 Katahira, Aoba-Ku, Sendai 980-8577, Japan"@en ;
+        foaf:page       "https://www.lifesci.tohoku.ac.jp/"^^xsd:anyURI .
+
+pm_org:JST  a           org:Organization ;
+        rdfs:label      "国立研究開発法人 科学技術振興機構"@ja , "Japan Science & Technology Agency"@en ;
+        :postalAddress  "〒332-0012 埼玉県川口市本町4-1-8"@ja , "4-1-8, Honcho, Kawaguchi-shi, Saitama 332-0012 Japan"@en ;
+        foaf:page       "https://www.jst.go.jp/"^^xsd:anyURI .
+
+pm_org:UnivRyukyusFaculAgriculture
+        a               org:Organization ;
+        rdfs:label      "琉球大学 農学部"@ja , "Faculty of Agriculture, University of the Ryukyus"@en ;
+        :postalAddress  "〒903-0213 沖縄県中頭郡西原町字千原1番地"@ja , "1 Senbaru, Nishihara-cho, Nakagami-gun, Okinawa 903-0213, Japan"@en ;
+        foaf:page       "http://www.agr.u-ryukyu.ac.jp/eng/"^^xsd:anyURI .
+
+pm_org:TokyoUnivGSMedicineMetabo
+        a               org:Organization ;
+        rdfs:label      "東京大学大学院 医学研究科メタボローム科"@ja , "Graduate School of Medicine, Department of Metabolome, The University of Tokyo"@en ;
+        :postalAddress  "〒113-0033 東京都文京区本郷7-3-1"@ja , "7-3-1 Hongo, Bunkyo-ku, Tokyo 113-0033, Japan"@en ;
+        foaf:page       "http://www.m.u-tokyo.ac.jp/index.html"^^xsd:anyURI .
+
+pm_org:TakaraBioDragon
+        a           org:Organization ;
+        rdfs:label  "タカラバイオ株式会社 ドラゴンジェノミクスセンター"@ja , "Dragon Genomics Center, TAKARA BIO INC."@en .
+
+pm_org:OhaioUnivAgri  a  org:Organization ;
+        rdfs:label      "Department of Horticulture and Crop Science, Ohio Agricultural Research and Development Center, The Ohio State University"@en ;
+        :postalAddress  "119 Williams Hall 1680 Madison Avenue, Wooster, OH 44691"@en ;
+        foaf:page       "https://hcs.osu.edu/"^^xsd:anyURI .
+
+pm_org:KDRI  a          org:Organization ;
+        rdfs:label      "公益財団法人 かずさDNA研究所"@ja , "Kazusa DNA Research Institute"@en ;
+        :postalAddress  "〒292-0818 千葉県木更津市かずさ鎌足2-6-7"@ja , "2-6-7 Kazusa-kamatari, Kisarazu, Chiba 292-0818, Japan"@en ;
+        skos:altLabel   "KDRI"@en ;
+        foaf:page       "http://www.kazusa.or.jp"^^xsd:anyURI .
+
+pm_org:OsakaUnivGSLifeEnvSci
+        a               org:Organization ;
+        rdfs:label      "大阪府立大学 生命環境科学研究科"@ja , "Graduate School of Life and Environmental Sciences, Osaka Prefecture University, Japan"@en ;
+        :postalAddress  "〒599-8531 大阪府堺市中区学園町1番1号"@ja , "1-1 Gakuen-cho,Nakaku, Sakai,Osaka 599-8531, Japan"@en ;
+        foaf:page       "http://www.bioenv.osakafu-u.ac.jp/eng/"^^xsd:anyURI .
+
+pm_org:KyushuUnivAgri
+        a               org:Organization ;
+        rdfs:label      "九州大学 農学部"@ja , "Faculty of Agriculture, Kyushu University"@en ;
+        :postalAddress  "〒812-8581 福岡市東区箱崎6丁目10番1号"@ja , "6-10-1 Hakozaki, Higashi-ku, Fukuoka-shi 812-8581, JAPAN"@en ;
+        foaf:page       "http://www.agr.kyushu-u.ac.jp/"^^xsd:anyURI .
+
+pm_org:NIBBplantOrgan
+        a               org:Organization ;
+        rdfs:label      "基礎生物学研究所 植物器官形成学研究室"@ja , "Laboratory of Plant Organ Development, National Institute for Basic Biology"@en ;
+        :postalAddress  "〒444-8585 愛知県岡崎市明大寺町字西郷中 38"@ja , "Nishigonaka 38, Myodaiji, Okazaki 444-8585 Aichi, Japan"@en .
+
+pm_org:KagomeCo  a      org:Organization ;
+        rdfs:label      "カゴメ株式会社 総合研究所"@ja , "Research and Development Division, Kagome Co., Ltd."@en ;
+        :postalAddress  "〒329-2762 栃木県那須塩原市西富山17"@ja , "17 Nishitomiyama, Nasushiobara, 329-2762, Japan"@en ;
+        foaf:page       "https://www.kagome.co.jp/"^^xsd:anyURI .
+
+<http://metadb.riken.jp/db/plantMetabolomics/0.1/Person/KeiichiMochida%20>
+        a                foaf:Person ;
+        rdfs:label       "持田 恵一"@ja , "MOCHIDA Keiichi"@en ;
+        :Orcid           "0000-0003-1299-0024" ;
+        :affiliation     pm_org:RikenCSRS ;
+        foaf:familyName  "持田"@ja , "MOCHIDA"@en ;
+        foaf:firstName   "恵一"@ja , "Keiichi"@en .
+
+pm_org:Denken  a        org:Organization ;
+        rdfs:label      "一般財団法人 電力中央研究所"@ja , "Central Research Institute of Electric Power Industry"@en ;
+        :postalAddress  "〒270-1194 千葉県我孫子市我孫子1646"@ja , "1646 Abiko, Abiko-shi, Chiba 270-1194 Japan"@en ;
+        skos:altLabel   "CRIEPI"@en ;
+        foaf:page       "https://criepi.denken.or.jp/"^^xsd:anyURI .
+
+pm_org:TokyoUnivPharmacyLifeSci
+        a               org:Organization ;
+        rdfs:label      "東京薬科大学"@ja , "Tokyo University of Pharmacy and Life Sciences"@en ;
+        :postalAddress  "〒192-0392 東京都八王子市堀之内1432-1"@ja , "1432-1 Horinouchi, Hachioji, Tokyo 192-0392, Japan"@en ;
+        foaf:page       "https://www.toyaku.ac.jp/"^^xsd:anyURI .
+
+pm_org:CREST  a         org:Organization ;
+        rdfs:label      "国立研究開発法人 科学技術振興機構"@ja , "CREST, Japan Science and Technology Agency (JST)"@en ;
+        :postalAddress  "〒332-0012 埼玉県川口市本町4-1-8"@ja , "4-1-8, Honcho, Kawaguchi-shi, Saitama 332-0012 Japan"@en ;
+        foaf:page       "https://www.jst.go.jp/kisoken/crest/"^^xsd:anyURI .
+
+pm_org:RikenPSC  a      org:Organization ;
+        rdfs:label      "理化学研究所 植物科学研究センター"@ja , "RIKEN Plant Science Center"@en ;
+        :postalAddress  "〒230-0045 神奈川県横浜市鶴見区末広町1丁目7番22号"@ja , "1-7-22 Suehiro, Tsurumi, Yokohama, Kanagawa 230-0045 Japan"@en .
+
+pm_org:KagomeCoLtdJp  a  org:Organization ;
+        rdfs:label      "カゴメ株式会社"@ja , "Kagome Co., Ltd., Japan"@en ;
+        :postalAddress  "〒460-0003 愛知県名古屋市中区錦3丁目14番15号"@ja , "3-14-15, Nishiki, Naka-ku, Nagoya, Aichi 460-0003, Japan"@en ;
+        foaf:page       "http://www.kagome.co.jp/english/"^^xsd:anyURI .
+
+pm_org:EhimeWomenCollege
+        a               org:Organization ;
+        rdfs:label      "愛媛女子短期大学"@ja , "Ehime Women’s College"@en ;
+        :postalAddress  "〒798-0025 愛媛県宇和島市伊吹町馬場421"@ja , "421 Baba Ibuki-cho, Uwajima, Ehime 798-0025, Japan"@en ;
+        foaf:page       "http://www.aitan.ac.jp/"^^xsd:anyURI .
+
+pm_org:NITE  a          org:Organization ;
+        rdfs:label      "独立行政法人 製品評価技術基盤機構"@ja , "National Institute of Technology and Evaluation"@en ;
+        :postalAddress  "〒292-0818 千葉県木更津市かずさ鎌足2-5-8"@ja , "2-5-8 Kazusa-kamatari, Kisarazu, Chiba 292-0818, Japan"@en ;
+        skos:altLabel   "NITE"@en ;
+        foaf:page       "https://www.nite.go.jp"^^xsd:anyURI .
+
+
+pmid:16739992  a  bibo:Article .
+pmid:17556050  a  bibo:Article .
+pmid:18028551  a  bibo:Article .

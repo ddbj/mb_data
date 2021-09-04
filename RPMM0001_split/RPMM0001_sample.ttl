@@ -1,0 +1,1659 @@
+# RPMM0001_def
+@prefix :      <http://metadb.riken.jp/ontology/plantMetabolomics/0.1/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix obo:   <http://purl.obolibrary.org/obo/> .
+
+# Sample/BioSample
+@prefix dcterms: <http://purl.org/dc/dcmitype/> . #Project, Experiment, Sample
+@prefix qudt:  <http://qudt.org/schema/qudt> .
+
+@prefix pm_sample: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Sample/> .
+@prefix pm_biosamp: <http://metadb.riken.jp/db/plantMetabolomics/0.1/BiologicalSample/> .
+@prefix pm_LightCond: <http://metadb.riken.jp/db/plantMetabolomics/0.1/LightCondition/> . # Sample → Experiment/Condition
+
+@prefix pm_samplePrep: <http://metadb.riken.jp/db/plantMetabolomics/0.1/SamplePreparation/> .
+@prefix pm_compound: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Compound/> .
+
+
+pm_sample:RPMM0001_GC_L_20_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_20_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_20_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_31_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_31_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_31_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_12_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_12_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_12_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_60_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_60_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_60_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_38_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_38_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_38_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_40_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_40_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_40_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_19_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_19_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_19_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_47_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_47_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_47_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_01_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_01_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_01_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_27_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_27_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_27_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_08_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_08_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_08_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_10_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_10_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_10_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_36_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_36_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_36_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_17_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_17_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_17_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_45_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_45_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_45_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_25_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_25_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_25_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_06_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_06_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_06_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_54_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_54_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_54_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_34_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_34_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_34_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_23_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_23_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_23_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_04_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_04_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_04_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_52_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_52_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_52_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_32_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_32_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_32_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_13_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_13_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_13_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_39_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_39_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_39_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_21_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_21_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_21_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_48_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_48_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_48_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_02_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_02_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_02_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_50_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_50_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_50_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+        
+pm_sample:RPMM0001_GC_L_28_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_28_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_28_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_30_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_30_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_30_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_09_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_09_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_09_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_57_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_57_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_57_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_11_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_11_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_11_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_37_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_37_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_37_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_18_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_18_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_18_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_46_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_46_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_46_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_26_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_26_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_26_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_35_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_35_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_35_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+pm_sample:RPMM0001_GC_L_16_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_16_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_16_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_alkanemix
+        a           :Sample ;
+        rdfs:label  "RPMM0001_sample_GC_alkanemix"@en ;
+        :compound   pm_compound:RPMM0001_GC_alkanemix .
+
+pm_sample:RPMM0001_GC_L_44_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_44_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_44_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_24_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_24_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_24_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_05_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_05_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_05_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_53_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_53_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_53_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_33_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_33_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_33_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_42_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_42_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_42_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_22_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_22_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_22_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_29_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_29_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_29_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_51_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_51_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_51_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_sample:RPMM0001_GC_L_03_1
+        a                   :Sample ;
+        rdfs:label          "RPMM0001_sample_GC_L_03_1"@en ;
+        :biologicalSample   pm_biosamp:RPMM0001_L_03_1 ;
+        :samplePreparation  pm_samplePrep:RPMM0001_GC .
+
+pm_biosamp:RPMM0001_L_32_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_32_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_32_1" .
+
+pm_biosamp:RPMM0001_L_50_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_50_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>mto1</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT3G01120" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_50_1" .
+
+pm_biosamp:RPMM0001_L_28_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_28_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_28_1" .
+
+pm_biosamp:RPMM0001_L_30_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_30_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;      
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_30_1" .
+
+pm_biosamp:RPMM0001_L_48_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_48_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>mto1</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT3G01120" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_48_1" .
+
+pm_biosamp:RPMM0001_L_12_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_12_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_12_1" .
+
+pm_biosamp:RPMM0001_L_39_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_39_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_39_1" .
+
+pm_biosamp:RPMM0001_L_19_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_19_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_19_1" .
+
+pm_biosamp:RPMM0001_L_21_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_21_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_21_1" .
+
+pm_biosamp:RPMM0001_L_01_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_01_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_01_1" .
+
+pm_biosamp:RPMM0001_L_08_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_08_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_08_1" .
+
+pm_biosamp:RPMM0001_L_10_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_10_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_10_1" .
+
+pm_biosamp:RPMM0001_L_57_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_57_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>mto1</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT3G01120" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_57_1" .
+
+pm_biosamp:RPMM0001_L_37_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_37_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_37_1" .
+
+pm_biosamp:RPMM0001_L_17_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_17_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_17_1" .
+
+pm_biosamp:RPMM0001_L_46_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_46_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>mto1</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT3G01120" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_46_1" .
+
+pm_biosamp:RPMM0001_L_26_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_26_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_26_1" .
+
+pm_biosamp:RPMM0001_L_06_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_06_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_06_1" .
+
+pm_biosamp:RPMM0001_L_35_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_35_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_35_1" .
+
+pm_biosamp:RPMM0001_L_44_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_44_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>mto1</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT3G01120" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_44_1" .
+
+pm_biosamp:RPMM0001_L_24_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_24_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_24_1" .
+
+pm_biosamp:RPMM0001_L_04_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_04_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_04_1" .
+
+pm_biosamp:RPMM0001_L_53_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_53_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>mto1</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT3G01120" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_53_1" .
+
+pm_biosamp:RPMM0001_L_33_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_33_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_33_1" .
+
+pm_biosamp:RPMM0001_L_13_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_13_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_13_1" .
+
+pm_biosamp:RPMM0001_L_42_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_42_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>mto1</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT3G01120" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_42_1" .
+
+pm_biosamp:RPMM0001_L_22_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_22_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_22_1" .
+
+pm_biosamp:RPMM0001_L_02_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_02_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_02_1" .
+
+pm_biosamp:RPMM0001_L_51_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_51_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>mto1</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT3G01120" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_51_1" .
+
+pm_biosamp:RPMM0001_L_31_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_31_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_31_1" .
+
+pm_biosamp:RPMM0001_L_29_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_29_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_29_1" .
+
+pm_biosamp:RPMM0001_L_09_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_09_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_09_1" .
+
+pm_biosamp:RPMM0001_L_11_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_11_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_11_1" .
+
+pm_biosamp:RPMM0001_L_60_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_60_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>mto1</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT3G01120" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_60_1" .
+
+pm_biosamp:RPMM0001_L_38_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_38_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_38_1" .
+
+pm_biosamp:RPMM0001_L_40_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_40_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_40_1" .
+
+pm_biosamp:RPMM0001_L_18_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_18_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_18_1" .
+
+pm_biosamp:RPMM0001_L_20_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_20_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_20_1" .
+
+pm_biosamp:RPMM0001_L_47_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_47_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>mto1</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT3G01120" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_47_1" .
+
+pm_biosamp:RPMM0001_L_27_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_27_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_27_1" .
+
+pm_biosamp:RPMM0001_L_36_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_36_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_36_1" .
+
+pm_biosamp:RPMM0001_L_16_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_16_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_16_1" .
+
+pm_biosamp:RPMM0001_L_45_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_45_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>mto1</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT3G01120" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_45_1" .
+
+pm_biosamp:RPMM0001_L_25_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_25_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_25_1" .
+
+pm_biosamp:RPMM0001_L_05_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_05_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_05_1" .
+
+pm_biosamp:RPMM0001_L_54_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_54_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>mto1</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT3G01120" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_54_1" .
+
+pm_biosamp:RPMM0001_L_34_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_34_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_34_1" .
+
+pm_biosamp:RPMM0001_L_23_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_23_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>tt4</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT5G13930" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_23_1" .
+
+pm_biosamp:RPMM0001_L_03_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_03_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "(WT)" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_03_1" .
+
+pm_biosamp:RPMM0001_L_52_1
+        a                           :BiologicalSample ;
+        rdfs:label                  "RPMM0001_L_52_1"@en ;
+        :darkLength                 "PT8H" ;
+        :dateOfPlantEstablishment   "2006-04-04"^^xsd:date ;
+        :dayLength                  "PT16H" ;
+        :developmentStage           "18 days after sowing" ;
+        :genotype                   "Col-0" ;
+        :growthCondition            "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." ;
+        :growthLocation             "growth chambers" ;
+        :growthSupport              "agar" ;
+        :lightCondition             pm_LightCond:RPMM0001 ;
+        :metabolismQuenchingMethod  "Snap-freezing in liquid nitrogen within 15 sec of excision" ;
+        :mutant                     "<i>mto1</i>" ;
+        :nutritionalRegime          "Murashige and Skoog (MS) medium containing 1% sucrose" ;
+        :plantOrgan                 obo:PO_0009006 ;
+        :plotDesign                 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." ;
+        :relevantGene               "AT3G01120" ;
+        :sampleStorage              "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" ;
+        :samplingLocation           "Japan:Yokohama, RIKEN, Plant Science Cneter" ;
+        :samplingTime               "6 h after the onset of the bright phase" ;
+        :speciesName                "<i>Arabidopsis thaliana</i>" ;
+        :temperature                _:b0 ;
+        :wateringRegime             "No watering" ;
+        obo:RO_0002162              <http://purl.bioontology.org/ontology/NCBITAXON/3702> ;
+        dcterms:identifier          "L_52_1" .
+
+_:b0    a          :Temperature ;
+        rdf:value  "22.0"^^xsd:float ;
+        qudt:unit  obo:UO_0000027 .

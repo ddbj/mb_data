@@ -1,0 +1,213 @@
+## PREFIX
+
+@prefix foaf_person: <http://xmlns.com/foaf/0.1/Person/> .
+
+@prefix metadb_catalog: <http://metadb.riken.jp/db/DBcatalog/> .
+
+@prefix pm_uniAnalysis: <http://metadb.riken.jp/db/plantMetabolomics/0.1/UnivariateAnalysis/> .
+@prefix pm_sampleAmount: <http://metadb.riken.jp/db/plantMetabolomics/0.1/SampleAmount/> .
+@prefix pm_expFactor: <http://metadb.riken.jp/db/plantMetabolomics/0.1/ExperimentalFactor/> .
+
+@prefix pm_sampleExtProt: <http://metadb.riken.jp/db/plantMetabolomics/0.1/SampleExtractionProtocol/> .
+
+@prefix pm_voltage: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Voltage/> .
+@prefix pm_flowRate: <http://metadb.riken.jp/db/plantMetabolomics/0.1/FlowRate/> .
+@prefix pm_summarisation: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Summarisation/> .
+
+
+@prefix pm_material: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Metarial/> .
+@prefix pm_treatment: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Treatment/> .
+@prefix pm_expRegime: <http://metadb.riken.jp/db/plantMetabolomics/0.1/ExperimentalRegime/> .
+@prefix pm_length: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Length/> .
+
+@prefix pm_normal: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Normalisation/> .
+
+@prefix pm_visualisation: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Visualisation/> .
+@prefix pm_organ: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Organ/> .
+@prefix pm_concentration: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Concentration/> .
+
+@prefix pm_amd: <http://metadb.riken.jp/db/plantMetabolomics/0.1/AnnotationMethodDetails/> .
+@prefix pm_rawData: <http://metadb.riken.jp/db/plantMetabolomics/0.1/RawData/> .
+
+@prefix pm_preProcess: <http://metadb.riken.jp/db/plantMetabolomics/0.1/PreProcessing/> .
+@prefix pm_dataTrans: <http://metadb.riken.jp/db/plantMetabolomics/0.1/DataTransformation/> .
+
+
+@prefix pm_humidity: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Humidity/> .
+@prefix pm_tissue: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Tissue/> .
+@prefix pm_multiAnalysis: <http://metadb.riken.jp/db/plantMetabolomics/0.1/MultivariateAnalysis/> .
+@prefix pm_temperature: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Temperature/> .
+
+@prefix pm_energy: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Energy/> .
+
+@prefix pm_pressure: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Pressure/> .
+@prefix pm_peakFile: <http://metadb.riken.jp/db/plantMetabolomics/0.1/PeakFile/> .
+
+@prefix pm_time: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Time/> .
+
+@prefix pm_rawDataFileList: <http://metadb.riken.jp/db/plantMetabolomics/0.1/RawDataFileList/> .
+@prefix pm_scaling: <http://metadb.riken.jp/db/plantMetabolomics/0.1/Scaling/> .
+@prefix pm_expType: <http://metadb.riken.jp/db/plantMetabolomics/0.1/ExperimentType/> .
+@prefix pm_statDataAnalysis: <http://metadb.riken.jp/db/plantMetabolomics/0.1/StatisticalDataAnalsis/> .
+
+
+## TODO 
+
+
+```
+<http://purl.bioontology.org/ontology/NCBITAXON/3702>
+        a       owl:Class .
+
+<http://www.ebi.ac.uk/efo/EFO_0000752>
+        a       :ExperimentalFactor .
+
+<http://www.ebi.ac.uk/efo/EFO_0004020>
+        a       :ExperimentalFactor .
+
+<http://www.ebi.ac.uk/metabolights/MTBLS40>
+        a       rdfs:Resource .
+
+
+## ???
+
+
+[ a          :Concentration ;
+  rdf:value  "25.0"^^xsd:float ;
+  qudt:unit  obo:UO_0000176
+] .
+
+pm_samplePrep:RPMM0001_GC
+        a                          :SamplePreparation ;
+        :derivatisation            "For methoximation, 20 micloliter of methoxyamine hydrochloride (20 mg/ml in pyridine) was added to the sample. After 30 h of derivatization at room temperature, the sample was trimethylsilylated for 1 h using 20 microliter of MSTFA with 1% TMCS at 37 degree C with shaking. Twenty microliter of n-heptane was added following silylation. All the derivatization steps were performed in the vacuum glove box VSC-100 (Sanplatec, Japan) filled with 99.9995% (G3 grade) of dry nitrogen." ;
+        :extractStorage            "The rest of the extracts were stored in 1.5 ml clear round-bottom glass tubes at -20 degrees C. " ;
+        :extraction                "Each sample was extracted with a concentration of 25 mg fresh weight of tissues per microliter extraction medium (methanol/chloroform/water [3:1:1 v/v/v]) containing 10 stable isotope reference compounds using a Retsch mixer mill MM310 at a frequency of 30 Hz for 3 min at 4 degrees C."@en ;
+        :internalStandardCompound  "10 stable isotope reference compounds: [<sup>2</sup>H<sub>4</sub>]-succinic acid, [<sup>13</sup>C<sub>5</sub>,<sup>15</sup>N]-glutamic acid, [<sup>2</sup>H<sub>7</sub>]-cholesterol, [<sup>13</sup>C<sub>3</sub>]-myristic acid, [<sup>13</sup>C<sub>5</sub>]-proline, [<sup>13</sup>C<sub>12</sub>]-sucrose, [<sup>13</sup>C<sub>4</sub>]-hexadecanoic acid, [<sup>2</sup>H<sub>4</sub>]-1,4-butanediamine, [<sup>2</sup>H<sub>6</sub>]-2-hydoxybenzoic acid and [<sup>13</sup>C<sub>6</sub>]-glucose" ;
+        :sampleExtractionProtocol  pm_sampleExtProt:RPMM0001_GC .
+
+pm_preProcess:RPMM0001
+        a                    :PreProcessing ;
+        rdfs:label           "RPMM0001_PreProcessing"@en ;
+        :dataTransformation  pm_dataTrans:RPMM0001_01 ;
+        :normalisation       pm_normal:RPMM0001 ;
+        :software            "MATLAB 6.5 (Mathworks, Natick, MA, USA)" ;
+        dcterms:description  "Nonprocessed MS data from GC-TOF/MS analysis were exported in NetCDF format to MATLAB 6.5 (Mathworks, Natick, MA, USA), where all data-pretreatment procedures, such as smoothing, alignment, time-window setting, and H-MCR, were carried out (Jonsson et al. 2006)."@en .
+
+pm_sampleExtProt:RPMM0001_GC
+        a                      :SampleExtractionProtocol ;
+        :extractConcentration  [ a          :Concentration ;
+                                 rdf:value  "25.0"^^xsd:float ;
+                                 qudt:unit  pm_unit:milligram_per_microliter
+                               ] .
+
+pm_visualisation:RPMM0001_01
+        a           :Visualisation ;
+        rdfs:label  "RPMM0001_Visualisation: heatmap"@en ;
+        :software   "R" .
+
+pm_visualisation:RPMM0001_02
+        a           :Visualisation ;
+        rdfs:label  "RPMM0001_Visualisation: network"@en ;
+        :software   "Pajek" .
+
+
+pm_statDataAnalysis:RPMM0001_01
+        a           :StatisticalDataAnalysis ;
+        rdfs:label  "RPMM0001_Statistical Data Analysis: Welch's <i>t</i>-test"@en ;
+        :software   "R" .
+
+pm_statDataAnalysis:RPMM0001_02
+        a           :StatisticalDataAnalysis ;
+        rdfs:label  "RPMM0001_Statistical Data Analysis: Pearson's correlation coefficient (<i>r <sub>Met</sub></i>) test"@en ;
+        :software   "R" .
+
+pm_statDataAnalysis:RPMM0001_03
+        a           :StatisticalDataAnalysis ;
+        rdfs:label  "RPMM0001_Statistical Data Analysis: z-score of metabolite correlation (ZMC)"@en ;
+        :software   "R" .
+
+pm_amd:RPMM0001  a           :AnnotationMethodDetails ;
+        rdfs:label           "RPMM0001_Annotation Method Details"@en ;
+        :software            "our custom software for peak annotation written in JAVA." , "NIST mass spectral search program for the NIST/EPA/NIH mass spectral library (version 2.0)" ;
+        :spectralLibrary     "our own library" , "NIST/EPA/NIH mass spectral library (version 2.0)" , "GMD" ;
+        dcterms:description  "The resolved MS spectra were matched against reference mass spectra using the NIST mass spectral search program for the NIST/EPA/NIH mass spectral library (version 2.0) and our custom software for peak annotation written in JAVA. The metabolites were identified by comparison with RIs from the library databases (GMD and our own library) and with those of authentic standards, and the metabolites were defined as annotated metabolites on comparison with mass spectra and RIs from these two libraries."@en ;
+        dcterms:references   pmid:16739992 .
+
+pm_compound:RPMM0001_GC_alkanemix
+        a                   :Compound ;
+        rdfs:label          "Alkane standard mixtures (C8–C20 and C21–C40)"@en ;
+        :source             "purchased from Sigma–Aldrich (Tokyo, Japan)" ;
+        dcterms:references  pmid:17556050 .
+
+pm_expDesign:RPMM0001_GC
+        a                    :ExperimentalDesign ;
+        :experimentType      obo:CHMO_0000497 ;
+        :experimentalFactor  <http://www.ebi.ac.uk/efo/EFO_0000752> , <http://www.ebi.ac.uk/efo/EFO_0004020> .
+
+pm_massSpec:RPMM0001_GC
+        a                       :MassSpectrometry ;
+        :acquisitionRate        "30 spectra/s" ;
+        :capilaryTemperature    [ a          :Temperature ;
+                                  rdf:value  "300.0"^^xsd:float ;
+                                  qudt:unit  obo:UO_0000027
+                                ] ;
+        :fragmentationMethod    "EI" ;
+        :instrument             pm_instrument:MS_TOFPeg3 ;
+        :ionIsolation           "EI" ;
+        :ionIsolationEnergy     [ a          :Energy ;
+                                  rdf:value  "70.0"^^xsd:float ;
+                                  qudt:unit  obo:UO_0000266
+                                ] ;
+        :ionMode                "Positive" ;
+        :ionSource              "GC" ;
+        :ionSourceTemperature   [ a          :Temperature ;
+                                  rdf:value  "230.0"^^xsd:float ;
+                                  qudt:unit  obo:UO_0000027
+                                ] ;
+        :massAnalyser           pm_massAnalyser:TOF ;
+        :retenitionIndexMethod  "Alkane standard mixtures (C8–C20 and C21–C40) " ;
+        :scanMZRange            "m/z 60-800" .
+
+
+pm_normal:RPMM0001  a        :Normalisation ;
+        rdfs:label           "RPMM0001_Normalisation"@en ;
+        :normalisationType   obo:MSIO_0000140 ;
+        dcterms:description  "The normalized responses are peak areas corrected using the sample weight and a constant amount of the representative internal standard compound ([<sup>13</sup>C<sub>4<sub>]-hexadecanoic acid)."@en .
+
+pm_multiAnalysis:RPMM0001_PCA
+        a           :MultivariateAnalysis ;
+        rdfs:label  "RPMM0001_Multivariate Analysis: PCA"@en ;
+        :software   "SIMCA-P 11.0 software (Umetrics AB, Umeaa, Sweden)" .
+
+pm_multiAnalysis:RPMM0001_PLS-DA
+        a           :MultivariateAnalysis ;
+        rdfs:label  "RPMM0001_Multivariate Analysis: PLS-DA"@en ;
+        :software   "SIMCA-P 11.0 software (Umetrics AB, Umeaa, Sweden)" .
+
+pm_dataTrans:RPMM0001_01
+        a                        :DataTransformation ;
+        rdfs:label               "RPMM0001_Data Transformation: log<sub>10</sub>-transformed"@en ;
+        :dataTransformationType  obo:OBI_0200094 .
+
+
+pm_dataAnalysis:RPMM0001
+        a                         :DataAnalysis ;
+        rdfs:label                "RPMM0001_DataAnalysis"@en ;
+        :analysedDataset          pm_analysedDataset:RPMM0001 ;
+        :annotationMethodDetails  pm_amd:RPMM0001 ;
+        :multivariateAnalysis     pm_multiAnalysis:RPMM0001_PCA , pm_multiAnalysis:RPMM0001_PLS-DA ;
+        :preProcessing            pm_preProcess:RPMM0001 ;
+        :statisticalDataAnalysis  pm_statDataAnalysis:RPMM0001_01 , pm_statDataAnalysis:RPMM0001_02 , pm_statDataAnalysis:RPMM0001_03 ;
+        :visualisation            pm_visualisation:RPMM0001_02 , pm_visualisation:RPMM0001_01 .
+
+pm_chromato:RPMM0001_GC
+        a                     :Chromatography ;
+        :columnName           "30 m long, 0.25 mm internal diameter fused-silica capillary column with a chemically bound 0.25micro liter film Rtx-5 Sil MS staionary phase (RESTEK, Bellefonte, USA)" ;
+        :columnType           "low polarity" ;
+        :flowGas              "Helium" ;
+        :flowRate             [ a          :FlowRate ;
+                                rdf:value  "1.0"^^xsd:float ;
+                                qudt:unit  pm_unit:milliliter_per_minute
+                              ] ;
+        :instrument           pm_instrument:GC_Agilent6890N ;
+        :temperatureGradient  "The temperture program started with a 2-min isothermal step at 80 degrees C and this was followed by temperature ramping at 30 degrees C to a final temperature of 320 degrees C" .
+```
