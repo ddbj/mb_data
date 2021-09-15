@@ -1,0 +1,159 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix ddbj: <http://ddbj.nig.ac.jp/ontologies/core> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix mb: <http://ddbj.nig.ac.jp/resource/metabobank/> .
+@prefix mbv: <http://ddbj.nig.ac.jp/ontologies/metabobank/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sio: <https://semanticscience.org/resource/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321>
+    ddbj:contactPerson "Atsushi Fukushima" ;
+    ddbj:dblink <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#dataset> ;
+    ddbj:principalInvestigator "Atsushi Fukushima", "Kazuki Saito", "Miyako Kusano" ;
+    ddbj:submitter "Mikiko Takahashi" ;
+    dc:creator "Mikiko Takahashi" ;
+    dc:description "Metabolites are not only the catalytic products of enzymatic reactions but also the active regulators or the ultimate phenotype of metabolic homeostasis in highly complex cellular processes. The modes of regulation at the metabolome level can be revealed by metabolic networks. We investigated the metabolic network between wild-type and 2 mutant (<i>methionine-over accumulation 1</i> [<i>mto1</i>] and <i>transparent testa4</i> [<i>tt4</i>]) plants regarding the alteration of metabolite accumulation in <i>Arabidopsis thaliana</i>. In the GC-TOF/MS analysis, we acquired quantitative information regarding over 170 metabolites, which has been analyzed by a novel score (ZMC, z-score of metabolite correlation) describing a characteristic metabolite in terms of correlation. Although the 2 mutants revealed no apparent morphological abnormalities, the overall correlation values in <i>mto1</i> were much lower than those of the wild-type and <i>tt4</i> plants, indicating the loss of overall network stability due to the uncontrolled accumulation of methionine. In the <i>tt4</i> mutant, a new correlation between malate and sinapate was observed although the levels of malate, sinapate, and sinapoylmalate remain unchanged, suggesting an adaptive reconfiguration of the network. Gene-expression correlations presumably responsible for these metabolic networks were determined using the metabolite correlations as clues. Two Arabidopsis mutants, <i>mto1</i> and tt4, exhibited the following changes in entire metabolome networks: the overall loss of metabolic stability (<i>mto1</i>) or the generation of a metabolic network of a backup pathway for the lost physiological functions (<i>tt4</i>). The expansion of metabolite correlation to gene-expression correlation provides detailed insights into the systemic understanding of the plant cellular process regarding metabolome and transcriptome."@en ;
+    dc:identifier "MTBKS1", "RPMM0001" ;
+    a mbv:Project ;
+    rdfs:label "Unbiased characterization of genotype-dependent metabolic regulations by metabolomic approach in Arabidopsis thaliana"@en ;
+    rdfs:seeAlso <http://www.ebi.ac.uk/metabolights/MTBLS40> ;
+    foaf:fundedBy "Grant-in-Aid for Scientific Research on Priority Areas \"Systems Genomics\" from the Ministry of Education, Culture, Sports, Science and Technology of Japan"@en, "Grants-in-Aid for Scientific Research from the Japan Society of the Promotion of Science (JSPS)"@en, "Uehara Memorial Foundation"@en .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#F1>
+    ddbj:dblink <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#dataset> ;
+    ddbj:downloadURL "http%3A%2F%2Fmetabobank.riken.jp%2Fdata%2FRPMM0001%2FRawDataset%2FL_22_1.cdf" ;
+    dc:description "" ;
+    dc:format "nrn:mimetype:application/x-cdf" ;
+    dc:identifier "8a6feab9-925d-487a-b83e-f9b7b6193321#F1" ;
+    a mbv:File ;
+    rdfs:label "RPMM0001 Raw Data File(GC-MS):L_22_1.cdf" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#F2>
+    ddbj:dblink <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#dataset> ;
+    ddbj:downloadURL "http%3A%2F%2Fmetabobank.riken.jp%2Fdata%2FRPMM0001%2FRawDataset%2FABF%2FL_22_1.abf" ;
+    dc:description "" ;
+    dc:format "nrn:mimetype:application/x-abf" ;
+    dc:identifier "8a6feab9-925d-487a-b83e-f9b7b6193321#F2" ;
+    a mbv:File ;
+    rdfs:label "RPMM0001 Raw Data File(GC-MS):L_22_1.abf" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#F3>
+    ddbj:dblink <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#dataset> ;
+    ddbj:downloadURL "http%3A%2F%2Fmetabobank.riken.jp%2Fdata%2FRPMM0001%2FRawDataset%2FL_23_1.cdf" ;
+    dc:description "" ;
+    dc:format "nrn:mimetype:application/x-cdf" ;
+    dc:identifier "8a6feab9-925d-487a-b83e-f9b7b6193321#F3" ;
+    a mbv:File ;
+    rdfs:label "RPMM0001 Raw Data File(GC-MS):L_23_1.cdf" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1>
+    a mbv:Sample ;
+    sio:SIO_000008 <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#darkLength>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#dateOfPlantEstablishment>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#dayLength>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#developmentStage>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#genotype>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#growthCondition>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#growthLocation>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#growthSupport>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#lightCondition>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#metabolismQuenchingMethod>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#mutant>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#nutritionalRegime>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#plantOrgan>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#plotDesign>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#relevantGene>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#sampleStorage>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#samplingLocation>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#samplingTime>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#speciesName>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#temperature>, <http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#wateringRegime> .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#darkLength>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#darkLength> ;
+    rdfs:label "darkLength" ;
+    sio:SIO_000300 "PT8H" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#dateOfPlantEstablishment>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#dateOfPlantEstablishment> ;
+    rdfs:label "dateOfPlantEstablishment" ;
+    sio:SIO_000300 "2006-04-04" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#dayLength>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#dayLength> ;
+    rdfs:label "dayLength" ;
+    sio:SIO_000300 "PT16H" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#developmentStage>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#developmentStage> ;
+    rdfs:label "developmentStage" ;
+    sio:SIO_000300 "18 days after sowing" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#genotype>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#genotype> ;
+    rdfs:label "genotype" ;
+    sio:SIO_000300 "Col-0" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#growthCondition>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#growthCondition> ;
+    rdfs:label "growthCondition" ;
+    sio:SIO_000300 "The sterilized seeds were stratified at 5 degrees C for 2 d, and were successively sown on Murashige and Skoog (MS) medium containing 1% sucrose. Plants saw on the plate were grown in controlled growth chambers for 18 days. Aerial parts were harvested 6 h after the onset of the bright phase at 18 day after sowing." .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#growthLocation>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#growthLocation> ;
+    rdfs:label "growthLocation" ;
+    sio:SIO_000300 "growth chambers" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#growthSupport>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#growthSupport> ;
+    rdfs:label "growthSupport" ;
+    sio:SIO_000300 "agar" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#lightCondition>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#lightCondition> ;
+    rdfs:label "lightCondition" ;
+    sio:SIO_000300 "http://metadb.riken.jp/db/plantMetabolomics/0.1/LightCondition/RPMM0001" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#metabolismQuenchingMethod>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#metabolismQuenchingMethod> ;
+    rdfs:label "metabolismQuenchingMethod" ;
+    sio:SIO_000300 "Snap-freezing in liquid nitrogen within 15 sec of excision" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#mutant>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#mutant> ;
+    rdfs:label "mutant" ;
+    sio:SIO_000300 "<i>tt4</i>" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#nutritionalRegime>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#nutritionalRegime> ;
+    rdfs:label "nutritionalRegime" ;
+    sio:SIO_000300 "Murashige and Skoog (MS) medium containing 1% sucrose" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#plantOrgan>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#plantOrgan> ;
+    rdfs:label "plantOrgan" ;
+    sio:SIO_000300 "http://purl.obolibrary.org/obo/PO_0009006" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#plotDesign>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#plotDesign> ;
+    rdfs:label "plotDesign" ;
+    sio:SIO_000300 "Plants of the three genotypes were arranged randomly together on a plate. We prepared 9 plates to collect samples." .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#relevantGene>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#relevantGene> ;
+    rdfs:label "relevantGene" ;
+    sio:SIO_000300 "AT5G13930" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#sampleStorage>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#sampleStorage> ;
+    rdfs:label "sampleStorage" ;
+    sio:SIO_000300 "Tissue samples were stored in clear polypropylene microfuge tubes at -80 degrees C" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#samplingLocation>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#samplingLocation> ;
+    rdfs:label "samplingLocation" ;
+    sio:SIO_000300 "Japan:Yokohama, RIKEN, Plant Science Cneter" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#samplingTime>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#samplingTime> ;
+    rdfs:label "samplingTime" ;
+    sio:SIO_000300 "6 h after the onset of the bright phase" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#speciesName>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#speciesName> ;
+    rdfs:label "speciesName" ;
+    sio:SIO_000300 "<i>Arabidopsis thaliana</i>" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#temperature>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#temperature> ;
+    rdfs:label "temperature" ;
+    sio:SIO_000300 "_:nodeID://b10003" .
+
+<http://ddbj.nig.ac.jp/resource/metabobank/8a6feab9-925d-487a-b83e-f9b7b6193321#S1/attr#wateringRegime>
+    a <http://ddbj.nig.ac.jp/ontologies/metabobank/SampleAttribute#wateringRegime> ;
+    rdfs:label "wateringRegime" ;
+    sio:SIO_000300 "No watering" .
+
