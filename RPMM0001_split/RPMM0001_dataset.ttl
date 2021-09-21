@@ -10,11 +10,13 @@
 @prefix pm_rawDataset: <http://metadb.riken.jp/db/plantMetabolomics/0.1/RawDataset/> .
 @prefix pm_rawDataSet: <http://metadb.riken.jp/db/plantMetabolomics/0.1/RawDataSet/> .
 @prefix pm_analysedDataset: <http://metadb.riken.jp/db/plantMetabolomics/0.1/AnalysedDataset/> .
+
 @prefix pm_file: <http://metadb.riken.jp/db/plantMetabolomics/0.1/File/> .
 @prefix pm_normalMatFile: <http://metadb.riken.jp/db/plantMetabolomics/0.1/NormalisationDataMatrixFile/> .
 @prefix pm_statResFile: <http://metadb.riken.jp/db/plantMetabolomics/0.1/StatisticalResultsFile/> .
-@prefix pm_fileFormat: <http://metadb.riken.jp/db/plantMetabolomics/0.1/FileFormat/> .
 @prefix pm_massSpecFile: <http://metadb.riken.jp/db/plantMetabolomics/0.1/MassSpectraFile/> .
+
+@prefix pm_fileFormat: <http://metadb.riken.jp/db/plantMetabolomics/0.1/FileFormat/> .
 
 pm_analysedDataset:RPMM0001
         a                          :AnalysedDataset ;
