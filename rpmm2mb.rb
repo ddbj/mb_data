@@ -10,7 +10,7 @@ require 'uuid'
 ### new RDF
 #graph_new = RDF::Graph.new
 ### from sparql endpoint
-sparql = SPARQL::Client.new("https://mbs1.ddbj.nig.ac.jp/sparql")
+sparql = SPARQL::Client.new("https://mb2.ddbj.nig.ac.jp/sparql", {:read_timeout => 300})
 ### from file
 #if argv = ARGV.shift  
 #  repos = RDF::Repository.load(argv)
@@ -18,7 +18,7 @@ sparql = SPARQL::Client.new("https://mbs1.ddbj.nig.ac.jp/sparql")
 #end
 
 pmaps = {}
-file = "projects-MTBKS-2021-09-14.ttl"
+file = "mb_data/projects-MTBKS-2021-09-14.ttl"
 RDF::Reader.open(file) do |reader|
   reader.each_statement do |statement|
    #pid =  statement.subject.to_s.gsub('http://metadb.riken.jp/db/plantMetabolomics/0.1/Project/','')
@@ -55,10 +55,12 @@ def person uri
   uri.to_s.gsub('http://metadb.riken.jp/db/plantMetabolomics/0.1/Person/','').gsub(/([A-Z][a-z]+)([A-Z][a-z]+)/){ $1 + ' '+ $2 }
  end
 
+### Projects
 sparql.query(query_projects).each do |prjs|
    ps = prjs[:s].to_s
    graph_new = RDF::Graph.new
    pid = pmaps[ps]
+   subject_study = RDF::URI.new("#{pfx[:mb]}#{pmaps[ps]}")
    
    query_project ="
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -72,6 +74,11 @@ SELECT * WHERE
 }
 "
 
+#
+#
+# Study
+#
+#
 
 projects ={}
 # {"http://metadb.riken.jp/db/plantMetabolomics/0.1/Project/RPMM0001"=>
@@ -83,9 +90,13 @@ sparql.query(query_project).each do |result|
       unless projects.key?(s)
         projects[s] = pmaps[s] || SecureRandom.uuid
         subject = RDF::URI.new("#{pfx[:mb]}#{projects[s]}")
-        graph_new << RDF::Statement.new(subject, RDF::RDFV.type,RDF::URI.new("#{pfx[:mbv]}Project") )
+        graph_new << RDF::Statement.new(subject, RDF::RDFV.type,RDF::URI.new("#{pfx[:mbv]}Study") )
         graph_new << RDF::Statement.new(subject, RDF::URI.new("#{pfx[:ddbj]}dblink"), RDF::URI.new("#{subject}#dataset") )
+        graph_new << RDF::Statement.new(RDF::URI.new("#{subject}#dataset"), RDF::URI.new("http://www.w3.org/ns/dcat#downloadURL"),RDF::Literal.new("https://ddbj.nig.ac.jp/public/metabobank/study/#{projects[s]}/dataset/#{projects[s]}.zip", datatype: RDF::XSD.anyURL))
+        graph_new << RDF::Statement.new(RDF::URI.new("#{subject}#dataset"), RDF::URI.new("http://www.w3.org/ns/dcat#downloadURL"),RDF::Literal.new("https://ddbj.nig.ac.jp/public/metabobank/study/#{projects[s]}/dataset/#{projects[s]}.zip", datatype: RDF::XSD.anyURL))
         graph_new << RDF::Statement.new(subject, RDF::RDFS.seeAlso, result[:s])
+        uri = URI.parse(s)
+        graph_new << RDF::Statement.new(subject, RDF::Vocab::SKOS.hiddenLabel,File.basename(uri.path))
       end
       subject = RDF::URI.new("#{pfx[:mb]}#{projects[s]}")
       #subject = RDF::URI.new("#{projects[s]}")
@@ -95,6 +106,8 @@ sparql.query(query_project).each do |result|
         graph_new << RDF::Statement.new(subject, result[:p], result[:o])
       when "http://www.w3.org/2000/01/rdf-schema#seeAlso"
         graph_new << RDF::Statement.new(subject, result[:p], result[:o])
+        uri = URI.parse(result[:o].to_s)
+        graph_new << RDF::Statement.new(subject, RDF::Vocab::SKOS.hiddenLabel,File.basename(uri.path))
 			when "http://xmlns.com/foaf/0.1/fundedBy"
         graph_new << RDF::Statement.new(subject, result[:p], result[:o])
 			when "http://purl.org/dc/dcmitype/creator"
@@ -128,14 +141,20 @@ end
 #puts graph_new.dump(:turtle, standard_prefixes: true, prefixes: pfx)
 #exit
 
+
+#
+#
 # Experiment
+#
+#
+
 query_experiment ="
 PREFIX mb: <http://metadb.riken.jp/ontology/plantMetabolomics/0.1/>
 PREFIX dc: <http://purl.org/dc/dcmitype/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT
-  ?uri as ?s ?p ?o ?id ?project_id ?project
+  ?uri as ?s ?p ?o ?o_label ?id ?project_id ?project
 FROM <http://metadb.riken.jp/db/plantMetabolomics>
 WHERE {
     values ?type_uri {mb:Experiment}
@@ -145,6 +164,7 @@ WHERE {
     ?project (<>|!<>)* ?uri.
     ?project dc:identifier ?project_id.
     ?uri ?p ?o.
+    OPTIONAL{?o rdfs:label ?o_label. FILTER(lang(?o_label) ='en')}
 #    FILTER( ?project = <http://metadb.riken.jp/db/plantMetabolomics/0.1/Project/RPMM0001> ).
     FILTER( ?project = <#{ps}> ).
 }
@@ -157,6 +177,11 @@ WHERE {
 exps ={}
 exp_attrs = {}
 cnt = 0
+
+technologyType =[]
+technologyPlatform =[]
+measurementType =[]
+
 sparql.query(query_experiment).each do |result|
       #pp result.inspect
       puri = result[:project].to_s
@@ -171,6 +196,7 @@ sparql.query(query_experiment).each do |result|
 #      cnt > 1 and next
       mtbks_id = "#{projects[puri]}-E#{cnt}"
       subject_s = RDF::URI.new(exps[sid])
+      graph_new << RDF::Statement.new(subject_s, RDF::URI.new("#{pfx[:ddbj]}dblink"), subject_p)
       #graph_new << RDF::Statement.new(subject_s, RDF::RDFV.type,  RDF::URI.new("#{pfx[:mbv]}Experiment") )
       case result[:p].to_s
         when "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
@@ -183,6 +209,15 @@ sparql.query(query_experiment).each do |result|
             graph_new << RDF::Statement.new(subject_s, RDF::RDFS.label, result[:o] || "")
         when "http://metadb.riken.jp/ontology/plantMetabolomics/0.1/measurement"
             #warn result.inspect TODO: mesurement
+        when "http://metadb.riken.jp/ontology/plantMetabolomics/0.1/technologyType"
+            graph_new << RDF::Statement.new(subject_study, RDF::URI.new("#{pfx[:ddbj]}technologyType"), result[:o_label])
+            technologyType.push(result[:o_label].to_s)
+        when "http://metadb.riken.jp/ontology/plantMetabolomics/0.1/technologyPlatform"
+            graph_new << RDF::Statement.new(subject_study, RDF::URI.new("#{pfx[:ddbj]}technologyPlatform"), result[:o_label])
+            technologyPlatform.push(result[:o_label].to_s)
+        when "http://metadb.riken.jp/ontology/plantMetabolomics/0.1/measurementType"
+            graph_new << RDF::Statement.new(subject_study, RDF::URI.new("#{pfx[:ddbj]}measurementType"), result[:o_label])
+            measurementType.push(result[:o_label].to_s)
         when /http:\/\/metadb.riken.jp\/ontology\/plantMetabolomics\/0.1\/(.+)/
           #puts "##" +  $1 + "\t" + result[:o].to_s
           #node = RDF::Node.uuid
@@ -200,7 +235,11 @@ end
 #puts graph_new.dump(:turtle, standard_prefixes: true, prefixes: pfx)
 #exit
 
+#
+#
 # Sample
+#
+#
 query_sample ="
 PREFIX mb: <http://metadb.riken.jp/ontology/plantMetabolomics/0.1/>
 PREFIX dc: <http://purl.org/dc/dcmitype/>
@@ -250,6 +289,7 @@ sparql.query(query_sample).each do |result|
       subject_s = RDF::URI.new(samples[sid])
       mtbks_id = "#{projects[puri]}-S#{cnt}"
       graph_new << RDF::Statement.new(subject_s, RDF::RDFV.type,  RDF::URI.new("#{pfx[:mbv]}Sample") )
+      graph_new << RDF::Statement.new(subject_s, RDF::URI.new("#{pfx[:ddbj]}dblink"), subject_p)
       case result[:p].to_s
         when "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"
           graph_new << RDF::Statement.new(subject_s, RDF::RDFV.type, RDF::URI.new("#{pfx[:mbv]}Sample") )          
@@ -278,8 +318,14 @@ end
 #puts graph_new.dump(:turtle, standard_prefixes: true, prefixes: pfx)
 #exit
 
+#
+#
 # File
+#
+#
+
 query_file ="
+DEFINE sql:select-option 'order'
     PREFIX mb: <http://metadb.riken.jp/ontology/plantMetabolomics/0.1/>
     PREFIX dc: <http://purl.org/dc/dcmitype/>
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -293,6 +339,9 @@ query_file ="
       ?download_url
       ?name
       ?description 
+?technologyPlatformLabel
+# ?s ?p ?pp ?ppp 
+REPLACE(str(?p),'http://metadb.riken.jp/ontology/plantMetabolomics/0.1/','') as ?file_type
     FROM <http://metadb.riken.jp/db/plantMetabolomics>
     WHERE {
         ?file_uri mb:fileFormat ?fileFormat.
@@ -316,7 +365,17 @@ query_file ="
         ?project dc:identifier ?project_id
 #        FILTER( ?project = <http://metadb.riken.jp/db/plantMetabolomics/0.1/Project/RPMM0001> ).
     FILTER( ?project = <#{ps}> ).
+
+### DEV
+?dataset ?p ?file_uri.
+?m_a ?pp ?dataset.
+?s ?ppp ?m_a.
+?s mb:technologyPlatform ?technologyPlatform .
+?technologyPlatform rdfs:label ?technologyPlatformLabel.
+FILTER(lang(?technologyPlatformLabel) = 'en').
+
 }
+ORDER BY ?file_id
 "
 
 #sparql.query(query_file).each do |result|
@@ -339,15 +398,28 @@ sparql.query(query_file).each do |result|
       end
       subject_f = RDF::URI.new(files[fid])
       #mtbks_id = "#{projects[puri]}-F#{cnt}"      
-      graph_new << RDF::Statement.new(subject_f, RDF::RDFV.type,  RDF::URI.new("#{pfx[:mbv]}File") )
+      filetype = result[:file_type].to_s.capitalize
+      #graph_new << RDF::Statement.new(subject_f, RDF::RDFV.type,  RDF::URI.new("#{pfx[:mbv]}File") )
+      graph_new << RDF::Statement.new(subject_f, RDF::RDFV.type, RDF::URI.new("#{pfx[:mbv]}#{filetype}"))
       #graph_new << RDF::Statement.new(subject_f, RDF::URI.new("#{pfx[:ddbj]}dblink"), subject_p )
       graph_new << RDF::Statement.new(subject_f, RDF::URI.new("#{pfx[:ddbj]}dblink"), subject_d )
-      graph_new << RDF::Statement.new(subject_f, RDF::URI.new("#{pfx[:ddbj]}downloadURL"), result[:download_url] )
+      #TODO: downloadURL
+      #graph_new << RDF::Statement.new(subject_f, RDF::URI.new("#{pfx[:ddbj]}downloadURL"), result[:download_url] )
+      #pp result[:download_url]
+      uri = URI.parse(URI.decode(result[:download_url].to_s))
+      filename =  File.basename(uri.path)
+      filepath = uri.path.split("/")[3..-1].join("/")
+      #pp filename
+      graph_new << RDF::Statement.new(subject_f, RDF::URI.new("#{pfx[:ddbj]}downloadURL"), RDF::Literal.new("https://ddbj.nig.ac.jp/public/metabobank/study/#{projects[puri]}/dataset/#{projects[puri]}-F#{cnt}", datatype: RDF::XSD.anyURL))
       #graph_new << RDF::Statement.new(subject_f, RDF::Vocab::DC.identifier,result[:file_id])
       graph_new << RDF::Statement.new(subject_f, RDF::Vocab::DC.identifier,"#{projects[puri]}-F#{cnt}")
       graph_new << RDF::Statement.new(subject_f, RDF::Vocab::DC.format,result[:format])
       graph_new << RDF::Statement.new(subject_f, RDF::RDFS.label,result[:name])
+      graph_new << RDF::Statement.new(subject_f, RDF::Vocab::SKOS.hiddenLabel,filename)
+      graph_new << RDF::Statement.new(subject_f, RDF::Vocab::SKOS.hiddenLabel,projects[puri])
       graph_new << RDF::Statement.new(subject_f, RDF::Vocab::DC.description,result[:description] || "")
+      graph_new << RDF::Statement.new(subject_f, RDF::RDFS.seeAlso, RDF::Literal.new("#{uri}", datatype: RDF::XSD.anyURL))
+      graph_new << RDF::Statement.new(subject_f, RDF::URI.new("#{pfx[:ddbj]}technologyPlatform"), result[:technologyPlatformLabel])
 end
 
 warn "### Output: rdf/#{projects[ps]}.ttl"
